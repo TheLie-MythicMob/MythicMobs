@@ -1,0 +1,110 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M021_SkillB:
+  Cooldown: 7
+  Conditions:
+  - onground
+  - incombat
+  Skills:
+  - message{m="&b海德拉 &7>> &f感受窒息的恐懼吧！"} @PlayersNearOrigin{r=30}
+  - effect:sound{s=entity.witch.ambient;v=3;p=1.6}
+  - delay 7
+  - effect:sound{s=entity.witch.ambient;v=3;p=1.2}
+  - delay 7
+  - effect:sound{s=entity.witch.ambient;v=3;p=1.8}
+  - delay 20
+  - effect:sound{s=entity.witch.death;v=2;p=1.4}
+  - effect:sound{s=entity.wither.ambient;v=5;p=2}
+  - skill{s=M021_SkillB_水牢} @RLNTE{amount=5;radius=20;spacing=0;minradius=2}
+  - skill{s=M021_SkillB_水牢} @PIR{r=20}
+M021_SkillB_水牢:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:sound{s=entity.dolphin.swim;v=1;p=0.8}
+  - effect:particlesphere{particle=fishing;amount=20;radius=0.5;repeat=4;repeatInterval=10}
+  - delay 40
+  - effect:sound{s=entity.player.splash.high_speed;v=2;p=2}
+  - totem{onStart=M021_SkillB_fishing_01;onHit=M021_SkillB_水牢_效果;hR=1;vR=1;md=20;y=0.1}
+  
+M021_SkillB_水牢_效果:
+  Cooldown: 0
+  Conditions:
+  Skills:  
+  - potion{type=SLOW;duration=60;level=100}
+  - potion{type=jump;duration=60;level=10000000}
+  - damage{amount=30;ia=false}
+  
+  
+M021_SkillB_fishing_01:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:sound{s=entity.dolphin.jump;v=1;p=0.1;repeat=3;repeatInterval=20}
+  - effect:particles{p=fishing;y=0.2;forwardOffset=0;sideOffset=-0.6;delay=0;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=0.3;forwardOffset=0.4;sideOffset=-0.5;delay=1;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=0.4;forwardOffset=0.6;sideOffset=-0.2;delay=2;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=0.5;forwardOffset=0.7;sideOffset=0;delay=3;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=0.6;forwardOffset=0.6;sideOffset=0.2;delay=4;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=0.7;forwardOffset=0.5;sideOffset=0.5;delay=5;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=0.8;forwardOffset=0.2;sideOffset=0.6;delay=6;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=0.9;forwardOffset=-0.2;sideOffset=0.5;delay=7;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.0;forwardOffset=-0.5;sideOffset=0.2;delay=8;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.1;forwardOffset=-0.5;sideOffset=-0.2;delay=9;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.2;forwardOffset=-0.4;sideOffset=-0.6;delay=10;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.3;forwardOffset=0;sideOffset=-0.7;delay=11;repeat=6;repeatInterval=10} #
+  - effect:particles{p=fishing;y=1.4;forwardOffset=0.4;sideOffset=-0.5;delay=12;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.5;forwardOffset=0.6;sideOffset=-0.2;delay=13;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.6;forwardOffset=0.7;sideOffset=0;delay=14;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.7;forwardOffset=0.6;sideOffset=0.2;delay=15;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.8;forwardOffset=0.5;sideOffset=0.5;delay=16;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.9;forwardOffset=0.2;sideOffset=0.6;delay=17;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=2;forwardOffset=-0.2;sideOffset=0.5;delay=18;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.1;forwardOffset=-0.5;sideOffset=0.2;delay=19;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.2;forwardOffset=-0.5;sideOffset=-0.2;delay=20;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.3;forwardOffset=-0.4;sideOffset=-0.6;delay=21;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.4;forwardOffset=0;sideOffset=-0.7;delay=22;repeat=6;repeatInterval=10} #
+  - effect:particles{p=fishing;y=2.5;forwardOffset=0.4;sideOffset=-0.5;delay=23;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.6;forwardOffset=0.6;sideOffset=-0.2;delay=24;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.7;forwardOffset=0.7;sideOffset=0;delay=25;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.8;forwardOffset=0.6;sideOffset=0.2;delay=26;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.9;forwardOffset=0.5;sideOffset=0.5;delay=27;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=3;forwardOffset=0.2;sideOffset=0.6;delay=28;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=3.1;forwardOffset=-0.2;sideOffset=0.5;delay=29;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=3.2;forwardOffset=-0.5;sideOffset=0.2;delay=30;repeat=6;repeatInterval=10}
+  #
+  - effect:particles{p=fishing;y=0.2;forwardOffset=0;sideOffset=0.6;delay=0;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=0.3;forwardOffset=-0.4;sideOffset=0.5;delay=1;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=0.4;forwardOffset=-0.6;sideOffset=0.2;delay=2;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=0.5;forwardOffset=-0.7;sideOffset=0;delay=3;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=0.6;forwardOffset=-0.6;sideOffset=-0.2;delay=4;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=0.7;forwardOffset=-0.5;sideOffset=-0.5;delay=5;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=0.8;forwardOffset=-0.2;sideOffset=-0.6;delay=6;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=0.9;forwardOffset=0.2;sideOffset=-0.5;delay=7;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.0;forwardOffset=0.5;sideOffset=-0.2;delay=8;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.1;forwardOffset=0.5;sideOffset=0.2;delay=9;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.2;forwardOffset=0.4;sideOffset=0.6;delay=10;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.3;forwardOffset=0;sideOffset=0.7;delay=11;repeat=6;repeatInterval=10} #
+  - effect:particles{p=fishing;y=1.4;forwardOffset=-0.4;sideOffset=0.5;delay=12;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.5;forwardOffset=-0.6;sideOffset=0.2;delay=13;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.6;forwardOffset=-0.7;sideOffset=0;delay=14;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.7;forwardOffset=-0.6;sideOffset=-0.2;delay=15;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.8;forwardOffset=-0.5;sideOffset=-0.5;delay=16;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.9;forwardOffset=-0.2;sideOffset=-0.6;delay=17;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=2;forwardOffset=-0.2;sideOffset=-0.5;delay=18;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.1;forwardOffset=-0.5;sideOffset=-0.2;delay=19;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.2;forwardOffset=-0.5;sideOffset=0.2;delay=20;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.3;forwardOffset=-0.4;sideOffset=0.6;delay=21;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.4;forwardOffset=0;sideOffset=0.7;delay=22;repeat=6;repeatInterval=10} #
+  - effect:particles{p=fishing;y=2.5;forwardOffset=0.4;sideOffset=0.5;delay=23;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.6;forwardOffset=0.6;sideOffset=0.2;delay=24;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.7;forwardOffset=0.7;sideOffset=0;delay=25;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.8;forwardOffset=0.6;sideOffset=-0.2;delay=26;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.9;forwardOffset=0.5;sideOffset=-0.5;delay=27;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=3;forwardOffset=0.2;sideOffset=-0.6;delay=28;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=3.1;forwardOffset=-0.2;sideOffset=-0.5;delay=29;repeat=6;repeatInterval=10}
+  - effect:particles{p=fishing;y=3.2;forwardOffset=-0.5;sideOffset=-0.2;delay=30;repeat=6;repeatInterval=10}
+  
+M021_SkillB_fishing_02:
+  Cooldown: 0
+  Conditions:
+  Skills:

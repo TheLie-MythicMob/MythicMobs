@@ -1,0 +1,20 @@
+m62:
+  ItemStack:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: PURPLE_STAINED_GLASS_PANE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"【"},{"italic":false,"color":"white","text":"普通"},{"italic":false,"color":"dark_gray","text":"】"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#EE82EE","text":"紫藤結晶"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"類型：
+        素材"}],"text":""}'
+      - '{"extra":[{"text":" "}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"紫晶山丘周圍的水晶充滿了魔力"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"不知為何會在卜普人的體內"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"但這水晶會使他們變得暴躁"}],"text":""}'
+      enchants:
+        WATER_WORKER: 1
+      ItemFlags:
+      - HIDE_ENCHANTS

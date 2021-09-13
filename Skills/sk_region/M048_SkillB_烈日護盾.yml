@@ -1,0 +1,28 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M048_SkillB:
+  Cooldown: 10
+  Conditions:
+  Skills:
+  - orbital{onTick=M048_SkillB_火焰粒子;oh=M048_SkillB_火焰擊中;points=30;interval=3;duration=600;charges=1;r=3}
+  - delay 30
+  - orbital{onTick=M048_SkillB_火焰粒子;oh=M048_SkillB_火焰擊中;points=30;interval=3;duration=570;charges=1;r=3}
+  - delay 30
+  - orbital{onTick=M048_SkillB_火焰粒子;oh=M048_SkillB_火焰擊中;points=30;interval=3;duration=540;charges=1;r=3}
+  
+  
+M048_SkillB_火焰粒子:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:sound{s=block.fire.ambient;v=1;p=0.8}
+  - effect:particlesphere{particle=flame;amount=20;radius=0.5;y=0.5} @origin
+ 
+M048_SkillB_火焰擊中:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - throw{velocity=15;velocityY=4}
+  - damage{amount=70;ia=false}
+  - potion{type=SLOW;duration=40;level=5}
+  - effect:sound{s=block.fire.extinguish;v=1;p=0.8}
+  - ignite{ticks=100}

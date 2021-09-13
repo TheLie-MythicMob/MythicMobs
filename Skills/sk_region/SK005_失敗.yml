@@ -1,0 +1,32 @@
+# 此技能由【小崇#8767 - TaiwanPingNO1】製作而成。
+SK005_01_fail:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=揮擊_失敗_01}
+  Skills:
+  - effect:particlesphere{p=reddust;color=#ffffff;amount=200;radius=0.5;hs=1;vs=1} @self
+  - effect:sound{s=entity.blaze.death;v=5;p=2}
+
+SK005_02_fail:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=揮擊_失敗_02}
+  Skills:
+  - effect:particlesphere{p=reddust;color=#ffffff;amount=200;radius=0.5;hs=1;vs=1} @self
+  - effect:sound{s=entity.blaze.death;v=5;p=2}
+
+SK005_03_fail:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=揮擊_失敗_03}
+  Skills:
+  - effect:particlesphere{p=reddust;color=#ffffff;amount=200;radius=0.5;hs=1;vs=1} @self
+  - effect:sound{s=entity.blaze.death;v=5;p=2}
+ 
+SK005_04_fail:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=揮擊_失敗_04}
+  Skills:
+  - effect:particlesphere{p=reddust;color=#ffffff;amount=200;radius=0.5;hs=1;vs=1} @self
+  - effect:sound{s=entity.blaze.death;v=5;p=2}

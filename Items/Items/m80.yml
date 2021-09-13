@@ -1,0 +1,16 @@
+m80:
+  ItemStack:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: GUNPOWDER
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"【"},{"italic":false,"color":"light_purple","text":"史詩"},{"italic":false,"color":"dark_gray","text":"】"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F0E68C","text":"龍之爪"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"類型：
+        素材"}],"text":""}'
+      - '{"extra":[{"text":" "}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"歐塔蒂歐的爪能輕易破壞建築物"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"其威力十分驚人"}],"text":""}'
+      custom-model-data: 24

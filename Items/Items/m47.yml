@@ -1,0 +1,15 @@
+m47:
+  ItemStack:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: BLAZE_POWDER
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"【"},{"italic":false,"color":"white","text":"普通"},{"italic":false,"color":"dark_gray","text":"】"},{"italic":false,"color":"red","text":"炎砂天晶"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"類型：
+        素材"}],"text":""}'
+      - '{"extra":[{"text":" "}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"炎熱的天氣讓紅砂幼蟲體內"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"產生一種結晶,擁有抗熱的屬性"}],"text":""}'

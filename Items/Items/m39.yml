@@ -1,0 +1,15 @@
+m39:
+  ItemStack:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: GLOWSTONE_DUST
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"【"},{"italic":false,"color":"white","text":"普通"},{"italic":false,"color":"dark_gray","text":"】"},{"italic":false,"color":"yellow","text":"垓多粉末"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"類型：
+        素材"}],"text":""}'
+      - '{"extra":[{"text":" "}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"神殿守衛身上的垓多粉末"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"能使自己保持精神,謹慎"}],"text":""}'

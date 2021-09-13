@@ -1,0 +1,24 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M028_SkillA:
+  Cooldown: 20
+  Conditions:
+  - onground
+  - incombat
+  Skills:
+  - effect:particlesphere{particle=crit;amount=300;radius=1} @self
+  - damage 8 @PIR{r=1}
+  - delay 10
+  - effect:particlesphere{particle=crit;amount=300;radius=2} @self
+  - damage 8 @PIR{r=2}
+  - delay 10
+  - effect:particlesphere{particle=crit;amount=300;radius=2.5} @self
+  - damage 8 @PIR{r=2.5}
+  - delay 10
+  - effect:particlesphere{particle=crit;amount=300;radius=3.5} @self
+  - damage 8 @PIR{r=3.5}
+  - delay 10
+  - effect:particlesphere{particle=crit;amount=300;radius=4} @self
+  - damage 8 @PIR{r=4}
+  - delay 10
+  - effect:particlesphere{particle=crit;amount=300;radius=4.5} @self
+  - damage 8 @PIR{r=4.5}

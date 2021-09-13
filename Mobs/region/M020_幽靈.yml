@@ -1,0 +1,35 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#
+M020_幽靈:
+  Type: VEX
+  Display: '&a低語森林&f-&7幽靈 &6[LV.17]'
+  Health: 105
+  Damage: 9.5
+  Faction: 怪物 #設定派系
+  AIGoalSelectors:
+  AITargetSelectors:
+  Equipment:
+  - PLAYER_HEAD{skullTexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjhkMjE4MzY0MDIxOGFiMzMwYWM1NmQyYWFiN2UyOWE5NzkwYTU0NWY2OTE2MTllMzg1NzhlYTRhNjlhZTBiNiJ9fX0=} HEAD
+  Options:
+    MovementSpeed: 0.34 #移動速度
+    AttackSpeed: 1 #攻擊速度
+    PreventSlimeSplit: true #防止分裂(史萊姆)
+    PreventOtherDrops: true #防止 MythicMobs 生物會掉原本會掉的東西 預設為 false
+    MaxCombatDistance: 30 #最大受擊距離 , 設定能打到的最遠距離  設定無法被狙擊的生物
+    KnockbackResistance: 0 #抗擊退機率
+    PreventSunburn: true
+    Despawn: true #生物附近沒玩家時，是否會消失
+    NoAI: false
+    Silent: true #關閉原版聲音
+    PreventRandomEquipment: true #生成時會不會隨機擁有裝備
+    NoGravity: false #是否開啟無重力
+    PreventSunburn: true #是否防止陽光下燃燒
+    ApplyInvisibility: true #是否隱形
+    AlwaysShowName: true
+  Drops:
+  - mmoitems{type=DROPMATERIAL;id=NMS_18} 1 0.6
+  - exp 1 1
+  Skills:
+  - effect:sound{s=entity.vex.hurt;v=2;p=0.8} @self ~onDamaged
+  - effect:sound{s=entity.ghast.death;v=2;p=0.8 @self ~onDeath

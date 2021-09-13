@@ -1,0 +1,17 @@
+m77:
+  ItemStack:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: GUNPOWDER
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"【"},{"italic":false,"color":"light_purple","text":"史詩"},{"italic":false,"color":"dark_gray","text":"】"},{"italic":false,"color":"dark_purple","text":"枯萎之枝"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"類型：
+        素材"}],"text":""}'
+      - '{"extra":[{"text":" "}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"這是一個充滿咒力的物品"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"它能把周圍的環境污染,並"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"把生命轉為咒力,因此咒力十分強大"}],"text":""}'
+      custom-model-data: 2

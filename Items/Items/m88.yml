@@ -1,0 +1,17 @@
+m88:
+  ItemStack:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: GUNPOWDER
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"【"},{"italic":false,"color":"light_purple","text":"史詩"},{"italic":false,"color":"dark_gray","text":"】"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#CD5C5C","text":"上"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#48D1CC","text":"古的"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#EEE8AA","text":"護身符"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"類型：
+        素材"}],"text":""}'
+      - '{"extra":[{"text":" "}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"以前是用於驅趕魔物的防身物品"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"但是不久卻被世人違忘了它的用途"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"物品從此被封印在鐵巨人遺跡裡讓巨靈守護"}],"text":""}'
+      custom-model-data: 52

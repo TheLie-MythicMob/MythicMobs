@@ -1,0 +1,26 @@
+# 此技能由【小崇#8767 - TaiwanPingNO1】製作而成。
+
+M012_SkillB:
+  Cooldown: 5
+  Conditions:
+  - onground
+  - incombat
+  Skills:
+  - message{m="&2毒氣製造者&f-&7蒐人 &f>> &e小心我研發的毒霧吧！"} @PlayersNearOrigin{r=15}
+  - effect:sound{s=entity.wandering_trader.yes;v=20;p=0.3}
+  - potion{type=SLOW;duration=50;level=1} @self
+  - delay 50
+  - effect:sound{s=block.glass.break;v=20;p=0}
+  - effect:sound{s=ui.cartography_table.take_result;v=50;p=0.6}
+  - effect:sound{s=entity.blaze.shoot;v=50;p=0.6}
+  - effect:particlering{p=reddust;color=#00ff55;radius=0;points=1;amount=20;vs=0;hs=0;delay=0} @self
+  - effect:particlering{p=reddust;color=#00ff55;radius=3;points=3;amount=20;vs=1;hs=1;delay=2} @self
+  - effect:particlering{p=reddust;color=#00ff55;radius=6;points=6;amount=20;vs=1.5;hs=1.5;delay=4} @self
+  - effect:particlering{p=reddust;color=#00ff55;radius=9;points=9;amount=20;vs=2;hs=2;delay=6} @self
+  - effect:particlering{p=reddust;color=#00ff55;radius=12;points=12;amount=20;vs=2;hs=2;delay=8} @self
+  - effect:particlering{p=reddust;color=#00ff55;radius=15;points=15;amount=20;vs=2;hs=2;delay=10} @self
+  - throw{velocity=20;velocityY=4;delay=5} @PIR{r=15}
+  #- potion{type=BLINDNESS;duration=100;level=1;delay=75} @PIR{r=15} #失明效果10秒
+  - potion{type=CONFUSION;duration=200;level=1;delay=5} @PIR{r=15} #暈眩效果10秒
+  - potion{type=WITHER;duration=200;level=1;delay=5} @PIR{r=15} #凋零效果10秒
+  - damage{amount=20;ia=false;delay=11} @PIR{r=15} #每兩秒造成XX傷害

@@ -1,0 +1,39 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#
+M037_岩型狼:
+  Type: zombie
+  Display: '&3迷離山岩&f-&7岩型狼&6 [LV.29]'
+  Health: 450
+  Damage: 17
+  Faction: 怪物 #設定派系
+  AIGoalSelectors:
+  AITargetSelectors:
+  Equipment:
+  Disguise:
+    Type: wolf
+    Skin: 
+  Options:
+    MovementSpeed: 0 #移動速度
+    AttackSpeed: 1 #攻擊速度
+    PreventSlimeSplit: true #防止分裂(史萊姆)
+    PreventOtherDrops: true #防止 MythicMobs 生物會掉原本會掉的東西 預設為 false
+    MaxCombatDistance: 30 #最大受擊距離 , 設定能打到的最遠距離  設定無法被狙擊的生物
+    KnockbackResistance: 0 #抗擊退機率
+    PreventSunburn: true
+    Despawn: true #生物附近沒玩家時，是否會消失
+    NoAI: true
+    Silent: true #關閉原版聲音
+    PreventRandomEquipment: true #生成時會不會隨機擁有裝備
+    NoGravity: false #是否開啟無重力
+    PreventSunburn: true #是否防止陽光下燃燒
+    ApplyInvisibility: false #是否隱形
+    AlwaysShowName: true
+  Drops:
+  - m44 1 0.6
+  - exp 1 1
+  Skills:
+  - effect:sound{s=entity.wolf.hurt;v=1;p=0.1} @self ~onDamaged
+  - effect:sound{s=entity.wolf.death;v=3;p=0.1} @self ~onDeath
+  - effect:particles{p=block_crack;m=dirt;amount=20;hS=1;vS=1} @self ~ontimer:20
+  

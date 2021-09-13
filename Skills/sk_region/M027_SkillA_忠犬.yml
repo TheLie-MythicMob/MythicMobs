@@ -1,0 +1,31 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M027_SkillA:
+  Cooldown: 8
+  Conditions:
+  - onground
+  - incombat
+  Skills:
+  - effect:sound{s=entity.pillager.ambient;v=2;p=0.4}
+  - message{m="&2古芭 &7>> &f上吧！我的忠犬們！"} @PlayersNearOrigin{r=30}
+  - delay 10
+  - effect:sound{s=entity.wolf.howl;v=1;p=1}
+  - delay 10
+  - skill{s=M027_SkillA_my} @Ring{radius=30;points=20}
+  
+M027_SkillA_my:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - projectile{bulletType=MOB;mob=M027_野原人首領-技能;onEnd=M027_SkillA_oe;oh=M027_SkillA_oh;pfacedir=true;syo=1;v=5;tyo=1;vO=0;StopAtEntity=true;StopAtBlock=true;g=0;hR=1.5}
+  
+M027_SkillA_oh:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - damage{amount=40;ia=false}
+  - effect:sound{s=entity.player.attack.sweep;v=1;p=0.1}
+  - effect:particles{p=sweep_attack;vs=0.5;hs=0.5;y=0.5}
+
+M027_SkillA_oe:
+  Skills:
+  - summon{type=M027_野原人首領-技能} @Origin 0.5

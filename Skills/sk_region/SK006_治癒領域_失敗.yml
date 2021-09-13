@@ -1,0 +1,49 @@
+# 此技能由【小崇#8767 - TaiwanPingNO1】製作而成。
+SK006_fail:
+  Cooldown: 0
+  Conditions:
+  - moving{} true
+  Skills:
+  - effect:particlesphere{p=reddust;color=#ffffff;amount=200;radius=0.5;hs=1;vs=1} @self
+  - effect:sound{s=entity.blaze.death;v=5;p=2}
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱失敗";fo=5} @self
+
+SK006_removetag_05:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - removetag{t=治癒領域_詠唱_01} @self
+  - removetag{t=治癒領域_詠唱_02} @self
+  - removetag{t=治癒領域_詠唱_03} @self
+  - removetag{t=治癒領域_詠唱_04} @self
+  - removetag{t=治癒領域_詠唱_05} @self
+  
+SK006_removetag_10:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - removetag{t=治癒領域_詠唱_06} @self
+  - removetag{t=治癒領域_詠唱_07} @self
+  - removetag{t=治癒領域_詠唱_08} @self
+  - removetag{t=治癒領域_詠唱_09} @self
+  - removetag{t=治癒領域_詠唱_10} @self
+  
+SK006_removetag_15:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - removetag{t=治癒領域_詠唱_11} @self
+  - removetag{t=治癒領域_詠唱_12} @self
+  - removetag{t=治癒領域_詠唱_13} @self
+  - removetag{t=治癒領域_詠唱_14} @self
+  - removetag{t=治癒領域_詠唱_15} @self
+  
+SK006_removetag_20:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - removetag{t=治癒領域_詠唱_16} @self
+  - removetag{t=治癒領域_詠唱_17} @self
+  - removetag{t=治癒領域_詠唱_18} @self
+  - removetag{t=治癒領域_詠唱_19} @self
+  - removetag{t=治癒領域_詠唱_20} @self

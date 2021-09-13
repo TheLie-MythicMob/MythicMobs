@@ -1,0 +1,792 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+ 
+fisha:
+  Id: FISHING_ROD
+  Data: 0
+  Amount: 1
+  Display: '§x§F§F§D§7§0§0小釣竿'
+  Lore:
+  - '&7漁獲物取得時間 : 3 - 30秒'
+  - ''
+  
+fish1:
+  Id: COD #小石子
+  Data: 0
+  Amount: 1
+  Model: 112
+  
+fish2:
+  Id: COD #荷葉
+  Data: 0
+  Amount: 1
+  Model: 80
+  
+fish3:
+  Id: COD #海螺
+  Data: 0
+  Amount: 1
+  Model: 69
+  
+fish4:
+  Id: COD #海藤
+  Data: 0
+  Amount: 1
+  Model: 97
+  
+fish5:
+  Id: COD #破布
+  Data: 0
+  Amount: 1
+  Model: 115
+  
+fish6:
+  Id: COD #海草
+  Data: 0
+  Amount: 1
+  Model: 98
+  
+fish7:
+  Id: COD #破鞋
+  Data: 0
+  Amount: 1
+  Model: 76
+  
+fish8:
+  Id: COD #海蠅
+  Data: 0
+  Amount: 1
+  Model: 121
+  
+fish9:
+  Id: COD #小魷魚
+  Data: 0
+  Amount: 1
+  Model: 17
+  
+fish10:
+  Id: COD #盔甲蟲
+  Data: 0
+  Amount: 1
+  Model: 57
+  
+fish11:
+  Id: COD #咬人蝌蚪
+  Data: 0
+  Amount: 1
+  Model: 67
+  
+fish12:
+  Id: COD #孔雀魚
+  Data: 0
+  Amount: 1
+  Model: 83
+  
+fish13:
+  Id: COD #皮皮蝦
+  Data: 0
+  Amount: 1
+  Model: 101
+  
+fish14:
+  Id: COD #海豌豆
+  Data: 0
+  Amount: 1
+  Model: 77
+  
+fish15:
+  Id: COD #冰魚
+  Data: 0
+  Amount: 1
+  Model: 55
+
+fish16:
+  Id: COD #蚯蚓
+  Data: 0
+  Amount: 1
+  Model: 12
+  
+fish17:
+  Id: COD #藍鰓太陽魚
+  Data: 0
+  Amount: 1
+  Model: 3
+  
+fish18:
+  Id: COD #比目魚
+  Data: 0
+  Amount: 1
+  Model: 26
+  
+fish19:
+  Id: COD #年幼海蠱蟲
+  Data: 0
+  Amount: 1
+  Model: 85
+  
+fish20:
+  Id: COD #小池魚
+  Data: 0
+  Amount: 1
+  Model: 28
+  
+fish21:
+  Id: COD #海星
+  Data: 0
+  Amount: 1
+  Model: 4
+  
+fish22:
+  Id: COD #蝴蝶魚
+  Data: 0
+  Amount: 1
+  Model: 70
+  
+fish23:
+  Id: COD #倉魚
+  Data: 0
+  Amount: 1
+  Model: 71
+  
+fish24:
+  Id: COD #紫珊瑚魚
+  Data: 0
+  Amount: 1
+  Model: 49
+  
+fish25:
+  Id: COD #成熟海蠱蟲
+  Data: 0
+  Amount: 1
+  Model: 124
+  
+fish26:
+  Id: COD #燕子魚
+  Data: 0
+  Amount: 1
+  Model: 95
+  
+fish27:
+  Id: COD #鬥魚
+  Data: 0
+  Amount: 1
+  Model: 27
+  
+fish28:
+  Id: COD #皮煇魚
+  Data: 0
+  Amount: 1
+  Model: 36
+  
+fish29:
+  Id: COD #雷諾魚
+  Data: 0
+  Amount: 1
+  Model: 122
+  
+fish30:
+  Id: COD #浪尾魚
+  Data: 0
+  Amount: 1
+  Model: 6
+  
+fish31:
+  Id: COD #冰藍鱒
+  Data: 0
+  Amount: 1
+  Model: 56
+  
+fish32:
+  Id: COD #擬刺尾鯛
+  Data: 0
+  Amount: 1
+  Model: 106
+  
+fish33:
+  Id: COD #小恐龍魚
+  Data: 0
+  Amount: 1
+  Model: 125
+  
+fish34:
+  Id: COD #蓮花魚·藍
+  Data: 0
+  Amount: 1
+  Model: 120
+  
+fish35:
+  Id: COD #青玉鱒
+  Data: 0
+  Amount: 1
+  Model: 60
+  
+fish36:
+  Id: COD #橄欖魚
+  Data: 0
+  Amount: 1
+  Model: 108
+  
+fish37:
+  Id: COD #獅子魚
+  Data: 0
+  Amount: 1
+  Model: 107
+  
+fish38:
+  Id: COD #海鰻
+  Data: 0
+  Amount: 1
+  Model: 54
+  
+fish39:
+  Id: COD #拉希
+  Data: 0
+  Amount: 1
+  Model: 123
+  
+fish40:
+  Id: COD #鮪魚
+  Data: 0
+  Amount: 1
+  Model: 119
+  
+fish41:
+  Id: COD #注視魚
+  Data: 0
+  Amount: 1
+  Model: 129
+  
+fish42:
+  Id: COD #熔岩魚
+  Data: 0
+  Amount: 1
+  Model: 129
+  
+fish43:
+  Id: COD #幼年鋸齒魚
+  Data: 0
+  Amount: 1
+  Model: 75
+  
+fish44:
+  Id: COD #岩石魚
+  Data: 0
+  Amount: 1
+  Model: 16
+  
+fish45:
+  Id: COD #杏仁古鱗魚
+  Data: 0
+  Amount: 1
+  Model: 5
+  
+fish46:
+  Id: COD #裸胸鱔
+  Data: 0
+  Amount: 1
+  Model: 99
+  
+fish47:
+  Id: COD #地毯魚
+  Data: 0
+  Amount: 1
+  Model: 37
+  
+fish48:
+  Id: COD #多雲富暗魚
+  Data: 0
+  Amount: 1
+  Model: 33
+  
+fish49:
+  Id: COD #紅腦水母
+  Data: 0
+  Amount: 1
+  Model: 13
+  
+fish50:
+  Id: COD #青菜花
+  Data: 0
+  Amount: 1
+  Model: 93
+  
+fish51:
+  Id: COD #帝王鮭
+  Data: 0
+  Amount: 1
+  Model: 118
+  
+fish52:
+  Id: COD #紅目鯽
+  Data: 0
+  Amount: 1
+  Model: 109
+  
+fish53:
+  Id: COD #水之魚
+  Data: 0
+  Amount: 1
+  Model: 46
+  
+fish54:
+  Id: COD #米諾魚
+  Data: 0
+  Amount: 1
+  Model: 63
+  
+fish55:
+  Id: COD #尸骨魚
+  Data: 0
+  Amount: 1
+  Model: 50
+  
+fish56:
+  Id: COD #雪花魚
+  Data: 0
+  Amount: 1
+  Model: 105
+  
+fish57:
+  Id: COD #條石鯛
+  Data: 0
+  Amount: 1
+  Model: 8
+  
+fish58:
+  Id: COD #珊瑚狂擺魚
+  Data: 0
+  Amount: 1
+  Model: 22
+  
+fish59:
+  Id: COD #朗姆刺鳃魚
+  Data: 0
+  Amount: 1
+  Model: 11
+  
+fish60:
+  Id: COD #幽靈魚
+  Data: 0
+  Amount: 1
+  Model: 25
+  
+fish61:
+  Id: COD #登島魚
+  Data: 0
+  Amount: 1
+  Model: 30
+  
+fish62:
+  Id: COD #黃目鯽
+  Data: 0
+  Amount: 1
+  Model: 110
+  
+fish63:
+  Id: COD #霓虹蝦
+  Data: 0
+  Amount: 1
+  Model: 96
+  
+fish64:
+  Id: COD #火炮魚
+  Data: 0
+  Amount: 1
+  Model: 40
+  
+fish65:
+  Id: COD #蠑螈
+  Data: 0
+  Amount: 1
+  Model: 127
+  
+fish66:
+  Id: COD #骷髏魚
+  Data: 0
+  Amount: 1
+  Model: 15
+  
+fish67:
+  Id: COD #羊咩魚
+  Data: 0
+  Amount: 1
+  Model: 72
+  
+fish68:
+  Id: COD #日光魚
+  Data: 0
+  Amount: 1
+  Model: 52
+  
+fish69:
+  Id: COD #微笑魚
+  Data: 0
+  Amount: 1
+  Model: 66
+  
+fish70:
+  Id: COD #咘滋
+  Data: 0
+  Amount: 1
+  Model: 82
+  
+fish71:
+  Id: COD #炸彈魚
+  Data: 0
+  Amount: 1
+  Model: 14
+  
+fish72:
+  Id: COD #藍紋鱸
+  Data: 0
+  Amount: 1
+  Model: 81
+  
+fish73:
+  Id: COD #鋸齒魚
+  Data: 0
+  Amount: 1
+  Model: 74
+  
+fish74:
+  Id: COD #暗影風暴魚
+  Data: 0
+  Amount: 1
+  Model: 29
+  
+fish75:
+  Id: COD #阿波羅魚
+  Data: 0
+  Amount: 1
+  Model: 59
+  
+fish76:
+  Id: COD #鬼怪魚
+  Data: 0
+  Amount: 1
+  Model: 51
+  
+fish77:
+  Id: COD #太陽破船魚
+  Data: 0
+  Amount: 1
+  Model: 64
+  
+fish78:
+  Id: COD #黃金脂鯉
+  Data: 0
+  Amount: 1
+  Model: 94
+  
+fish79:
+  Id: COD #氣球魚
+  Data: 0
+  Amount: 1
+  Model: 102
+  
+fish80:
+  Id: COD #虎紋岩魚
+  Data: 0
+  Amount: 1
+  Model: 88
+  
+fish81:
+  Id: COD #食人魚
+  Data: 0
+  Amount: 1
+  Model: 117
+  
+fish82:
+  Id: COD #雷達魚
+  Data: 0
+  Amount: 1
+  Model: 104
+  
+fish83:
+  Id: COD #印加
+  Data: 0
+  Amount: 1
+  Model: 116
+  
+fish84:
+  Id: COD #貓頭鷹魚
+  Data: 0
+  Amount: 1
+  Model: 53
+  
+fish85:
+  Id: COD #蜜蜂魚
+  Data: 0
+  Amount: 1
+  Model: 18
+  
+fish86:
+  Id: COD #白兔魚
+  Data: 0
+  Amount: 1
+  Model: 19
+  
+fish87:
+  Id: COD #碧空魚
+  Data: 0
+  Amount: 1
+  Model: 43
+  
+fish88:
+  Id: COD #月空魚
+  Data: 0
+  Amount: 1
+  Model: 58
+  
+fish89:
+  Id: COD #紫晶星
+  Data: 0
+  Amount: 1
+  Model: 1
+  
+fish90:
+  Id: COD #黃疸水母
+  Data: 0
+  Amount: 1
+  Model: 7
+  
+fish91:
+  Id: COD #長舌烏
+  Data: 0
+  Amount: 1
+  Model: 10
+  
+fish92:
+  Id: COD #紡錘鯖
+  Data: 0
+  Amount: 1
+  Model: 103
+  
+fish93:
+  Id: COD #貓咪魚
+  Data: 0
+  Amount: 1
+  Model: 21
+  
+fish94:
+  Id: COD #海盜魚
+  Data: 0
+  Amount: 1
+  Model: 20
+  
+fish95:
+  Id: COD #瑪瑙魚
+  Data: 0
+  Amount: 1
+  Model: 2
+  
+fish96:
+  Id: COD #硃砂水母
+  Data: 0
+  Amount: 1
+  Model: 65
+  
+fish97:
+  Id: COD #蝙蝠魚
+  Data: 0
+  Amount: 1
+  Model: 9
+  
+fish98:
+  Id: COD #紅蜴
+  Data: 0
+  Amount: 1
+  Model: 128
+  
+fish99:
+  Id: COD #龜魚
+  Data: 0
+  Amount: 1
+  Model: 38
+  
+fish100:
+  Id: COD #隱士魚
+  Data: 0
+  Amount: 1
+  Model: 42
+  
+fish101:
+  Id: COD #魔鬼魚
+  Data: 0
+  Amount: 1
+  Model: 24
+  
+fish102:
+  Id: COD #企鵝魚
+  Data: 0
+  Amount: 1
+  Model: 78
+  
+fish103:
+  Id: COD #夜光魚
+  Data: 0
+  Amount: 1
+  Model: 32
+  
+fish104:
+  Id: COD #鐳射魚
+  Data: 0
+  Amount: 1
+  Model: 84
+  
+fish105:
+  Id: COD #粉龍魚
+  Data: 0
+  Amount: 1
+  Model: 31
+  
+fish106:
+  Id: COD #子彈魚
+  Data: 0
+  Amount: 1
+  Model: 73
+  
+fish107:
+  Id: COD #結晶魚
+  Data: 0
+  Amount: 1
+  Model: 68
+  
+fish108:
+  Id: COD #眼珠水母
+  Data: 0
+  Amount: 1
+  Model: 114
+  
+fish109:
+  Id: COD #鯰魚
+  Data: 0
+  Amount: 1
+  Model: 90
+  
+fish110:
+  Id: COD #紅龍蝦
+  Data: 0
+  Amount: 1
+  Model: 89
+  
+fish111:
+  Id: COD #眼珠魚
+  Data: 0
+  Amount: 1
+  Model: 126
+  
+fish112:
+  Id: COD #玫瑰魚
+  Data: 0
+  Amount: 1
+  Model: 91
+  
+fish113:
+  Id: COD #翻車魚
+  Data: 0
+  Amount: 1
+  Model: 41
+  
+fish114:
+  Id: COD #小鯊魚
+  Data: 0
+  Amount: 1
+  Model: 39
+  
+fish115:
+  Id: COD #五星魚
+  Data: 0
+  Amount: 1
+  Model: 45
+  
+fish116:
+  Id: COD #變臉魚·雄
+  Data: 0
+  Amount: 1
+  Model: 61
+  
+fish117:
+  Id: COD #變臉魚·雌
+  Data: 0
+  Amount: 1
+  Model: 62
+  
+fish118:
+  Id: COD #喪屍魚
+  Data: 0
+  Amount: 1
+  Model: 130
+  
+fish119:
+  Id: COD #鮭魚
+  Data: 0
+  Amount: 1
+  Model: 35
+
+fish120:
+  Id: COD #奶哲魚
+  Data: 0
+  Amount: 1
+  Model: 48
+  
+fish121:
+  Id: COD #暗黑魚
+  Data: 0
+  Amount: 1
+  Model: 100
+  
+fish122:
+  Id: COD #苔蘚鯊
+  Data: 0
+  Amount: 1
+  Model: 44
+  
+fish123:
+  Id: COD #海蝶魚
+  Data: 0
+  Amount: 1
+  Model: 47
+  
+fish124:
+  Id: COD #羽鱗槍
+  Data: 0
+  Amount: 1
+  Model: 113
+  
+fish125:
+  Id: COD #費蘭肯魚
+  Data: 0
+  Amount: 1
+  Model: 86
+  
+fish126:
+  Id: COD #鋸鯊
+  Data: 0
+  Amount: 1
+  Model: 92
+  
+fish127:
+  Id: COD #天使水母
+  Data: 0
+  Amount: 1
+  Model: 79
+  
+fish128:
+  Id: COD #青槍魚
+  Data: 0
+  Amount: 1
+  Model: 111
+  
+fish129:
+  Id: COD #錦鯉
+  Data: 0
+  Amount: 1
+  Model: 23
+  
+fish130:
+  Id: COD #雙鬢鯊
+  Data: 0
+  Amount: 1
+  Model: 87

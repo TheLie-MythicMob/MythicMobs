@@ -1,0 +1,234 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M018_SkillA_01:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:sound{s=block.stone.place;v=50;p=1.5} @self
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.2;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.4;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.6;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.8;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.2;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.4;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.6;sideOffset=0}
+  #<腳底_右>
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.2;sideOffset=0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.4;sideOffset=0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.6;sideOffset=0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.8;sideOffset=0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2;sideOffset=0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.2;sideOffset=0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.4;sideOffset=0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.6;sideOffset=0.2}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.2;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.4;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.6;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.8;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.2;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.4;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.6;sideOffset=0.4}
+    #<腳底_左>
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.2;sideOffset=-0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.4;sideOffset=-0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.6;sideOffset=-0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.8;sideOffset=-0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2;sideOffset=-0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.2;sideOffset=-0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.4;sideOffset=-0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.6;sideOffset=-0.2}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.2;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.4;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.6;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.8;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.2;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.4;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.6;sideOffset=-0.4}
+   #<腳底>
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=1.2;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=1.4;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=1.6;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=1.8;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=2;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=2.2;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=2.4;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=2.6;sideOffset=0}
+  #<腳底_右>
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=1.2;sideOffset=0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=1.4;sideOffset=0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=1.6;sideOffset=0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=1.8;sideOffset=0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=2;sideOffset=0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=2.2;sideOffset=0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=2.4;sideOffset=0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=2.6;sideOffset=0.2}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=1.2;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=1.4;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=1.6;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=1.8;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=2;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=2.2;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=2.4;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=2.6;sideOffset=0.4}
+    #<腳底_左>
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=1.2;sideOffset=-0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=1.4;sideOffset=-0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=1.6;sideOffset=-0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=1.8;sideOffset=-0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=2;sideOffset=-0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=2.2;sideOffset=-0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=2.4;sideOffset=-0.2}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=2.6;sideOffset=-0.2}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=1.2;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=1.4;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=1.6;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=1.8;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=2;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=2.2;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=2.4;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0;forwardOffset=2.6;sideOffset=-0.4}
+  #<腳中_右>
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=1.2;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=1.4;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=1.6;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=1.8;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=2;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=2.2;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=2.4;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=2.6;sideOffset=0.4}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=1.2;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=1.4;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=1.6;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=1.8;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=2;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=2.2;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=2.4;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=2.6;sideOffset=0.4}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.2;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.4;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.6;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.8;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.2;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.4;sideOffset=0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.6;sideOffset=0.4}
+    #<腳中_左>
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=1.2;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=1.4;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=1.6;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=1.8;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=2;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=2.2;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=2.4;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=2.6;sideOffset=-0.4}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=1.2;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=1.4;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=1.6;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=1.8;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=2;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=2.2;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=2.4;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=2.6;sideOffset=-0.4}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.2;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.4;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.6;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.8;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.2;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.4;sideOffset=-0.4}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.6;sideOffset=-0.4}
+  #<腳邊_前>
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=2.6;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=2.6;sideOffset=0.3}
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=2.6;sideOffset=-0.3}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=2.6;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=2.6;sideOffset=0.3}
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=2.6;sideOffset=-0.3}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.6;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.6;sideOffset=0.3}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=2.6;sideOffset=-0.3}
+    #<腳邊_後>
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=1.2;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=1.2;sideOffset=0.3}
+  - effect:particles{p=reddust;color=#7c6666;y=0.2;forwardOffset=1.2;sideOffset=-0.3}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=1.2;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=1.2;sideOffset=0.3}
+  - effect:particles{p=reddust;color=#7c6666;y=0.4;forwardOffset=1.2;sideOffset=-0.3}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.2;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.2;sideOffset=0.3}
+  - effect:particles{p=reddust;color=#7c6666;y=0.6;forwardOffset=1.2;sideOffset=-0.3}
+  #======================================================================================
+  #<腳踝>
+  - effect:particles{p=reddust;color=#7c6666;y=0.8;forwardOffset=1.4;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0.8;forwardOffset=1.4;sideOffset=0.3}
+  - effect:particles{p=reddust;color=#7c6666;y=0.8;forwardOffset=1.4;sideOffset=-0.3}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=0.8;forwardOffset=1.7;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0.8;forwardOffset=1.7;sideOffset=0.3}
+  - effect:particles{p=reddust;color=#7c6666;y=0.8;forwardOffset=1.7;sideOffset=-0.3}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=0.8;forwardOffset=2;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=0.8;forwardOffset=2;sideOffset=0.3}
+  - effect:particles{p=reddust;color=#7c6666;y=0.8;forwardOffset=2;sideOffset=-0.3}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=1;forwardOffset=1.4;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=1;forwardOffset=1.4;sideOffset=0.3}
+  - effect:particles{p=reddust;color=#7c6666;y=1;forwardOffset=1.4;sideOffset=-0.3}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=1;forwardOffset=1.7;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=1;forwardOffset=1.7;sideOffset=0.3}
+  - effect:particles{p=reddust;color=#7c6666;y=1;forwardOffset=1.7;sideOffset=-0.3}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=1;forwardOffset=2;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=1;forwardOffset=2;sideOffset=0.3}
+  - effect:particles{p=reddust;color=#7c6666;y=1;forwardOffset=2;sideOffset=-0.3}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=1.2;forwardOffset=1.4;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=1.2;forwardOffset=1.4;sideOffset=0.3}
+  - effect:particles{p=reddust;color=#7c6666;y=1.2;forwardOffset=1.4;sideOffset=-0.3}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=1.2;forwardOffset=1.7;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=1.2;forwardOffset=1.7;sideOffset=0.3}
+  - effect:particles{p=reddust;color=#7c6666;y=1.2;forwardOffset=1.7;sideOffset=-0.3}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=1.2;forwardOffset=2;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=1.2;forwardOffset=2;sideOffset=0.3}
+  - effect:particles{p=reddust;color=#7c6666;y=1.2;forwardOffset=2;sideOffset=-0.3}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=1.4;forwardOffset=1.4;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=1.4;forwardOffset=1.4;sideOffset=0.3}
+  - effect:particles{p=reddust;color=#7c6666;y=1.4;forwardOffset=1.4;sideOffset=-0.3}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=1.4;forwardOffset=1.7;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=1.4;forwardOffset=1.7;sideOffset=0.3}
+  - effect:particles{p=reddust;color=#7c6666;y=1.4;forwardOffset=1.7;sideOffset=-0.3}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=1.4;forwardOffset=2;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=1.4;forwardOffset=2;sideOffset=0.3}
+  - effect:particles{p=reddust;color=#7c6666;y=1.4;forwardOffset=2;sideOffset=-0.3}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=1.6;forwardOffset=1.4;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=1.6;forwardOffset=1.4;sideOffset=0.3}
+  - effect:particles{p=reddust;color=#7c6666;y=1.6;forwardOffset=1.4;sideOffset=-0.3}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=1.6;forwardOffset=1.7;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=1.6;forwardOffset=1.7;sideOffset=0.3}
+  - effect:particles{p=reddust;color=#7c6666;y=1.6;forwardOffset=1.7;sideOffset=-0.3}
+  #
+  - effect:particles{p=reddust;color=#7c6666;y=1.6;forwardOffset=2;sideOffset=0}
+  - effect:particles{p=reddust;color=#7c6666;y=1.6;forwardOffset=2;sideOffset=0.3}
+  - effect:particles{p=reddust;color=#7c6666;y=1.6;forwardOffset=2;sideOffset=-0.3}

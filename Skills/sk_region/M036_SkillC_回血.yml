@@ -1,0 +1,10 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M036_SkillC:
+  Cooldown: 3
+  Conditions:
+  - onground
+  - incombat
+  Skills:
+  - message{m="&7莫斯特 &7>> &f你的生命我就收下了，哈哈！"} @PlayersNearOrigin{r=30}
+  - heal{amount=46}
+  - effect:particles{p=heart;y=1.5}

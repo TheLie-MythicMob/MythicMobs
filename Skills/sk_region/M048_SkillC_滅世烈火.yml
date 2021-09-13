@@ -1,0 +1,26 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M048_SkillC:
+  Cooldown: 5
+  Conditions:
+  Skills:
+  - effect:particlesphere{particle=flame;amount=300;radius=1.5;vs=0.5;y=0.5;repeat=10;repeatInterval=10}
+  - effect:particlesphere{particle=largesmoke;amount=40;radius=1.5;vs=0.5;y=0.5;repeat=10;repeatInterval=10}
+  - effect:sound{s=block.fire.extinguish;v=3;p=0.5}
+  - delay 60
+  - jump{velocity=1}
+  - effect:sound{s=entity.blaze.shoot;v=30;p=0.1}
+  - delay 5
+  - leap{velocity=500} @Target
+  - delay 10
+  - effect:particlering{p=flame;radius=0;points=1;amount=20;vs=0;hs=0}
+  - effect:particlering{p=flame;radius=3;points=3;amount=20;vs=1;hs=1}
+  - effect:particlering{p=flame;radius=6;points=6;amount=20;vs=1.5;hs=1.5}
+  - effect:particlering{p=flame;radius=9;points=9;amount=20;vs=2;hs=2}
+  - effect:particlering{p=flame;radius=12;points=12;amount=20;vs=2;hs=2}
+  - effect:particlering{p=flame;radius=15;points=15;amount=20;vs=2;hs=2}
+  - damage{amount=65;ia=true} @PIR{r=15}
+  - effect:sound{s=item.totem.use;v=2;p=2}
+  - potion{type=SLOW;duration=100;level=4} @PIR{r=15}
+  - potion{type=CONFUSION;duration=100;level=4} @PIR{r=15}
+  - throw{velocity=10;velocityY=2} @PIR{r=15}
+  - ignite{ticks=100} @PIR{r=15}

@@ -1,0 +1,51 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M021_SkillA:
+  Cooldown: 3
+  Conditions:
+  - onground
+  - incombat
+  Skills:
+  - effect:sound{s=entity.witch.ambient;v=2;p=0.7}
+  - message{m="&b海德拉 &7>> &f水也能殺人的！"} @PlayersNearOrigin{r=30}
+  - delay 10
+  - jump{velocity=1.2} @self
+  - effect:particlesphere{particle=fishing;amount=100;radius=0.3;hs=1;y=0.2}
+  - effect:sound{s=entity.blaze.shoot;v=3;p=0.5}
+  - effect:sound{s=entity.dolphin.jump;v=5;p=2}
+  - delay 10
+  - skill{s=M021_SkillA_水標} @PIR{r=30}
+  - delay 10
+  - throw{velocity=0;velocityY=-10} @self
+M021_SkillA_水標:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:sound{s=entity.dolphin.jump;v=5;p=0.8}
+  - projectile{onTick=M021_SkillA_水標_特效;onHit=M021_SkillA_水標_擊中;oe=M021_SkillA_水標_消失;v=20;i=2;hR=1;vR=1;syo=1.5;g=0.4}
+  - projectile{onTick=M021_SkillA_水標_特效;onHit=M021_SkillA_水標_擊中;oe=M021_SkillA_水標_消失;v=20;i=2;hR=1;vR=1;hO=1;vO=0.1;syo=1.5;g=0.4;delay=1}
+  - projectile{onTick=M021_SkillA_水標_特效;onHit=M021_SkillA_水標_擊中;oe=M021_SkillA_水標_消失;v=20;i=2;hR=1;vR=1;hO=5;vO=0.2;syo=1.5;g=0.4;delay=2}
+  - projectile{onTick=M021_SkillA_水標_特效;onHit=M021_SkillA_水標_擊中;oe=M021_SkillA_水標_消失;v=20;i=2;hR=1;vR=1;hO=-9;vO=-0.1;syo=1.5;g=0.4;delay=3}
+  - projectile{onTick=M021_SkillA_水標_特效;onHit=M021_SkillA_水標_擊中;oe=M021_SkillA_水標_消失;v=20;i=2;hR=1;vR=1;hO=-2;vO=-0.2;syo=1.5;g=0.4;delay=4}
+  - projectile{onTick=M021_SkillA_水標_特效;onHit=M021_SkillA_水標_擊中;oe=M021_SkillA_水標_消失;v=20;i=2;hR=1;vR=1;hO=3;vO=-0.3;syo=1.5;g=0.4;delay=5}
+  - projectile{onTick=M021_SkillA_水標_特效;onHit=M021_SkillA_水標_擊中;oe=M021_SkillA_水標_消失;v=20;i=2;hR=1;vR=1;hO=7;vO=-0.1;syo=1.5;g=0.4;delay=6}
+  - projectile{onTick=M021_SkillA_水標_特效;onHit=M021_SkillA_水標_擊中;oe=M021_SkillA_水標_消失;v=20;i=2;hR=1;vR=1;hO=13;vO=0.2;syo=1.5;g=0.4;delay=7}
+  
+M021_SkillA_水標_特效:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particlesphere{particle=fishing;amount=20;radius=0.1} @origin
+  
+M021_SkillA_水標_消失:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:sound{s=entity.dolphin.swim;v=1;p=2}
+  
+M021_SkillA_水標_擊中:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:sound{s=entity.player.splash.high_speed;v=1;p=0.7}
+  - potion{type=SLOW;duration=60;level=3}
+  - damage{amount=25;ia=false}

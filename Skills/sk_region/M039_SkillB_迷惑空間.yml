@@ -1,0 +1,60 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M039_SkillB:
+  Cooldown: 11
+  Conditions:
+  - playerwithin{d=25}
+  Skills:
+  - effect:sound{s=entity.wither.ambient;v=5;p=0.1}
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=0.5;delay=0;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=1.5;delay=2;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=2.5;delay=4;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=3.5;delay=6;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=4.5;delay=8;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=5.5;delay=10;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=6.5;delay=12;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=7.5;delay=14;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=8.5;delay=16;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=9.5;delay=18;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=10.5;delay=20;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=11.5;delay=22;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=12.5;delay=24;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=13.5;delay=26;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=14.5;delay=28;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=15.5;delay=30;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=16.5;delay=32;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=17.5;delay=34;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=18.5;delay=36;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=19.5;delay=38;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=0.5;delay=0;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=1.5;delay=2;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=2.5;delay=4;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=3.5;delay=6;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=4.5;delay=8;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=5.5;delay=10;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=6.5;delay=12;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=7.5;delay=14;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=8.5;delay=16;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=9.5;delay=18;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=10.5;delay=20;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=11.5;delay=22;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=12.5;delay=24;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=13.5;delay=26;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=14.5;delay=28;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=15.5;delay=30;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=16.5;delay=32;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=17.5;delay=34;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=18.5;delay=36;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=19.5;delay=38;y=1.5} @self
+  - delay 38
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=300;radius=1;hs=20;vs=10;repeat=20;repeatInterval=10}
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=300;radius=1;hs=20;vs=10;repeat=20;repeatInterval=10}
+  - skill{s=M039_SkillB_傷害;repeat=20;repeatInterval=10} @PIR{r=30}
+  - effect:sound{s=block.fire.extinguish;v=0.2;p=0.6;repeat=40;repeatInterval=5} @PIR{r=30}
+  
+M039_SkillB_傷害:
+  Cooldown: 0
+  TargetConditions:
+  - crouching{} false
+  Skills:
+  - effect:bloodyScreen{d=10}
+  - damage{amount=30;ia=false;preventknockback=true}

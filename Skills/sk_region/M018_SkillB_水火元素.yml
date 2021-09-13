@@ -1,0 +1,190 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M018_SkillB:
+  Cooldown: 10
+  Conditions:
+  - onground
+  - incombat
+  Skills:
+  - setAI{ai=false}
+  - skill{s=M018_SkillB_flame}
+  - skill{s=M018_SkillB_drip_water}
+  - delay 80
+  - skill{s=M018_SkillB_particlesphere}
+  - delay 140
+  - skill{s=M018_SkillB_particlesphere_big}
+  - projectile{ot=M018_SkillB_missile;oh=M018_SkillB_missile;v=1;i=5;hR=1;vR=1;in=0;syo=5;;sfo=0;tyo=10;HitNonPlayers=true;HitTargetOnly=true;StopAtEntity=true;md=100} @origin
+  - delay 100
+  - skill{s=M018_SkillB_particlesphere_big_01}
+  - skill{s=M018_SkillB_projectile}
+  - setAI{ai=true}
+M018_SkillB_flame:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particles{p=flame;y=0.2;forwardOffset=0;sideOffset=-0.6;delay=2;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=0.3;forwardOffset=0.4;sideOffset=-0.5;delay=4;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=0.4;forwardOffset=0.6;sideOffset=-0.2;delay=6;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=0.5;forwardOffset=0.7;sideOffset=0;delay=8;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=0.6;forwardOffset=0.6;sideOffset=0.2;delay=10;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=0.7;forwardOffset=0.5;sideOffset=0.5;delay=12;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=0.8;forwardOffset=0.2;sideOffset=0.6;delay=14;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=0.9;forwardOffset=-0.2;sideOffset=0.5;delay=16;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=1.0;forwardOffset=-0.5;sideOffset=0.2;delay=18;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=1.1;forwardOffset=-0.5;sideOffset=-0.2;delay=20;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=1.2;forwardOffset=-0.4;sideOffset=-0.6;delay=22;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=1.3;forwardOffset=0;sideOffset=-0.7;delay=24;repeat=12;repeatInterval=10} #
+  - effect:particles{p=flame;y=1.4;forwardOffset=0.4;sideOffset=-0.5;delay=26;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=1.5;forwardOffset=0.6;sideOffset=-0.2;delay=28;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=1.6;forwardOffset=0.7;sideOffset=0;delay=30;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=1.7;forwardOffset=0.6;sideOffset=0.2;delay=32;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=1.8;forwardOffset=0.5;sideOffset=0.5;delay=34;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=1.9;forwardOffset=0.2;sideOffset=0.6;delay=36;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=2;forwardOffset=-0.2;sideOffset=0.5;delay=38;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=2.1;forwardOffset=-0.5;sideOffset=0.2;delay=40;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=2.2;forwardOffset=-0.5;sideOffset=-0.2;delay=42;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=2.3;forwardOffset=-0.4;sideOffset=-0.6;delay=44;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=2.4;forwardOffset=0;sideOffset=-0.7;delay=46;repeat=12;repeatInterval=10} #
+  - effect:particles{p=flame;y=2.5;forwardOffset=0.4;sideOffset=-0.5;delay=48;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=2.6;forwardOffset=0.6;sideOffset=-0.2;delay=50;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=2.7;forwardOffset=0.7;sideOffset=0;delay=52;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=2.8;forwardOffset=0.6;sideOffset=0.2;delay=54;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=2.9;forwardOffset=0.5;sideOffset=0.5;delay=56;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=3;forwardOffset=0.2;sideOffset=0.6;delay=58;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=3.1;forwardOffset=-0.2;sideOffset=0.5;delay=60;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=3.2;forwardOffset=-0.5;sideOffset=0.2;delay=62;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=3.3;forwardOffset=-0.5;sideOffset=-0.2;delay=64;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=3.4;forwardOffset=-0.4;sideOffset=-0.6;delay=66;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=3.5;forwardOffset=0;sideOffset=-0.7;delay=68;repeat=12;repeatInterval=10} #
+  - effect:particles{p=flame;y=3.6;forwardOffset=0.4;sideOffset=-0.5;delay=70;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=3.7;forwardOffset=0.6;sideOffset=-0.2;delay=72;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=3.8;forwardOffset=0.7;sideOffset=0;delay=74;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=3.9;forwardOffset=0.6;sideOffset=0.2;delay=76;repeat=12;repeatInterval=10}
+  - effect:particles{p=flame;y=4;forwardOffset=0.5;sideOffset=0.5;delay=78;repeat=12;repeatInterval=10}
+  - effect:sound{s=block.fire.ambient;v=10;p=0.1;repeat=8;repeatInterval=20}
+  
+M018_SkillB_drip_water:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particles{p=fishing;y=0.2;forwardOffset=0;sideOffset=0.6;delay=2;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=0.3;forwardOffset=-0.4;sideOffset=0.5;delay=4;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=0.4;forwardOffset=-0.6;sideOffset=0.2;delay=6;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=0.5;forwardOffset=-0.7;sideOffset=0;delay=8;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=0.6;forwardOffset=-0.6;sideOffset=-0.2;delay=10;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=0.7;forwardOffset=-0.5;sideOffset=-0.5;delay=12;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=0.8;forwardOffset=-0.2;sideOffset=-0.6;delay=14;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=0.9;forwardOffset=0.2;sideOffset=-0.5;delay=16;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.0;forwardOffset=0.5;sideOffset=-0.2;delay=18;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.1;forwardOffset=0.5;sideOffset=0.2;delay=20;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.2;forwardOffset=0.4;sideOffset=0.6;delay=22;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.3;forwardOffset=0;sideOffset=0.7;delay=24;repeat=12;repeatInterval=10} #
+  - effect:particles{p=fishing;y=1.4;forwardOffset=-0.4;sideOffset=0.5;delay=26;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.5;forwardOffset=-0.6;sideOffset=0.2;delay=28;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.6;forwardOffset=-0.7;sideOffset=0;delay=30;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.7;forwardOffset=-0.6;sideOffset=-0.2;delay=32;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.8;forwardOffset=-0.5;sideOffset=-0.5;delay=34;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=1.9;forwardOffset=-0.2;sideOffset=-0.6;delay=36;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=2;forwardOffset=-0.2;sideOffset=-0.5;delay=38;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.1;forwardOffset=-0.5;sideOffset=-0.2;delay=40;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.2;forwardOffset=-0.5;sideOffset=0.2;delay=42;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.3;forwardOffset=-0.4;sideOffset=0.6;delay=44;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.4;forwardOffset=0;sideOffset=0.7;delay=46;repeat=12;repeatInterval=10} #
+  - effect:particles{p=fishing;y=2.5;forwardOffset=0.4;sideOffset=0.5;delay=48;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.6;forwardOffset=0.6;sideOffset=0.2;delay=50;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.7;forwardOffset=0.7;sideOffset=0;delay=52;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.8;forwardOffset=0.6;sideOffset=-0.2;delay=54;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=2.9;forwardOffset=0.5;sideOffset=-0.5;delay=56;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=3;forwardOffset=0.2;sideOffset=-0.6;delay=58;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=3.1;forwardOffset=-0.2;sideOffset=-0.5;delay=60;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=3.2;forwardOffset=-0.5;sideOffset=-0.2;delay=62;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=3.3;forwardOffset=-0.5;sideOffset=0.2;delay=64;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=3.4;forwardOffset=-0.4;sideOffset=0.6;delay=66;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=3.5;forwardOffset=0;sideOffset=0.7;delay=68;repeat=12;repeatInterval=10} #
+  - effect:particles{p=fishing;y=3.6;forwardOffset=0.4;sideOffset=0.5;delay=70;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=3.7;forwardOffset=0.6;sideOffset=0.2;delay=72;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=3.8;forwardOffset=0.7;sideOffset=0;delay=74;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=3.9;forwardOffset=0.6;sideOffset=-0.2;delay=76;repeat=12;repeatInterval=10}
+  - effect:particles{p=fishing;y=4;forwardOffset=0.5;sideOffset=-0.5;delay=78;repeat=12;repeatInterval=10}
+  - effect:sound{s=entity.dolphin.jump;v=10;p=0.1;repeat=8;repeatInterval=20}
+  
+M018_SkillB_particlesphere_big:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particlesphere{p=flame;amount=40;radius=1;y=2.5} @self
+  - effect:particlesphere{p=fishing;amount=100;radius=1.2;y=2.5} @self
+  - effect:particlesphere{p=smoke;radius=1.2}
+  #- projectile{ot=M018_SkillB_projectile_flame;oe=M018_SkillB_projectile_flame;v=2;i=1;hR=0;vR=0;syo=2.5;sfo=0} @Ring{radius=5;points=36}
+  
+M018_SkillB_particlesphere:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particlesphere{p=flame;amount=20;radius=0.3;y=2.5;repeat=14;repeatInterval=10} @self
+  - effect:particlesphere{p=fishing;amount=50;radius=0.5;y=2.5;repeat=14;repeatInterval=10} @self
+  - effect:particlesphere{p=smoke;radius=0.5;y=2.5;repeat=14;repeatInterval=10}
+
+M018_SkillB_projectile_flame:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particles{p=flame}
+  
+M018_SkillB_projectile_drip_water:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particles{p=fishing}
+
+M018_SkillB_missile:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particlesphere{p=flame;amount=40;radius=1}
+  - effect:particlesphere{p=fishing;amount=100;radius=1.2} 
+  - effect:particlesphere{p=smoke;radius=1.2}
+  - effect:sound{s=entity.blaze.shoot;v=10;p=0.1}
+  
+M018_SkillB_particlesphere_big_01:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particlesphere{p=flame;amount=40;radius=1;y=5;repeat=6;repeatInterval=10} @self
+  - effect:particlesphere{p=fishing;amount=100;radius=1.2;y=5;repeat=6;repeatInterval=10} @self
+  - effect:particlesphere{p=smoke;radius=1.2;repeat=6;repeatInterval=10}
+  
+M018_SkillB_projectile_flame_da:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - damage{amount=25;ia=false} 
+  
+M018_SkillB_projectile_drip_water_da:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - damage{amount=25;ia=false}
+  
+M018_SkillB_projectile:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - projectile{ot=M018_SkillB_projectile_drip_water;oh=M018_SkillB_projectile_drip_water_da;v=10;i=1;hR=1.5;vR=1.5;syo=10;sfo=0;HitPlayers=true;HitNonPlayers=false} @Ring{radius=3;points=6}
+  - effect:sound{s=block.water.ambient;v=10;p=2}
+  - delay 10
+  - projectile{ot=M018_SkillB_projectile_flame;oh=M018_SkillB_projectile_flame_da;v=10;i=1;hR=1.5;vR=1.5;syo=10;sfo=0;HitPlayers=true;HitNonPlayers=false} @Ring{radius=5;points=10}
+  - effect:sound{s=entity.blaze.shoot;v=10;p=0.1}
+  - delay 10
+  - projectile{ot=M018_SkillB_projectile_drip_water;oh=M018_SkillB_projectile_drip_water_da;v=10;i=1;hR=1.5;vR=1.5;syo=10;sfo=0;HitPlayers=true;HitNonPlayers=false} @Ring{radius=8;points=16}
+  - effect:sound{s=block.water.ambient;v=10;p=2}
+  - delay 10
+  - projectile{ot=M018_SkillB_projectile_flame;oh=M018_SkillB_projectile_flame_da;v=10;i=1;hR=1.5;vR=1.5;syo=10;sfo=0;HitPlayers=true;HitNonPlayers=false} @Ring{radius=11;points=22}
+  - effect:sound{s=entity.blaze.shoot;v=10;p=0.1}
+  - delay 10
+  - projectile{ot=M018_SkillB_projectile_drip_water;oh=M018_SkillB_projectile_drip_water_da;v=8;i=1;hR=1.5;vR=1.5;syo=10;sfo=0;HitPlayers=true;HitNonPlayers=false} @Ring{radius=14;points=28}
+  - effect:sound{s=block.water.ambient;v=10;p=2}
+  - delay 10
+  - projectile{ot=M018_SkillB_projectile_flame;oh=M018_SkillB_projectile_flame_da;v=8;i=1;hR=1.5;vR=1.5;syo=10;sfo=0;HitPlayers=true;HitNonPlayers=false} @Ring{radius=17;points=34}
+  - effect:sound{s=entity.blaze.shoot;v=10;p=0.1}
+  - delay 10
+  - projectile{ot=M018_SkillB_projectile_drip_water;oh=M018_SkillB_projectile_drip_water_da;v=8;i=1;hR=1.5;vR=1.5;syo=10;sfo=0;HitPlayers=true;HitNonPlayers=false} @Ring{radius=20;points=40}

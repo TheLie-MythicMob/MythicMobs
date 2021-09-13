@@ -1,0 +1,13 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M018_SkillA_01_01:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  #- effect:sound{s=item.totem.use;v=50;p=2}
+  - missile{ot=M018_SkillA_01_02;oh=Homer_HIT;v=4;i=1;hR=1;vR=1;in=0.75;tyo=6;HitNonPlayers=true;HitTargetOnly=true;StopAtEntity=true;md=60} @MIR{r=50;t=M018_元素魔像} 
+
+M018_SkillA_01_02:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particlesphere{p=reddust;color=#7c6666;amount=5;radius=0.2}

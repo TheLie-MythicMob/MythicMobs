@@ -1,0 +1,113 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M048_SkillA:
+  Cooldown: 100
+  Conditions:
+  Skills:
+  - effect:sound{s=entity.strider.saddle;v=3;p=0.8}
+  - effect:particlering{p=smoke_large;radius=0;points=1;amount=5;vs=0.5;hs=0.5;delay=0;y=0.3}
+  - effect:particlering{p=smoke_large;radius=2;points=3;amount=5;vs=0.5;hs=0.5;delay=2;y=0.3}
+  - effect:particlering{p=smoke_large;radius=4;points=6;amount=5;vs=0.5;hs=0.5;delay=4;y=0.3}
+  - effect:particlering{p=smoke_large;radius=6;points=9;amount=5;vs=0.5;hs=0.5;delay=6;y=0.3}
+  - effect:particlering{p=smoke_large;radius=8;points=12;amount=5;vs=0.5;hs=0.5;delay=8;y=0.3}
+  - delay 10
+  - effect:sound{s=block.fire.extinguish;v=3;p=0.8}
+  - skill{s=M048_SkillA_預備_粒子}
+  - delay 30
+  - projectile{ot=M048_SkillA_墜毀之球;oe=M048_SkillA_墜毀之球_召喚;v=3;i=5;hR=0;vR=0;eyedir=false;syo=8;g=0;vO=1;hO=0;tyo=20;mr=7;fromOrigin=true} @self
+  
+M048_SkillA_墜毀之球_召喚:
+  Cooldown: 0
+  Conditions:
+  Skills:    
+  - summon{type=M048_拓笊_技能;amount=1;radius=0}
+  
+M048_SkillA_墜毀之球:
+  Cooldown: 0
+  Conditions:
+  Skills:  
+  - effect:particlesphere{particle=flame;amount=300;radius=4;y=0.5} @origin
+  - effect:particlesphere{particle=largesmoke;amount=40;radius=4;y=0.5} @origin
+  
+M048_SkillA_預備_粒子:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particlesphere{particle=flame;amount=2;radius=0.5;hs=0.5;y=0.5;delay=0} @Ring{radius=8;points=16}
+  - effect:particlesphere{particle=flame;amount=2;radius=0.5;hs=0.5;y=0.5;delay=2} @Ring{radius=7.5;points=16}
+  - effect:particlesphere{particle=flame;amount=2;radius=0.5;hs=0.5;y=0.5;delay=4} @Ring{radius=7;points=16}
+  - effect:particlesphere{particle=flame;amount=2;radius=0.5;hs=0.5;y=0.5;delay=6} @Ring{radius=6.5;points=16}
+  - effect:particlesphere{particle=flame;amount=2;radius=0.5;hs=0.5;y=0.5;delay=8} @Ring{radius=6;points=16}
+  - effect:particlesphere{particle=flame;amount=2;radius=0.5;hs=0.5;y=0.5;delay=10} @Ring{radius=5.5;points=16}
+  - effect:particlesphere{particle=flame;amount=2;radius=0.5;hs=0.5;y=0.5;delay=12} @Ring{radius=5;points=16}
+  - effect:particlesphere{particle=flame;amount=2;radius=0.5;hs=0.5;y=0.5;delay=14} @Ring{radius=4.5;points=16}
+  - effect:particlesphere{particle=flame;amount=2;radius=0.5;hs=0.5;y=0.6;delay=16} @Ring{radius=4;points=16}
+  - effect:particlesphere{particle=flame;amount=2;radius=0.5;hs=0.5;y=1;delay=18} @Ring{radius=3.5;points=16}
+  - effect:particlesphere{particle=flame;amount=2;radius=0.5;hs=0.5;y=1.4;delay=20} @Ring{radius=3;points=16}
+  - effect:particlesphere{particle=flame;amount=2;radius=0.5;hs=0.5;y=1.8;delay=22} @Ring{radius=2.5;points=16}
+  - effect:particlesphere{particle=flame;amount=2;radius=0.5;hs=0.5;y=2.2;delay=24} @Ring{radius=2;points=16}
+  - effect:particlesphere{particle=flame;amount=2;radius=0.5;hs=0.5;y=2.6;delay=26} @Ring{radius=1.5;points=16}
+  - effect:particlesphere{particle=flame;amount=2;radius=0.5;hs=0.5;y=3;delay=28} @Ring{radius=1;points=16}
+  - effect:particlesphere{particle=flame;amount=2;radius=0.5;hs=0.5;y=3.4;delay=30} @Ring{radius=0.5;points=16}
+  - effect:particlesphere{particle=smoke_large;amount=1;radius=0.1;hs=0;y=0.5;delay=0} @Ring{radius=8;points=8}
+  - effect:particlesphere{particle=smoke_large;amount=1;radius=0.1;hs=0;y=0.5;delay=2} @Ring{radius=7.5;points=8}
+  - effect:particlesphere{particle=smoke_large;amount=1;radius=0.1;hs=0;y=0.5;delay=4} @Ring{radius=7;points=8}
+  - effect:particlesphere{particle=smoke_large;amount=1;radius=0.1;hs=0;y=0.5;delay=6} @Ring{radius=6.5;points=8}
+  - effect:particlesphere{particle=smoke_large;amount=1;radius=0.1;hs=0;y=0.5;delay=8} @Ring{radius=6;points=8}
+  - effect:particlesphere{particle=smoke_large;amount=1;radius=0.1;hs=0;y=0.5;delay=10} @Ring{radius=5.5;points=8}
+  - effect:particlesphere{particle=smoke_large;amount=1;radius=0.1;hs=0;y=0.5;delay=12} @Ring{radius=5;points=8}
+  - effect:particlesphere{particle=smoke_large;amount=1;radius=0.1;hs=0;y=0.5;delay=14} @Ring{radius=4.5;points=8}
+  - effect:particlesphere{particle=smoke_large;amount=1;radius=0.1;hs=0;y=0.6;delay=16} @Ring{radius=4;points=8}
+  - effect:particlesphere{particle=smoke_large;amount=1;radius=0.1;hs=0;y=1;delay=18} @Ring{radius=3.5;points=8}
+  - effect:particlesphere{particle=smoke_large;amount=1;radius=0.1;hs=0;y=1.4;delay=20} @Ring{radius=3;points=8}
+  - effect:particlesphere{particle=smoke_large;amount=1;radius=0.1;hs=0;y=1.8;delay=22} @Ring{radius=2.5;points=8}
+  - effect:particlesphere{particle=smoke_large;amount=1;radius=0.1;hs=0;y=2.2;delay=24} @Ring{radius=2;points=8}
+  - effect:particlesphere{particle=smoke_large;amount=1;radius=0.1;hs=0;y=2.6;delay=26} @Ring{radius=1.5;points=8}
+  - effect:particlesphere{particle=smoke_large;amount=1;radius=0.1;hs=0;y=3;delay=28} @Ring{radius=1;points=8}
+  - effect:particlesphere{particle=smoke_large;amount=1;radius=0.1;hs=0;y=3.4;delay=30} @Ring{radius=0.1;points=8}
+  
+M048_SkillA_釋放:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=SkillA_沒死}
+  Skills:
+  - projectile{ot=M048_SkillA_墜毀之球;oe=M048_SkillA_釋放_消失;v=10;i=1;hR=0;vR=0;eyedir=false;syo=0;g=10;vO=-1;hO=0;tyo=-11;mr=11;HitPlayers=false;HitTarget=false;StopAtEntity=false;StopAtBlock=true} @self
+  - delay 5
+  - remove @self 
+  
+M048_SkillA_釋放_消失:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particles{p=largeexplosion;a=3;vS=0.75;hS=0.75}
+  - effect:particles{p=flame;a=30;vS=1;hS=1}
+  - effect:sound{s=item.totem.use;v=10;p=0.6}
+  - effect:sound{s=block.fire.extinguish;v=10;p=1}
+  - effect:particlering{p=largeexplosion;radius=1;points=1;amount=5;vs=0.5;hs=0.5;delay=0;y=0.3}
+  - effect:particlering{p=largeexplosion;radius=4;points=3;amount=5;vs=0.5;hs=0.5;delay=1;y=0.3}
+  - effect:particlering{p=largeexplosion;radius=7;points=6;amount=5;vs=0.5;hs=0.5;delay=2;y=0.3}
+  - effect:particlering{p=largeexplosion;radius=10;points=9;amount=5;vs=0.5;hs=0.5;delay=3;y=0.3}
+  - effect:particlering{p=largeexplosion;radius=13;points=12;amount=5;vs=0.5;hs=0.5;delay=4;y=0.3}
+  - effect:particlering{p=largeexplosion;radius=15;points=15;amount=5;vs=0.5;hs=0.5;delay=5;y=0.3}
+  - effect:particlering{p=largeexplosion;radius=18;points=18;amount=5;vs=0.5;hs=0.5;delay=6;y=0.3}
+  - effect:particlering{p=largeexplosion;radius=21;points=21;amount=5;vs=0.5;hs=0.5;delay=7;y=0.3}
+  - effect:particlering{p=largeexplosion;radius=24;points=24;amount=5;vs=0.5;hs=0.5;delay=8;y=0.3}
+  - effect:particlering{p=largeexplosion;radius=27;points=27;amount=5;vs=0.5;hs=0.5;delay=9;y=0.3}
+  - effect:particlering{p=largeexplosion;radius=30;points=30;amount=5;vs=0.5;hs=0.5;delay=10;y=0.3}
+  - effect:particlering{p=largeexplosion;radius=33;points=33;amount=5;vs=0.5;hs=0.5;delay=11;y=0.3}
+  - effect:particlering{p=largeexplosion;radius=36;points=36;amount=5;vs=0.5;hs=0.5;delay=12;y=0.3}
+  - effect:particlering{p=largeexplosion;radius=39;points=39;amount=5;vs=0.5;hs=0.5;delay=13;y=0.3}
+  - effect:particlering{p=snow_shovel;radius=1;points=1;amount=5;vs=0.5;hs=0.5;delay=0;y=0.3}
+  - effect:particlering{p=snow_shovel;radius=4;points=3;amount=5;vs=0.5;hs=0.5;delay=1;y=0.3}
+  - effect:particlering{p=snow_shovel;radius=7;points=6;amount=5;vs=0.5;hs=0.5;delay=2;y=0.3}
+  - effect:particlering{p=snow_shovel;radius=10;points=9;amount=5;vs=0.5;hs=0.5;delay=3;y=0.3}
+  - effect:particlering{p=snow_shovel;radius=13;points=12;amount=5;vs=0.5;hs=0.5;delay=4;y=0.3}
+  - effect:particlering{p=snow_shovel;radius=15;points=15;amount=5;vs=0.5;hs=0.5;delay=5;y=0.3}
+  - effect:particlering{p=snow_shovel;radius=18;points=18;amount=5;vs=0.5;hs=0.5;delay=6;y=0.3}
+  - effect:particlering{p=snow_shovel;radius=21;points=21;amount=5;vs=0.5;hs=0.5;delay=7;y=0.3}
+  - effect:particlering{p=snow_shovel;radius=24;points=24;amount=5;vs=0.5;hs=0.5;delay=8;y=0.3}
+  - effect:particlering{p=snow_shovel;radius=27;points=27;amount=5;vs=0.5;hs=0.5;delay=9;y=0.3}
+  - effect:particlering{p=snow_shovel;radius=30;points=30;amount=5;vs=0.5;hs=0.5;delay=10;y=0.3}
+  - effect:particlering{p=snow_shovel;radius=33;points=33;amount=5;vs=0.5;hs=0.5;delay=11;y=0.3}
+  - effect:particlering{p=snow_shovel;radius=36;points=36;amount=5;vs=0.5;hs=0.5;delay=12;y=0.3}
+  - effect:particlering{p=snow_shovel;radius=39;points=39;amount=5;vs=0.5;hs=0.5;delay=13;y=0.3}
+  - damagepercent{percent=1;ignoreArmor=true} @PIR{r=40}

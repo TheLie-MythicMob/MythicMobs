@@ -1,0 +1,15 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#
+test:
+  Type: cow
+  Display: 'test'
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Skills:
+  - skill{s=test} ~onTimer:15
+

@@ -1,0 +1,30 @@
+# 此技能由【小龍#9874 - Lolilong030】製作而成。
+
+M009_哥布林將軍_SkillC_威壓:
+  Cooldown: 15
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - effect:particlering{p=flame;r=3;points=32;amount=1;hS=0;vS=1} @self
+  - effect:sound{s=entity.ravager.hurt;v=2;p=0.2} @self
+  - addtag{t=哥布林將軍_威壓_01} @PIR{r=15}
+  - message{m="&a哥布林將軍 &7>> &f（一陣吼叫）"} @PIR{r=15}
+  - message{m="&3系統 &7>> &f你感到驚恐而迷糊不清且接下來的十秒內，哥布林將軍將對你造成強化傷害！"} @PIR{r=15}
+  - potion{t=SLOW;d=200;l=1} @PIR{r=15}
+  - potion{t=CONFUSION;d=200;l=1} @PIR{r=15}
+  - delay 200
+  - removetag{t=哥布林將軍_威壓_01} @PIR{r=100}
+  - message{m="&3系統 &7>> &f你已從惶恐中恢復，但仍需小心下次攻擊！"} @PIR{r=15}
+
+M009_哥布林將軍_SkillC_威壓_Tag:
+  Cooldown: 2
+  Conditions:
+  TriggerConditions:
+  - hastag{tag=哥布林將軍_威壓_01}
+  Skills:
+  - delay 1
+  - message{m="&3系統 &7>> &f受到強化傷害！"}  
+  - delay 1
+  - damage{amount=15;ia=false} @trigger
+  - effect:particles{p=reddust;a=300;y=1;hs=0.5} @self
+  - effect:sound{s=entity.player.attack.knockback;v=5;p=0.1} @self

@@ -1,0 +1,119 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M018_SkillA:
+  Cooldown: 10
+  Conditions:
+  - onground
+  - incombat
+  Skills:
+  - setAI{ai=false}
+  - summon{type=M018_02_石元素_01;amount=1;radius=5}
+  - summon{type=M018_02_石元素_02;amount=1;radius=5}
+  - effect:particlesphere{p=reddust;color=#7c6666;amount=50;radius=1;y=3;delay=40;repeat=11;repeatInterval=10} @self
+  - effect:sound{s=entity.evoker.cast_spell;v=50;p=0.1;delay=40;repeat=5;repeatInterval=20}
+  - effect:particlesphere{p=reddust;color=#7c6666;amount=200;radius=2;y=3;delay=150;repeat=3;repeatInterval=10} @self
+  - effect:sound{s=entity.evoker.cast_spell;v=50;p=1;delay=150;repeat=1;repeatInterval=30}
+  - delay 200
+  - skill{s=M018_SkillA_tag_03}
+  - skill{s=M018_SkillA_tag_04}
+  - delay 5
+  - skill{s=M018_SkillA_tag_01}
+  - skill{s=M018_SkillA_tag_02}
+
+  
+M018_SkillA_03: #石元素未清除
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:sound{s=item.totem.use;v=2;p=0.6}  
+  - effect:particlering{p=explosion_normal;radius=0;points=1;amount=20;vs=0;hs=0;delay=0}
+  - effect:particlering{p=explosion_normal;radius=2;points=3;amount=20;vs=1;hs=1;delay=2}
+  - effect:particlering{p=explosion_normal;radius=4;points=6;amount=20;vs=1.5;hs=1.5;delay=4}
+  - effect:particlering{p=explosion_normal;radius=6;points=9;amount=20;vs=2;hs=2;delay=6}
+  - effect:particlering{p=explosion_normal;radius=8;points=12;amount=20;vs=2;hs=2;delay=8}
+  - effect:particlering{p=explosion_normal;radius=10;points=15;amount=20;vs=2;hs=2;delay=10}
+  - effect:particlering{p=explosion_normal;radius=12;points=15;amount=20;vs=2;hs=2;delay=12}
+  - effect:particlering{p=explosion_normal;radius=14;points=15;amount=20;vs=2;hs=2;delay=14}
+  - message{m="&6系統 &7>> &3因&2石元素&3未清除，&c【重踏】&3傷害達100%!"} @PlayersInRadius{r=20}
+  - damage{amount=40;ia=false} @PlayersInRadius{r=15}
+  - potion{type=SLOW;duration=200;level=4} @PlayersInRadius{r=20} #緩速
+  - potion{type=BLINDNESS;duration=200;level=4} @PlayersInRadius{r=20} #失明
+  - potion{type=CONFUSION;duration=200;level=4} @PlayersInRadius{r=20} #暈眩效果
+  - setAI{ai=true} @self
+  
+M018_SkillA_03_01: #石元素剩一隻
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:sound{s=item.totem.use;v=2;p=0.6}  
+  - effect:particlering{p=explosion_normal;radius=0;points=1;amount=20;vs=0;hs=0;delay=0}
+  - effect:particlering{p=explosion_normal;radius=2;points=3;amount=20;vs=1;hs=1;delay=2}
+  - effect:particlering{p=explosion_normal;radius=4;points=6;amount=20;vs=1.5;hs=1.5;delay=4}
+  - effect:particlering{p=explosion_normal;radius=6;points=9;amount=20;vs=2;hs=2;delay=6}
+  - effect:particlering{p=explosion_normal;radius=8;points=12;amount=20;vs=2;hs=2;delay=8}
+  - effect:particlering{p=explosion_normal;radius=10;points=15;amount=20;vs=2;hs=2;delay=10}
+  - effect:particlering{p=explosion_normal;radius=12;points=15;amount=20;vs=2;hs=2;delay=12}
+  - effect:particlering{p=explosion_normal;radius=14;points=15;amount=20;vs=2;hs=2;delay=14}
+  - message{m="&6系統 &7>> &3因&2石元素&3未全部清除，&c【重踏】&3傷害達50%!"} @PlayersInRadius{r=20}
+  - damage{amount=20;ia=false} @PlayersInRadius{r=15}
+  - potion{type=SLOW;duration=200;level=4} @PlayersInRadius{r=20} #緩速
+  - potion{type=BLINDNESS;duration=200;level=4} @PlayersInRadius{r=20} #失明
+  - potion{type=CONFUSION;duration=200;level=4} @PlayersInRadius{r=20} #暈眩效果
+  - setAI{ai=true} @self
+  
+M018_SkillA_03_02: #石元素全死
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:sound{s=item.totem.use;v=2;p=0.6}  
+  - effect:particlering{p=explosion_normal;radius=0;points=1;amount=20;vs=0;hs=0;delay=0}
+  - effect:particlering{p=explosion_normal;radius=2;points=3;amount=20;vs=1;hs=1;delay=2}
+  - effect:particlering{p=explosion_normal;radius=4;points=6;amount=20;vs=1.5;hs=1.5;delay=4}
+  - effect:particlering{p=explosion_normal;radius=6;points=9;amount=20;vs=2;hs=2;delay=6}
+  - effect:particlering{p=explosion_normal;radius=8;points=12;amount=20;vs=2;hs=2;delay=8}
+  - effect:particlering{p=explosion_normal;radius=10;points=15;amount=20;vs=2;hs=2;delay=10}
+  - effect:particlering{p=explosion_normal;radius=12;points=15;amount=20;vs=2;hs=2;delay=12}
+  - effect:particlering{p=explosion_normal;radius=14;points=15;amount=20;vs=2;hs=2;delay=14}
+  - message{m="&6系統 &7>> &3因&2石元素&3全部清除，&c【重踏】&3傷害達0%!"} @PlayersInRadius{r=20}
+  - damage{amount=0;ia=false} @PlayersInRadius{r=15}
+  - potion{type=SLOW;duration=100;level=4} @PlayersInRadius{r=20} #緩速
+  - potion{type=BLINDNESS;duration=100;level=4} @PlayersInRadius{r=20} #失明
+  - potion{type=CONFUSION;duration=100;level=4} @PlayersInRadius{r=20} #暈眩效果
+  - setAI{ai=true} @self
+  
+M018_SkillA_tag_01:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=石元素_活著_01}
+  Skills:
+  #- message{m="&c測試 &7>> &7石元素技能測試_&1元素1活著!"} @PlayersInRadius{r=10}
+  - projectile{ot=M018_SkillA_01;oe=M018_SkillA_03_01;v=2;i=8;hR=0;vR=0;syo=6;sfo=0} @Origin
+  
+M018_SkillA_tag_02:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=石元素_活著_02}
+  Skills:
+  #- message{m="&c測試 &7>> &c石元素技能測試_&2元素2活著!"} @PlayersInRadius{r=10}
+  - projectile{ot=M018_SkillA_01;oe=M018_SkillA_03_01;v=2;i=8;hR=0;vR=0;syo=6;sfo=0} @Origin
+  
+M018_SkillA_tag_03:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=石元素_活著_01}
+  - hastag{tag=石元素_活著_02}
+  Skills:
+  #- message{m="&c測試 &7>> &4石元素技能測試_&c元素1跟2活著!!"} @PlayersInRadius{r=10}
+  - removetag{t=石元素_活著_01} @self
+  - removetag{t=石元素_活著_02} @self
+  - projectile{ot=M018_SkillA_01;oe=M018_SkillA_03;v=2;i=8;hR=0;vR=0;syo=6;sfo=0} @Origin
+  
+M018_SkillA_tag_04:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=石元素_死亡_01}
+  - hastag{tag=石元素_死亡_02}
+  Skills:
+  #- message{m="&c測試 &7>> &4石元素技能測試_&0元素1跟2都死亡!!"} @PlayersInRadius{r=10}
+  - removetag{t=石元素_死亡_01} @self
+  - removetag{t=石元素_死亡_02} @self
+  - projectile{ot=M018_SkillA_01;oe=M018_SkillA_03_02;v=2;i=8;hR=0;vR=0;syo=6;sfo=0} @Origin

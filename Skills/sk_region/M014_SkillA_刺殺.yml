@@ -1,0 +1,10 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M014_SkillA:
+  Cooldown: 15
+  Skills:
+  - potion{type=SPEED;duration=45;level=6} @self
+  - delay 20
+  - potion{type=INVISIBILITY;duration=40;level=100} @self
+  - effect:particles{p=portal;hs=0.5;vs=1;a=100;repeat=10;repeatInterval=3} @self
+  - effect:sound{s=block.fire.extinguish;v=30;p=0.5}
+  - damage{a=10} @PIR{r=2}

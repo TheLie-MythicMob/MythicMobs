@@ -1,0 +1,28 @@
+# 此技能由【小龍#9874 - Lolilong030】製作而成。
+
+M045_奇爾卡布爾_SkillC_神木祝福:
+  Cooldown: 120
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - skill{s=M045_奇爾卡布爾_SkillC_神木祝福_02;delay=20} @self
+  - skill{s=M045_奇爾卡布爾_SkillC_神木祝福_03;repeat=5;repeatInterval=40;delay=20} @self
+  - message{m="&e奇爾卡布爾 &7>> &f眷顧吾之主啊，賜主之祝福於吾吧！"} @PIR{r=30} 
+  - message{m="&b系統 &7>> &f神木祝福發動！奇布爾雅芙將獲得45秒的抗性和5次的回復！"} @PIR{r=30}  
+ 
+M045_奇爾卡布爾_SkillC_神木祝福_02:
+  Cooldown: 0
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - potion{type=DAMAGE_RESISTANCE;duration=900;lvl=0}
+  
+M045_奇爾卡布爾_SkillC_神木祝福_03:
+  Cooldown: 0
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - healpercent{m=0.04}
+  - effect:particleorbital{p=villager_happy;a=1;yoffset=0.7;r=1;v=5;points=16;ticks=40;in=1;an=0}
+  - effect:particleorbital{p=heart;a=2;yoffset=0.7;r=1;v=2;points=16;ticks=40;in=1;an=0}
+  - effect:sound{s=block.note_block.bell;v=3;p=2}

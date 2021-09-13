@@ -1,0 +1,35 @@
+# 此技能由【小崇#8767 - TaiwanPingNO1】製作而成。
+SK007:
+  Cooldown: 2
+  Conditions:
+  - hastag{tag=夜精靈守護_特效} false
+  Skills:
+  - skill{s=SK007_01} @self
+  
+SK007_01:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - orbital{onTick=SK007_tick;oE=SK007_oE;points=40;interval=1;duration=40;charges=1;r=0.7}
+
+SK007_tick:
+  Skills:
+  - effect:particles{p=reddust;color=#FF00FF;amount=1;speed=0;y=0.8} @origin
+  
+SK007_b:
+  Skills:
+  - effect:particlering{p=reddust;color=#FF00FF;radius=0;points=1;amount=20;vs=0;hs=0;delay=0}
+  - effect:particlering{p=reddust;color=#FF00FF;radius=1;points=3;amount=20;vs=1;hs=1;delay=2}
+  - effect:particlering{p=reddust;color=#FF00FF;radius=2;points=6;amount=20;vs=1.5;hs=1.5;delay=4}
+  - effect:particlering{p=reddust;color=#FF00FF;radius=3;points=9;amount=20;vs=2;hs=2;delay=6}
+  - effect:particlering{p=reddust;color=#FF00FF;radius=4;points=12;amount=20;vs=2;hs=2;delay=8}
+  - effect:particlering{p=reddust;color=#FF00FF;radius=5;points=15;amount=20;vs=2;hs=2;delay=10}
+  - effect:sound{s=entity.blaze.shoot;v=10;p=0.6}
+  - effect:sound{s=block.beacon.deactivate;v=10;p=1.5}
+  - damage{amount=<eval.%arctic_skill_damage%*1+%arctic_player_level%*1.5>;ia=false} @EntitiesNearOrigin{r=5}
+  - throw{velocity=20;velocityY=4} @EntitiesNearOrigin{r=5}
+  - addtag{t=夜精靈守護_特效} @self
+  - delay 400
+  - removetag{t=夜精靈守護_特效} @self
+
+  

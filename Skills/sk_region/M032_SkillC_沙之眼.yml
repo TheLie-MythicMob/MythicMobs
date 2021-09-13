@@ -1,0 +1,41 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M032_SkillC:
+  Cooldown: 10
+  Conditions:
+  - onground
+  - incombat
+  Skills:
+  - effect:sound{s=entity.pillager.ambient;v=2;p=0.1}
+  - message{m="&e阿努凡里歐斯 &7>> &f祝福我吧！"} @PlayersNearOrigin{r=30}
+  - setAI{ai=false}
+  - effect:sound{s=entity.wither.spawn;v=3;p=2}
+  - effect:particlesphere{p=reddust;color=#ffff00;amount=100;radius=1;hs=1;vs=0.5;y=5;repeat=30;repeatInterval=2} @self
+  - effect:particlesphere{p=reddust;color=#f5deb3;amount=20;radius=0.5;y=5;repeat=30;repeatInterval=2} @self
+  - delay 60
+  - effect:sound{s=entity.wither.break_block;v=3;p=0.5}
+  - effect:particlesphere{p=reddust;color=#ffff00;amount=100;radius=1;hs=1;vs=0.5;y=5;repeat=20;repeatInterval=2} @self
+  - effect:particlesphere{p=reddust;color=#000000;amount=20;radius=0.5;y=5;repeat=20;repeatInterval=2} @self
+  - projectile{onTick=M032_SkillC_粒子;oh=M032_SkillC_擊中;v=8;i=2;hR=1;vR=1;syo=10;sfo=0;delay=0} @Ring{radius=3;points=6}
+  - projectile{onTick=M032_SkillC_粒子;oh=M032_SkillC_擊中;v=8;i=2;hR=1;vR=1;syo=10;sfo=0;delay=5} @Ring{radius=6;points=7}
+  - projectile{onTick=M032_SkillC_粒子;oh=M032_SkillC_擊中;v=8;i=2;hR=1;vR=1;syo=10;sfo=0;delay=10} @Ring{radius=9;points=8}
+  - projectile{onTick=M032_SkillC_粒子;oh=M032_SkillC_擊中;v=8;i=2;hR=1;vR=1;syo=10;sfo=0;delay=15} @Ring{radius=12;points=9}
+  - projectile{onTick=M032_SkillC_粒子;oh=M032_SkillC_擊中;v=8;i=2;hR=1;vR=1;syo=10;sfo=0;delay=20} @Ring{radius=15;points=10}
+  - projectile{onTick=M032_SkillC_粒子;oh=M032_SkillC_擊中;v=8;i=2;hR=1;vR=1;syo=10;sfo=0;delay=25} @Ring{radius=18;points=11}
+  - projectile{onTick=M032_SkillC_粒子;oh=M032_SkillC_擊中;v=8;i=2;hR=1;vR=1;syo=10;sfo=0;delay=30} @Ring{radius=21;points=12}
+  - projectile{onTick=M032_SkillC_粒子;oh=M032_SkillC_擊中;v=8;i=2;hR=1;vR=1;syo=10;sfo=0;delay=35} @Ring{radius=24;points=13}
+  - delay 50
+  - setAI{ai=true}
+  
+M032_SkillC_粒子:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particles{p=reddust;color=#ffff00}
+  - effect:sound{s=entity.tnt.primed;v=0.5;p=2}
+  
+M032_SkillC_擊中:
+  Cooldown: 1
+  Conditions:
+  Skills:
+  - damage{amount=45;ia=false}
+  - potion{type=HUNGER;duration=100;level=3}

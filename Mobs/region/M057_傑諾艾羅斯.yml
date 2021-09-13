@@ -1,0 +1,36 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#
+M057_傑諾艾羅斯:
+  Type: zombie
+  Display: '[區域頭目]魔界統帥--傑諾艾羅斯[LV.48]'
+  Health: 24000
+  Damage: 65
+  Faction: 怪物 #設定派系
+  AIGoalSelectors:
+  AITargetSelectors:
+  Equipment:
+  Disguise:
+    Type: Player
+    Skin: 
+  Options:
+    MovementSpeed: 0 #移動速度
+    AttackSpeed: 1 #攻擊速度
+    PreventSlimeSplit: true #防止分裂(史萊姆)
+    PreventOtherDrops: true #防止 MythicMobs 生物會掉原本會掉的東西 預設為 false
+    MaxCombatDistance: 30 #最大受擊距離 , 設定能打到的最遠距離  設定無法被狙擊的生物
+    KnockbackResistance: 0 #抗擊退機率
+    PreventSunburn: true
+    Despawn: true #生物附近沒玩家時，是否會消失
+    NoAI: true
+    Silent: true #關閉原版聲音
+    PreventRandomEquipment: true #生成時會不會隨機擁有裝備
+    NoGravity: false #是否開啟無重力
+    PreventSunburn: true #是否防止陽光下燃燒
+    ApplyInvisibility: false #是否隱形
+    AlwaysShowName: true
+  Drops:
+  - m66 1 0.6
+  - exp 1 1
+
+  

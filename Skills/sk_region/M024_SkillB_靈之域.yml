@@ -1,0 +1,59 @@
+# 此技能由【小龍#9874 - Lolilong030】製作而成。
+
+M024_艾靈守衛_SkillB_靈之域:
+  Cooldown: 60
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - setAI{ai=false} @self 
+  - message{m="&a艾靈守衛 &7>> &f(咒語)&f！"} @PlayersInRadius{r=20}
+  - effect:particlering{p=villager_happy;radius=1;points=64;y=0.5} @self
+  - effect:sound{s=block.note_block.bell;v=3;p=0.1} 
+  - delay 25
+  - effect:particlering{p=villager_happy;radius=3;points=64;y=0.4} @self
+  - effect:sound{s=block.note_block.bell;v=3;p=0.5} 
+  - delay 25
+  - effect:particlering{p=villager_happy;radius=5;points=128;y=0.3} @self
+  - effect:sound{s=block.note_block.bell;v=3;p=1} 
+  - delay 25
+  - effect:particlering{p=villager_happy;radius=10;points=128;y=0.2} @self
+  - effect:sound{s=block.note_block.bell;v=3;p=1.5} 
+  - delay 25
+  - effect:particlering{p=villager_happy;radius=17;points=256;y=0.1} @self
+  - effect:sound{s=block.note_block.bell;v=3;p=2}
+  - delay 25
+  - effect:particles{p=flame;a=400;hs=10;y=0.1} 
+  - totem{onTick=M024_SkillB_effectB;onHit=M024_SkillB_BuffA;onStart=M024_SkillB_effectA;md=200;hR=20;vR=20;i=50;yo=0.1;HitNonPlayers=true} 
+  - message{m="&3系統 &7>> &f靈之域啟動，區域內的靈魂進入無敵模式並回血！"} @PIR{r=15}
+  - healpercent{m=0.05;repeat=4;repeatInterval=50}
+  - potion{type=DAMAGE_RESISTANCE;duration=200;level=4}
+  - setAI{ai=true} @self 
+
+M024_SkillB_effectA:
+  Cooldown: 0
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - effect:blockmask{m=green_concrete_powder;r=20}
+  - delay 200
+  - effect:blockunmask{r=20}
+
+M024_SkillB_effectB:
+  Cooldown: 0
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - effect:particles{p=villager_happy;a=400;hs=10;y=0.1} 
+  - effect:sound{s=entity.player.levelup;v=1;p=0.8} 
+  - delay 20
+  - effect:sound{s=entity.player.levelup;v=2;p=0.7} 
+  - delay 20  
+  - effect:sound{s=entity.player.levelup;v=3;p=0.6} 
+  
+M024_SkillB_BuffA:
+  Cooldown: 0
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - healpercent{m=0.05} @MobsNearOrigin{r=20;t=M023_靈魂骷髏,M022_野靈犬}
+  - potion{type=DAMAGE_RESISTANCE;duration=60;level=4} @MobsNearOrigin{r=20;t=M023_靈魂骷髏,M022_野靈犬}

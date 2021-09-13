@@ -1,0 +1,49 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M036_SkillA:
+  Cooldown: 5
+  Conditions:
+  - onground
+  - incombat
+  Skills:
+  - message{m="&7莫斯特 &7>> &f死者們，甦醒吧！"} @PlayersNearOrigin{r=30}
+  - skill{s=M036_SkillA_sm_木乃伊} @RLNTE{amount=1;radius=8;spacing=0;minradius=1}
+  - skill{s=M036_SkillA_sm_沙麈屍} @RLNTE{amount=2;radius=8;spacing=0;minradius=1}
+  
+M036_SkillA_sm_木乃伊:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - totem{onStart=M036_SkillA_sm_木乃伊_召喚;hR=1;vR=1;md=20}
+  
+M036_SkillA_sm_木乃伊_召喚:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:sound{s=block.beacon.activate;v=2;p=2}
+  - effect:particlesphere{particle=suspended_depth;amount=200;radius=0.2;hs=0.5;repeat=12;repeatInterval=5}
+  - delay 40
+  - effect:sound{s=entity.zombie.ambient;v=2;p=0.1}
+  - effect:particlesphere{p=reddust;color=#FF00FF;amount=30;radius=0.2;hs=0.5;vs=1;y=1;repeat=20;repeatInterval=1}
+  - delay 20
+  - effect:sound{s=entity.wither.break_block;v=2;p=0.5}
+  - summon{type=M035_木乃伊;amount=1;radius=0}
+  
+M036_SkillA_sm_沙麈屍:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - totem{onStart=M036_SkillA_sm_沙麈屍_召喚;hR=1;vR=1;md=20}
+  
+M036_SkillA_sm_沙麈屍_召喚:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:sound{s=block.beacon.activate;v=2;p=2}
+  - effect:particlesphere{particle=suspended_depth;amount=200;radius=0.2;hs=0.5;repeat=12;repeatInterval=5}
+  - delay 40
+  - effect:sound{s=entity.zombie.ambient;v=2;p=0.1}
+  - effect:particlesphere{p=reddust;color=#FF00FF;amount=30;radius=0.2;hs=0.5;vs=1;y=1;repeat=20;repeatInterval=1}
+  - delay 20
+  - effect:sound{s=entity.wither.break_block;v=2;p=0.5}
+  - summon{type=M033_沙麈屍;amount=1;radius=0}
+  

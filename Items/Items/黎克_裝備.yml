@@ -1,0 +1,48 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+黎克的盔甲:
+  Id: leather_chestplate
+  Data: 0
+  Display: '&0黎克的盔甲'
+  Options:
+    Unbreakable: true
+    Color: 150,205,205
+  Lore:
+   - ''
+
+黎克的護腿:
+  Id: leather_leggings
+  Data: 0
+  Display: '&0黎克的盔甲'
+  Options:
+    Unbreakable: true
+    Color: 150,205,205
+  Lore:
+   - ''
+
+黎克的鞋子:
+  Id: leather_boots
+  Data: 0
+  Display: '&0黎克的盔甲'
+  Options:
+    Unbreakable: true
+    Color: 150,205,205
+  Lore:
+   - ''
+   
+黎克的劍:
+  Id: iron_sword
+  Data: 0
+  Display: '&3黎克的劍'
+  Options:
+    Unbreakable: true
+  Lore:
+   - ''
+   
+黎克的神劍:
+  Id: GOLD_sword
+  Data: 0
+  Display: '&3黎克的劍'
+  Options:
+    Unbreakable: true
+  Lore:
+   - ''

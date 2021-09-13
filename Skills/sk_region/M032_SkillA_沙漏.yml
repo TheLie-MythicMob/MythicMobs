@@ -1,0 +1,44 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M032_SkillA:
+  Cooldown: 5
+  Conditions:
+  - onground
+  - incombat
+  Skills:
+  - effect:sound{s=entity.pillager.ambient;v=2;p=0.2}
+  - message{m="&e阿努凡里歐斯 &7>> &f被吞噬吧！"} @PlayersNearOrigin{r=30}
+  - delay 20
+  - setAI{ai=false}
+  - effect:sound{s=entity.wither.ambient;v=0.3;p=1.7;repeat=9;repeatInterval=10}
+  - pull{v=1.5;to=true;repeat=90;repeatInterval=1} @PlayersNearOrigin{r=20}
+  - skill{s=M032_SkillA_吸收;repeat=6;repeatInterval=15}
+  - delay 120
+  - skill{s=M032_SkillA_釋放}
+  - effect:sound{s=entity.wither.break_block;v=3;p=1.5}
+  - damage{amount=45;ia=false} @PlayersNearOrigin{r=15}
+  - potion{type=HUNGER;duration=100;level=2} @PlayersNearOrigin{r=15}
+  - setAI{ai=true}
+  
+  
+M032_SkillA_吸收:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particlering{p=reddust;color=#ffff00;radius=1;points=1;amount=20;vs=0;hs=0;delay=12} @self
+  - effect:particlering{p=reddust;color=#ffff00;radius=4;points=4;amount=20;vs=1;hs=1;delay=10} @self
+  - effect:particlering{p=reddust;color=#ffff00;radius=7;points=7;amount=20;vs=1.5;hs=1.5;delay=8} @self
+  - effect:particlering{p=reddust;color=#ffff00;radius=10;points=10;amount=20;vs=2;hs=2;delay=6} @self
+  - effect:particlering{p=reddust;color=#ffff00;radius=13;points=13;amount=20;vs=2;hs=2;delay=4} @self
+  - effect:particlering{p=reddust;color=#ffff00;radius=16;points=16;amount=20;vs=2;hs=2;delay=2} @self
+  - effect:particlering{p=reddust;color=#ffff00;radius=19;points=19;amount=20;vs=2;hs=2;delay=0} @self
+  
+M032_SkillA_釋放:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particlering{p=reddust;color=#ffff00;radius=1;points=1;amount=20;vs=0;hs=0;delay=0} @self
+  - effect:particlering{p=reddust;color=#ffff00;radius=3;points=4;amount=20;vs=1;hs=1;delay=2} @self
+  - effect:particlering{p=reddust;color=#ffff00;radius=6;points=7;amount=20;vs=1.5;hs=1.5;delay=4} @self
+  - effect:particlering{p=reddust;color=#ffff00;radius=9;points=10;amount=20;vs=2;hs=2;delay=6} @self
+  - effect:particlering{p=reddust;color=#ffff00;radius=12;points=13;amount=20;vs=2;hs=2;delay=8} @self
+  - effect:particlering{p=reddust;color=#ffff00;radius=15;points=16;amount=20;vs=2;hs=2;delay=10} @self

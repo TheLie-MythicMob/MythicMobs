@@ -1,0 +1,59 @@
+# 此技能由【小崇#8767 - TaiwanPingNO1】製作而成。
+
+SK004:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - message{m="&c技能測試 &7>> &2成功觸發！"} @self
+  - projectile{onTick=SK004_01;onHit=SK004_01;oe=SK004_02;v=8;i=1;hR=1;vR=1;syo=1.5;g=0.1} @targetLocation
+  - effect:sound{s=entity.arrow.shoot;v=1;p=1.5}
+  - message{m="&c<eval.%arctic_skill_damage%*1+%arctic_player_level%*1.5>！"} @self
+  
+SK004_01:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particlesphere{particle=crit;amount=10;radius=0.1} @origin
+  
+SK004_02:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:blockmask{m=red_terracotta;r=5;d=100}
+  #- effect:blockmask{m=red_terracotta;r=1;d=100}
+  #- summon{type=箭雨落地;amount=1;radius=0}
+  - totem{onTick=SK004_箭雨落下;onHit=SK004_受傷;hR=5;vR=5;md=100;y=0.5;i=10;HitNonPlayers=true}
+  - effect:sound{s=entity.arrow.shoot;v=5;p=1;repeat=20;repeatInterval=5}
+  
+SK004_受傷:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  #- damage{amount=<eval.%arctic_skill_damage%*1+%arctic_player_level%*1.5>;ia=false}
+  #- damage{amount=10;ia=false;element=magic}
+  - message{m="Damaged by <skill.var.damage-type> for <skill.var.damage-amount>"} @self
+  - potion{type=SLOW;duration=30;level=3}
+  
+SK004_箭雨落下:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - skill{s=SK004_箭雨落下_01} #@RLNTE{amount=3;radius=5}
+  - effect:particlesphere{p=flame;hs=2;y=4;amount=300;radius=1}
+  
+SK004_箭雨落下_01:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  #- effect:particles{particle=crit;amount=50;radius=0.1;vs=3} #@RLNTE{amount=3;radius=5;spacing=0}
+  #- effect:particles{particle=crit;amount=50;radius=0.1;vs=3}
+  - effect:particlering{particle=crit;radius=0.5;points=3;amount=10;y=2;vs=2}
+  - effect:particlering{particle=crit;radius=1;points=5;amount=10;y=2;vs=2;delay=1}
+  - effect:particlering{particle=crit;radius=1.5;points=7;amount=10;y=2;vs=2;delay=2}
+  - effect:particlering{particle=crit;radius=2;points=9;amount=10;y=2;vs=2;delay=3}
+  - effect:particlering{particle=crit;radius=2.5;points=11;amount=10;y=2;vs=2;delay=4}
+  - effect:particlering{particle=crit;radius=3;points=9;amount=10;y=2;vs=2;delay=5}
+  - effect:particlering{particle=crit;radius=3.5;points=7;amount=10;y=2;vs=2;delay=6}
+  - effect:particlering{particle=crit;radius=4;points=5;amount=10;y=2;vs=2;delay=7}
+  - effect:particlering{particle=crit;radius=4.5;points=9;amount=10;y=2;vs=2;delay=8}
+  - effect:particlering{particle=crit;radius=5;points=9;amount=10;y=2;vs=2;delay=9}

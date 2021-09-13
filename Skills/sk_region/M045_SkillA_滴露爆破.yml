@@ -1,0 +1,102 @@
+# 此技能由【小龍#9874 - Lolilong030】製作而成。
+
+M045_奇爾卡布爾_SkillA_滴露爆破:
+  Cooldown: 30
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - skill{s=M045_奇爾卡布爾_SkillA_滴露爆破_02;delay=20} @PIR{r=20}
+  - message{m="&e奇爾卡布爾 &7>> &f願偉人的水之加護降臨所求之處請獻我恩賜，滴露爆破！！"} @PIR{r=20}
+
+M045_奇爾卡布爾_SkillA_滴露爆破_02:
+  Cooldown: 0
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - totem{onStart=M045_SkillA_oS_1;onHit=M045_SkillA_oH_1;onEnd=M045_SkillA_oE_1;hR=1;vR=1;md=40;y=0.1;i=20;yo=0} 
+  
+M045_SkillA_oS_1:
+  Cooldown: 0
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - effect:sound{s=entity.player.splash.high_speed;v=2;p=0.1}
+  - delay 1
+  - effect:particlering{particle=reddust;points=30;radius=2;y=0.1;c=#46A3FF}
+  - delay 1
+  - effect:particlering{particle=reddust;points=30;radius=3;y=0.1;c=#0072E3}
+  - delay 1
+  - effect:particlering{particle=reddust;points=30;radius=4;y=0.1;c=#2828FF}
+  
+M045_SkillA_oH_1:
+  Cooldown: 0
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - message{m="&b系統 &7>> &f滴露爆破發動，每秒會出現傷害漸增的水圈！"} 
+  
+M045_SkillA_oE_1:
+  Cooldown: 0
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - totem{onStart=M045_SkillA_oS_2;onHit=M045_SkillA_oH_2;onEnd=M045_SkillA_oE_2;hR=2;vR=2;md=40;y=0.1;i=20;yo=0} @origin
+  
+M045_SkillA_oS_2:
+  Cooldown: 0
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - effect:particlesphere{particle=splash;amount=400;radius=2} @origin
+  - effect:sound{s=entity.dolphin.swim;v=2;p=1}
+
+M045_SkillA_oH_2:
+  Cooldown: 0
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - damage{a=25;pi=true}
+
+M045_SkillA_oE_2:
+  Cooldown: 0
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - totem{onStart=M045_SkillA_oS_3;onHit=M045_SkillA_oH_3;onEnd=M045_SkillA_oE_3;hR=3;vR=3;md=40;y=0.1;i=20;yo=0} @origin
+  
+M045_SkillA_oS_3:
+  Cooldown: 0
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - effect:particlesphere{particle=splash;amount=600;radius=3} @origin
+  - effect:sound{s=entity.dolphin.swim;v=2;p=1}
+  
+M045_SkillA_oH_3:
+  Cooldown: 0
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - damage{a=30}
+
+M045_SkillA_oE_3:
+  Cooldown: 0
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - totem{onStart=M045_SkillA_oS_4;onHit=M045_SkillA_oH_4;hR=4;vR=4;md=40;y=0.1;i=20;yo=0} @origin
+  
+M045_SkillA_oS_4:
+  Cooldown: 0
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - effect:particlesphere{particle=splash;amount=1000;radius=4} @origin
+  - effect:sound{s=entity.dolphin.swim;v=2;p=1}
+  
+M045_SkillA_oH_4:
+  Cooldown: 0
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - damage{a=45}

@@ -1,0 +1,44 @@
+# 此技能由【小龍#9874 - Lolilong030】製作而成。
+
+M045_奇爾卡布爾_SkillB_土石飛揚:
+  Cooldown: 8
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - skill{s=M045_奇爾卡布爾_SkillB_土石飛揚_02;delay=20} @Ring{radius=30;points=20}
+  - message{m="&e奇爾卡布爾 &7>> &f無盡的大地之神，挺起你無邊的胸膛，將世人震撼吧！土石飛揚！！"} @PIR{r=30}
+M045_奇爾卡布爾_SkillB_土石飛揚_02:
+  Cooldown: 0
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - projectile{onTick=M045_SkillB_oS_1;onHit=M045_SkillB_oH_1;v=8;mr=30;bulletType=ITEM;material=DIRT;syo=1;sfo=0;sso=0;g=0.3;vo=0.3;i=1;Duration=1000;SE=false} 
+  - projectile{onTick=M045_SkillB_oS_2;onHit=M045_SkillB_oH_1;v=8;mr=30;bulletType=ITEM;material=STONE;syo=0.5;sfo=0;sso=0;g=0.2;vo=0.5;i=1;Duration=1000;SE=false} 
+  - message{m="&b系統 &7>> &f土石飛揚發動，請小心閃避飛來的土石！"} @PIR{r=30}
+M045_SkillB_oS_1:
+  Cooldown: 0
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - effect:particles{p=blockcrack;m=dirt;a=2}
+  - effect:sound{s=block.gravel.break;v=0.5;p=0.7}
+  
+M045_SkillB_oH_1:
+  Cooldown: 0
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - damage{a=20;pi=true}
+  - potion{type=SLOW;duration=100;lvl=1}
+  - potion{type=BLINDNESS;duration=100;lvl=0} 0.05
+  - effect:sound{s=block.note_block.basedrum;v=2;p=2}
+  
+M045_SkillB_oS_2:
+  Cooldown: 0
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - effect:particles{p=blockcrack;m=STONE;a=2}
+  - effect:sound{s=block.stone.break;v=0.5;p=0.7}
+  
+  

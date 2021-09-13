@@ -1,0 +1,66 @@
+# 此技能由【Sleep_AllDay】製作而成。
+
+M010_SkillA:
+  Cooldown: 8
+  Conditions:
+  - onground
+  - incombat
+  Skills:
+  - effect:particlering{particle=reddust;color=#49ff00;radius=0.4;points=15;amount=1} @origin
+  - effect:particlering{particle=reddust;color=#0b9607;radius=0.4;points=15;amount=1} @origin
+  - delay 1
+  - effect:particlering{particle=reddust;color=#0b9607;radius=0.6;points=20;amount=1} @origin
+  - damage{a=2;pk=true} @PIR{r=0.6}
+  - effect:particlering{particle=reddust;color=#49ff00;radius=0.6;points=20;amount=1} @origin
+  - delay 1
+  - effect:particlering{particle=reddust;color=#49ff00;radius=0.7;points=25;amount=1} @origin
+  - effect:particlering{particle=reddust;color=#49ff00;radius=0.8;points=25;amount=1} @origin
+  - effect:particlering{particle=reddust;color=#0b9607;radius=0.7;points=25;amount=1} @origin
+  - effect:particlering{particle=reddust;color=#0b9607;radius=0.8;points=25;amount=1} @origin
+  - damage{a=2;pk=true} @PIR{r=2}
+  - sound{s=entity.dolphin.jump;p=5;v=5} @PIR{r=20}
+  - delay 1
+  - effect:particlering{particle=reddust;color=#49ff00;radius=1;points=20;amount=1} @origin
+  - effect:particlering{particle=reddust;color=#49ff00;radius=1.15;points=30;amount=1} @origin
+  - delay 1
+  - effect:particlering{particle=reddust;color=#49ff00;radius=1.3;points=40;amount=1} @origin
+  - effect:particlering{particle=reddust;color=#49ff00;radius=1.45;points=50;amount=1} @origin
+  - delay 1
+  - effect:particlering{particle=reddust;color=#49ff00;radius=1.6;points=50;amount=1} @origin
+  - effect:particlering{particle=reddust;color=#0b9607;radius=1.75;points=50;amount=1} @origin
+  - delay 1
+  - effect:particlering{particle=reddust;color=#49ff00;radius=1.9;points=70;amount=1} @origin
+  - delay 1
+  - effect:particlering{particle=reddust;color=#0b9607;radius=2;points=70;amount=1} @origin
+  - delay 1
+  - effect:particlering{particle=reddust;color=#49ff00;radius=2.15;points=70;amount=1} @origin
+  - effect:particlering{particle=reddust;color=#0b9607;radius=2.3;points=70;amount=1} @origin
+  - damage{a=2;pk=true} @PIR{r=2}
+  - delay 1
+  - effect:particlering{particle=reddust;color=#49ff00;radius=2.45;points=70;amount=1} @origin
+  - effect:particlering{particle=reddust;color=#0b9607;radius=2.45;points=70;amount=1} @origin
+  - delay 1
+  - effect:particlering{particle=reddust;color=#49ff00;radius=2.6;points=70;amount=1} @origin
+  - effect:particlering{particle=reddust;color=#0b9607;radius=2.7;points=70;amount=1} @origin
+  - effect:particlering{particle=reddust;color=#0b9607;radius=2.6;points=70;amount=1} @origin
+  - effect:particlering{particle=reddust;color=#49ff00;radius=2.7;points=70;amount=1} @origin
+  - delay 1
+  - effect:particlering{particle=reddust;color=#49ff00;radius=3;points=70;amount=1} @origin
+  - effect:particlering{particle=reddust;color=#0b9607;radius=3;points=70;amount=1} @origin
+  - delay 1
+  - effect:particlering{particle=reddust;color=#0b9607;radius=3.2;points=70;amount=1} @origin
+   - effect:particlering{particle=reddust;color=#49ff00;radius=3.2;points=70;amount=1} @origin
+  - delay 1
+  - damage{a=2;pk=true} @PIR{r=4.5}
+  - effect:particlering{particle=reddust;color=#0b9607;radius=3.4;points=70;amount=1} @origin
+  - effect:particlering{particle=reddust;color=#0b9607;radius=3.6;points=70;amount=1} @origin
+  - effect:particlering{particle=reddust;color=#49ff00;radius=3.4;points=70;amount=1} @origin
+  - effect:particlering{particle=reddust;color=#49ff00;radius=3.6;points=70;amount=1} @origin
+  - delay 1
+  - effect:particlering{particle=reddust;color=#0b9607;radius=3.8;points=100;amount=1} @origin
+  - effect:particlering{particle=reddust;color=#49ff00;radius=3.8;points=100;amount=1} @origin
+  - delay 1
+  - effect:particlering{particle=reddust;color=#0b9607;radius=4;points=100;amount=1} @origin
+  - effect:particlering{particle=reddust;color=#49ff00;radius=4;points=100;amount=1} @origin
+  - damage{a=2;pk=true} @PIR{r=5}
+  - potion{type=POISON;duration=100;level=1} @PIR{R=4}

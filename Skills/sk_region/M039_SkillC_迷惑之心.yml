@@ -1,0 +1,51 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M039_SkillC:
+  Cooldown: 5
+  Conditions:
+  - playerwithin{d=25}
+  Skills:
+  - effect:sound{s=entity.wither.ambient;v=5;p=2}
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=0.5;delay=0;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=1.5;delay=2;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=2.5;delay=4;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=3.5;delay=6;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=4.5;delay=8;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=5.5;delay=10;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=6.5;delay=12;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=7.5;delay=14;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=8.5;delay=16;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=9.5;delay=18;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=10.5;delay=20;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=11.5;delay=22;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=12.5;delay=24;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=13.5;delay=26;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=14.5;delay=28;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=15.5;delay=30;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=16.5;delay=32;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=17.5;delay=34;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=18.5;delay=36;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=19.5;delay=38;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=0.5;delay=0;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=1.5;delay=2;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=2.5;delay=4;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=3.5;delay=6;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=4.5;delay=8;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=5.5;delay=10;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=6.5;delay=12;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=7.5;delay=14;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=8.5;delay=16;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=9.5;delay=18;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=10.5;delay=20;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=11.5;delay=22;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=12.5;delay=24;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=13.5;delay=26;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=14.5;delay=28;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=15.5;delay=30;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=16.5;delay=32;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=17.5;delay=34;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=18.5;delay=36;y=1.5} @self
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=19.5;delay=38;y=1.5} @self
+  - delay 38
+  - effect:sound{s=entity.wither.ambient;v=5;p=1.3}
+  - summon{type=M038_山巨人;amount=1;radius=0} @RLNTE{amount=1;radius=8;spacing=0;minradius=1}
+  - summon{type=M037_岩型狼;amount=1;radius=0} @RLNTE{amount=2;radius=8;spacing=0;minradius=1}

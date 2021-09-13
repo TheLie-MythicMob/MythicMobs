@@ -1,0 +1,92 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#
+M048_拓笊:
+  Type: zombie
+  Display: '&4[區域頭目] &c烈日之陽&f--&9拓笊 &6[LV.40]'
+  Health: 12000
+  Damage: 60
+  Faction: 怪物 #設定派系
+  AIGoalSelectors:
+  AITargetSelectors:
+  Equipment:
+  BossBar:
+    Enabled: true
+    Title: '<mob.name> &f- <mob.hp>&7/&f<mob.mhp>'
+    Range: 20
+    Color: RED
+    Style: SEGMENTED_20
+  Disguise:
+    Type: Player
+    Skin: Not21Just2Savage
+  Options:
+    MovementSpeed: 0.4 #移動速度
+    AttackSpeed: 1 #攻擊速度
+    PreventSlimeSplit: true #防止分裂(史萊姆)
+    PreventOtherDrops: true #防止 MythicMobs 生物會掉原本會掉的東西 預設為 false
+    MaxCombatDistance: 30 #最大受擊距離 , 設定能打到的最遠距離  設定無法被狙擊的生物
+    KnockbackResistance: 100 #抗擊退機率
+    PreventSunburn: true
+    Despawn: true #生物附近沒玩家時，是否會消失
+    NoAI: false
+    Silent: true #關閉原版聲音
+    PreventRandomEquipment: true #生成時會不會隨機擁有裝備
+    NoGravity: false #是否開啟無重力
+    PreventSunburn: true #是否防止陽光下燃燒
+    ApplyInvisibility: false #是否隱形
+    AlwaysShowName: true
+  Drops:
+  - m55 1 0.6
+  - exp 1 1
+  Skills:
+  - effect:sound{s=entity.wandering_trader.hurt;v=2;p=0.1} @self ~onDamaged
+  - effect:sound{s=entity.wandering_trader.death;v=2;p=0.1} @self ~onDeath
+  - skill{s=M048_SkillA} @self =50%
+  - skill{s=M048_SkillD} @self ~onDamaged 0.3 <40%
+  - skill{s=M048_SkillB} @self ~onDamaged 0.1 <80%
+  - skill{s=M048_SkillC} @self ~onTimer:150 0.5 <95%
+  
+M048_拓笊_技能:
+  Type: zombie
+  Display: '&4[技能]&c墜毀火球'
+  Health: 2100
+  Damage: 35
+  Faction: 怪物 #設定派系
+  AIGoalSelectors:
+  AITargetSelectors:
+  Equipment:
+  BossBar:
+    Enabled: true
+    Title: '<mob.name> &f- <mob.hp>&7/&f<mob.mhp>'
+    Range: 20
+    Color: RED
+    Style: SEGMENTED_20
+  Disguise:
+    Type: ghast
+  Options:
+    MovementSpeed: 0 #移動速度
+    AttackSpeed: 1 #攻擊速度
+    PreventSlimeSplit: true #防止分裂(史萊姆)
+    PreventOtherDrops: true #防止 MythicMobs 生物會掉原本會掉的東西 預設為 false
+    MaxCombatDistance: 300 #最大受擊距離 , 設定能打到的最遠距離  設定無法被狙擊的生物
+    KnockbackResistance: 100 #抗擊退機率
+    PreventSunburn: true
+    Despawn: true #生物附近沒玩家時，是否會消失
+    NoAI: true
+    Silent: true #關閉原版聲音
+    PreventRandomEquipment: true #生成時會不會隨機擁有裝備
+    NoGravity: false #是否開啟無重力
+    PreventSunburn: true #是否防止陽光下燃燒
+    ApplyInvisibility: true #是否隱形
+    AlwaysShowName: false
+  Skills:
+  - effect:particlesphere{particle=flame;amount=300;radius=4;y=0.5} @self ~onTimer:5
+  - effect:particlesphere{p=reddust;color=#ff0000;amount=50;radius=1;y=0.5} @self ~onTimer:5
+  - effect:particlesphere{particle=largesmoke;amount=40;radius=4;y=0.5} @self ~onTimer:5
+  - effect:sound{s=block.fire.extinguish;v=3;p=1} @self ~onDamaged
+  - effect:sound{s=entity.blaze.death;v=5;p=1.8} @self ~onDeath
+  - effect:sound{s=block.fire.ambient;v=3;p=0.5} @self ~onTimer:10
+  - skill{s=M048_SkillA_釋放;delay=600} @self ~onSpawn
+  - addtag{t=SkillA_沒死} @self ~onSpawn
+  - removetag{t=SkillA_沒死} @self ~onDeath
+  

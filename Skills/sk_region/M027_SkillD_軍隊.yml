@@ -1,0 +1,6 @@
+
+M027_SkillD:
+  Skills:
+  - summon{type=M027_野原人首領-戰鼓;amount=1;radius=3} @self
+  - summon{type=M026_野原人;amount=5;radius=7} @self
+  - summon{type=M025_沙漠條蜂;amount=5;radius=7} @self

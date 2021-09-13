@@ -1,0 +1,9 @@
+M009_Banner:
+  Id: banner
+  Display: '&fM009_Banner'
+  Options:
+    Color: GRAY
+  BannerLayers:
+  - BLACK CURLY_BORDER
+  - GREEN STRAIGHT_CROSS
+  - RED FLOWER

@@ -1,0 +1,6 @@
+test:
+  Conditions:
+  - targetwithin 2
+  Skills:
+  - consume{d=2} @Target
+

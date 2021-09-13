@@ -1,0 +1,62 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M039_SkillA:
+  Cooldown: 4
+  Conditions:
+  - playerwithin{d=20}
+  Skills:
+  - effect:sound{s=entity.elder_guardian.curse;v=2;p=0.1}
+  - effect:particlering{p=reddust;color=#ff1493;radius=10;points=32;amount=1;delay=0;y=1} @self
+  - effect:particlering{p=reddust;color=#ff1493;radius=9;points=31;amount=1;delay=4;y=1} @self
+  - effect:particlering{p=reddust;color=#ff1493;radius=8;points=30;amount=1;delay=8;y=1} @self
+  - effect:particlering{p=reddust;color=#ff1493;radius=7;points=29;amount=1;delay=12;y=1} @self
+  - effect:particlering{p=reddust;color=#ff1493;radius=6;points=28;amount=1;delay=16;y=1} @self
+  - effect:particlering{p=reddust;color=#ff1493;radius=5;points=27;amount=1;delay=20;y=1} @self
+  - effect:particlering{p=reddust;color=#ff1493;radius=4;points=26;amount=1;delay=24;y=1} @self
+  - effect:particlering{p=reddust;color=#ff1493;radius=3;points=25;amount=1;delay=28;y=1} @self
+  - effect:particlering{p=reddust;color=#ff1493;radius=2;points=24;amount=1;delay=32;y=1} @self
+  - delay 32
+  - skill{s=M039_SkillA_totem} @RLNTE{amount=4;radius=10;spacing=0;minradius=1}
+  - delay 10
+  - skill{s=M039_SkillA_totem} @RLNTE{amount=8;radius=15;spacing=0;minradius=1}
+  - delay 10
+  - skill{s=M039_SkillA_totem} @RLNTE{amount=12;radius=20;spacing=0;minradius=1}
+  - delay 10
+  - skill{s=M039_SkillA_totem} @RLNTE{amount=16;radius=25;spacing=0;minradius=1}
+  
+M039_SkillA_totem:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - totem{onend=M039_SkillA_射擊;hR=5;vR=5;md=1;oy=-3}
+  
+  
+M039_SkillA_射擊:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:sound{s=entity.ghast.shoot;v=0.5;p=0.3}
+  - projectile{onTick=M039_SkillA_粒子;oh=M039_SkillA_傷害;oe=M039_SkillA_餘傷;v=8;i=2;hR=1.5;vR=1.5;syo=20;g=0;fromOrigin=true} @Origin
+  
+M039_SkillA_傷害:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:sound{s=entity.ender_dragon.hurt;v=2;p=0.1}
+  - damage{amount=50;ia=false;preventknockback=true}
+  
+M039_SkillA_餘傷:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:sound{s=entity.zombie.infect;v=2;p=0.1}
+  - damage{amount=13;ia=false;preventknockback=true} @PlayersNearOrigin{r=4}
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=20;radius=0.5;hs=1.5;y=0.1;vs=0.3}
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=20;radius=0.5;hs=1.5;y=0.1;vs=0.3}
+  
+M039_SkillA_粒子:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:sound{s=entity.strider.saddle;v=0.1;p=2}
+  - effect:particlesphere{p=reddust;color=#FFFFFF;amount=5;radius=0.2}
+  - effect:particlesphere{p=reddust;color=#ff1493;amount=5;radius=0.2}

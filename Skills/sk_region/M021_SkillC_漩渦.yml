@@ -1,0 +1,51 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M021_SkillC:
+  Cooldown: 20
+  Conditions:
+  Skills:
+  - message{m="&b海德拉 &7>> &f可惡！滾開阿！"} @PlayersNearOrigin{r=30}
+  - potion{type=SLOW;duration=220;level=10000}
+  - effect:sound{s=entity.witch.ambient;v=3;p=1.6}
+  - delay 7
+  - effect:sound{s=entity.witch.death;v=3;p=1.2}
+  - delay 7
+  - effect:sound{s=entity.witch.ambient;v=3;p=1.8}
+  - delay 20
+  - effect:sound{s=entity.witch.death;v=2;p=1.4}
+  - totem{onTick=M021_SkillC_漩渦;onEnd=M021_SkillC_圖騰射擊;hR=5;vR=5;md=40;y=0} @Ring{radius=2;points=6}
+  - effect:sound{s=entity.wither.spawn;v=2;p=2}
+  
+  
+M021_SkillC_圖騰射擊:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:sound{s=entity.wither.ambient;v=2;p=0.1}
+  - projectile{onTick=M021_SkillC_漩渦;onhit=M021_SkillC_漩渦_擊中;onEnd=M021_SkillC_圖騰射擊_02;v=5;i=5;hR=1.5;vR=4;syo=1} @Ring{radius=25;points=6}
+  - delay 60
+  - effect:sound{s=entity.wither.ambient;v=2;p=0.1}
+  - projectile{onTick=M021_SkillC_漩渦;onhit=M021_SkillC_漩渦_擊中;onEnd=M021_SkillC_圖騰射擊_02;v=5;i=5;hR=1.5;vR=4;syo=1} @Ring{radius=25;points=15}
+  
+
+M021_SkillC_漩渦:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:sound{s=entity.dolphin.swim;v=1;p=0.8}
+  - effect:sound{s=entity.blaze.shoot;v=0.5;p=2}
+  - effect:particletornado{p=fishing;cp=falling_water;mr=1;h=2;i=1;d=10;rs=0.5;sh=1;cs=1;ca=1;chs=1;cvs=0.1;cps=5;cyo=0}
+  
+M021_SkillC_漩渦_擊中:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - damage{amount=30;ia=false}
+  - throw{velocity=10;velocityY=10}
+  - effect:sound{s=entity.player.splash.high_speed;v=2;p=2}
+  - potion{type=SLOW;duration=40;level=5}
+  
+M021_SkillC_01:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particles{p=fishing} @origin

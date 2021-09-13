@@ -1,0 +1,15 @@
+healthbarA:
+  Skills:
+  - actionmessage{msg="&4▀▀▀▀▀▀▀▀▀▀&7"} @PlayersInRadius{r=10} <100%
+  - actionmessage{msg="&4▀▀▀▀▀▀▀▀▀&7▀"} @PlayersInRadius{r=10} <90%
+  - actionmessage{msg="&4▀▀▀▀▀▀▀▀&7▀▀"} @PlayersInRadius{r=10} <80%
+  - actionmessage{msg="&4▀▀▀▀▀▀▀&7▀▀▀"} @PlayersInRadius{r=10} <70%
+  - actionmessage{msg="&4▀▀▀▀▀▀&7▀▀▀▀"} @PlayersInRadius{r=10} <60%
+  - actionmessage{msg="&4▀▀▀▀▀&7▀▀▀▀▀"} @PlayersInRadius{r=10} <50%
+  - actionmessage{msg="&4▀▀▀▀&7▀▀▀▀▀▀"} @PlayersInRadius{r=10} <40%
+  - actionmessage{msg="&4▀▀▀&7▀▀▀▀▀▀▀"} @PlayersInRadius{r=10} <30%
+  - actionmessage{msg="&4▀▀&7▀▀▀▀▀▀▀▀"} @PlayersInRadius{r=10} <20%
+  - actionmessage{msg="&4▀&7▀▀▀▀▀▀▀▀▀"} @PlayersInRadius{r=10} <10%
+healthbarB:
+  Skills:
+  - actionmessage{msg="&7▀▀▀▀▀▀▀▀▀▀"} @PlayersInRadius{r=10}

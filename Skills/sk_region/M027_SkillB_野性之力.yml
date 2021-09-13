@@ -1,0 +1,10 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M027_SkillB:
+  Cooldown: 3
+  Conditions:
+  Skills:
+  - effect:sound{s=entity.player.attack.crit;v=2;p=0.8}
+  - effect:particlesphere{particle=reddust;amount=20;radius=0.6;vs=2} @Trigger
+  - damage{amount=40;ia=false;preventimmunity=true}
+  - message{m="&3系統 &7>> &f你受到了暴擊！"} 
+  

@@ -1,0 +1,485 @@
+# 此技能由【小崇#8767 - TaiwanPingNO1】製作而成。
+SK006:
+  Cooldown: 0.5
+  Conditions:
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱中.";fo=20} @self
+  - effect:sound{s=entity.player.breath;v=5;p=2}
+  - skill{s=SK006_01}
+  - skill{s=SK006_fail}
+  
+SK006_01:
+  Cooldown: 0
+  Conditions:
+  - moving{} false
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱中..";fo=20} @self
+  - addtag{t=治癒領域_詠唱_02} @self  
+  - effect:particlering{particle=composter;radius=0.5;points=6;amount=1;y=0.1}
+  - effect:particlering{particle=composter;radius=0.6;points=7;amount=1;y=0.1;delay=1}
+  - effect:particlering{particle=composter;radius=0.7;points=8;amount=1;y=0.1;delay=2}
+  - effect:particlering{particle=composter;radius=0.8;points=9;amount=1;y=0.1;delay=3}
+  - effect:particlering{particle=composter;radius=0.9;points=10;amount=1;y=0.1;delay=4}
+  - delay 5
+  - skill{s=SK006_02}
+  - removetag{t=治癒領域_詠唱_02} @self
+  - skill{s=SK006_fail}
+  
+SK006_02:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=治癒領域_詠唱_02}
+  - moving{} false
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱中...";fo=20} @self
+  - addtag{t=治癒領域_詠唱_03} @self  
+  - removetag{t=治癒領域_詠唱_02} @self
+  - removetag{t=治癒領域_詠唱_01} @self
+  - effect:particlering{particle=composter;radius=1;points=11;amount=1;y=0.1}
+  - effect:particlering{particle=composter;radius=1.1;points=12;amount=1;y=0.1;delay=1}
+  - effect:particlering{particle=composter;radius=1.2;points=13;amount=1;y=0.1;delay=2}
+  - effect:particlering{particle=composter;radius=1.3;points=14;amount=1;y=0.1;delay=3}
+  - effect:particlering{particle=composter;radius=1.4;points=15;amount=1;y=0.1;delay=4}
+  - delay 5
+  - skill{s=SK006_03}
+  - skill{s=SK006_fail}
+
+SK006_03:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=治癒領域_詠唱_03}
+  - moving{} false
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱中.";fo=20} @self
+  - addtag{t=治癒領域_詠唱_04} @self    
+  - removetag{t=治癒領域_詠唱_03} @self
+  - removetag{t=治癒領域_詠唱_02} @self
+  - removetag{t=治癒領域_詠唱_01} @self
+  - effect:particlering{particle=composter;radius=1.5;points=16;amount=1;y=0.1}
+  - effect:particlering{particle=composter;radius=1.6;points=17;amount=1;y=0.1;delay=1}
+  - effect:particlering{particle=composter;radius=1.7;points=18;amount=1;y=0.1;delay=2}
+  - effect:particlering{particle=composter;radius=1.8;points=19;amount=1;y=0.1;delay=3}
+  - effect:particlering{particle=composter;radius=1.9;points=20;amount=1;y=0.1;delay=4}
+  - effect:sound{s=entity.player.breath;v=5;p=2}
+  - delay 5
+  - skill{s=SK006_04}
+  - skill{s=SK006_fail}
+
+
+SK006_04:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=治癒領域_詠唱_04}
+  - moving{} false
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱中..";fo=20} @self
+  - addtag{t=治癒領域_詠唱_05} @self  
+  - removetag{t=治癒領域_詠唱_04} @self
+  - removetag{t=治癒領域_詠唱_01} @self
+  - removetag{t=治癒領域_詠唱_02} @self
+  - removetag{t=治癒領域_詠唱_03} @self
+  - effect:particlering{particle=composter;radius=2;points=21;amount=1;y=0.1}
+  - effect:particlering{particle=composter;radius=2.1;points=22;amount=1;y=0.1;delay=1}
+  - effect:particlering{particle=composter;radius=2.2;points=23;amount=1;y=0.1;delay=2}
+  - effect:particlering{particle=composter;radius=2.3;points=24;amount=1;y=0.1;delay=3}
+  - effect:particlering{particle=composter;radius=2.4;points=25;amount=1;y=0.1;delay=4}
+  - delay 5
+  - skill{s=SK006_05}
+  - skill{s=SK006_fail}
+  
+SK006_05:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=治癒領域_詠唱_05}
+  - moving{} false
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱中...";fo=20} @self
+  - addtag{t=治癒領域_詠唱_06} @self  
+  - removetag{t=治癒領域_詠唱_04} @self
+  - removetag{t=治癒領域_詠唱_01} @self
+  - removetag{t=治癒領域_詠唱_02} @self
+  - removetag{t=治癒領域_詠唱_03} @self
+  - effect:particlering{particle=composter;radius=2.5;points=26;amount=1;y=0.1}
+  - effect:particlering{particle=composter;radius=2.6;points=27;amount=1;y=0.1;delay=1}
+  - effect:particlering{particle=composter;radius=2.7;points=28;amount=1;y=0.1;delay=2}
+  - effect:particlering{particle=composter;radius=2.8;points=29;amount=1;y=0.1;delay=3}
+  - effect:particlering{particle=composter;radius=2.9;points=30;amount=1;y=0.1;delay=4}
+  - delay 5
+  - skill{s=SK006_06}
+  - skill{s=SK006_fail}
+  
+SK006_06:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=治癒領域_詠唱_06}
+  - moving{} false
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱中.";fo=20} @self
+  - addtag{t=治癒領域_詠唱_07} @self  
+  - skill{s=SK006_removetag_05}
+  - effect:particlering{particle=composter;radius=3;points=31;amount=1;y=0.1}
+  - effect:particlering{particle=composter;radius=3.1;points=32;amount=1;y=0.1;delay=1}
+  - effect:particlering{particle=composter;radius=3.2;points=33;amount=1;y=0.1;delay=2}
+  - effect:particlering{particle=composter;radius=3.3;points=34;amount=1;y=0.1;delay=3}
+  - effect:particlering{particle=composter;radius=3.4;points=35;amount=1;y=0.1;delay=4}
+  - effect:sound{s=entity.player.breath;v=5;p=2}
+  - delay 5
+  - skill{s=SK006_07}
+  - skill{s=SK006_fail}
+  
+SK006_07:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=治癒領域_詠唱_07}
+  - moving{} false
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱中..";fo=20} @self
+  - addtag{t=治癒領域_詠唱_08} @self  
+  - skill{s=SK006_removetag_05}
+  - removetag{t=治癒領域_詠唱_06} @self
+  - effect:particlering{particle=composter;radius=3.5;points=36;amount=1;y=0.1}
+  - effect:particlering{particle=composter;radius=3.6;points=37;amount=1;y=0.1;delay=1}
+  - effect:particlering{particle=composter;radius=3.7;points=38;amount=1;y=0.1;delay=2}
+  - effect:particlering{particle=composter;radius=3.8;points=39;amount=1;y=0.1;delay=3}
+  - effect:particlering{particle=composter;radius=3.9;points=40;amount=1;y=0.1;delay=4}
+  - delay 5
+  - skill{s=SK006_08}
+  - skill{s=SK006_fail}
+  
+SK006_08:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=治癒領域_詠唱_08}
+  - moving{} false
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱中...";fo=20} @self
+  - addtag{t=治癒領域_詠唱_09} @self  
+  - skill{s=SK006_removetag_05}
+  - removetag{t=治癒領域_詠唱_06} @self
+  - removetag{t=治癒領域_詠唱_07} @self
+  - effect:particlering{particle=composter;radius=4;points=41;amount=1;y=0.1}
+  - effect:particlering{particle=composter;radius=4.1;points=42;amount=1;y=0.1;delay=1}
+  - effect:particlering{particle=composter;radius=4.2;points=43;amount=1;y=0.1;delay=2}
+  - effect:particlering{particle=composter;radius=4.3;points=44;amount=1;y=0.1;delay=3}
+  - effect:particlering{particle=composter;radius=4.4;points=45;amount=1;y=0.1;delay=4}
+  - delay 5
+  - skill{s=SK006_09}
+  - skill{s=SK006_fail}
+  
+SK006_09:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=治癒領域_詠唱_09}
+  - moving{} false
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱中.";fo=20} @self
+  - addtag{t=治癒領域_詠唱_10} @self  
+  - skill{s=SK006_removetag_05}
+  - removetag{t=治癒領域_詠唱_06} @self
+  - removetag{t=治癒領域_詠唱_07} @self
+  - removetag{t=治癒領域_詠唱_08} @self
+  - effect:particlering{particle=composter;radius=4.5;points=46;amount=1;y=0.1}
+  - effect:particlering{particle=composter;radius=4.6;points=47;amount=1;y=0.1;delay=1}
+  - effect:particlering{particle=composter;radius=4.7;points=48;amount=1;y=0.1;delay=2}
+  - effect:particlering{particle=composter;radius=4.8;points=49;amount=1;y=0.1;delay=3}
+  - effect:particlering{particle=composter;radius=4.9;points=50;amount=1;y=0.1;delay=4}
+  - effect:sound{s=entity.player.breath;v=5;p=2}
+  - delay 5
+  - skill{s=SK006_10}
+  - skill{s=SK006_fail}
+  
+SK006_10:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=治癒領域_詠唱_10}
+  - moving{} false
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱中..";fo=20} @self
+  - addtag{t=治癒領域_詠唱_11} @self  
+  - skill{s=SK006_removetag_05}
+  - removetag{t=治癒領域_詠唱_06} @self
+  - removetag{t=治癒領域_詠唱_07} @self
+  - removetag{t=治癒領域_詠唱_08} @self
+  - removetag{t=治癒領域_詠唱_09} @self
+  - effect:particlering{particle=composter;radius=5;points=51;amount=1;y=0.1}
+  - effect:particlering{particle=composter;radius=5.1;points=52;amount=1;y=0.1;delay=1}
+  - effect:particlering{particle=composter;radius=5.2;points=53;amount=1;y=0.1;delay=2}
+  - effect:particlering{particle=composter;radius=5.3;points=54;amount=1;y=0.1;delay=3}
+  - effect:particlering{particle=composter;radius=5.4;points=55;amount=1;y=0.1;delay=4}
+  - delay 5
+  - skill{s=SK006_11}
+  - skill{s=SK006_fail}
+  
+SK006_11:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=治癒領域_詠唱_11}
+  - moving{} false
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱中...";fo=20} @self
+  - addtag{t=治癒領域_詠唱_12} @self  
+  - skill{s=SK006_removetag_05}
+  - skill{s=SK006_removetag_10}
+  - effect:particlering{particle=composter;radius=5.5;points=55;amount=1;y=0.1}
+  - effect:particlering{particle=composter;radius=5.4;points=54;amount=1;y=0.3;delay=1}
+  - effect:particlering{particle=composter;radius=5.3;points=53;amount=1;y=0.5;delay=2}
+  - effect:particlering{particle=composter;radius=5.2;points=52;amount=1;y=0.7;delay=3}
+  - effect:particlering{particle=composter;radius=5.1;points=51;amount=1;y=0.9;delay=4}
+  - delay 5
+  - skill{s=SK006_12}
+  - skill{s=SK006_fail}
+  
+SK006_12:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=治癒領域_詠唱_12}
+  - moving{} false
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱中.";fo=20} @self
+  - addtag{t=治癒領域_詠唱_13} @self  
+  - skill{s=SK006_removetag_05}
+  - skill{s=SK006_removetag_10}
+  - removetag{t=治癒領域_詠唱_11} @self
+  - effect:particlering{particle=composter;radius=5;points=50;amount=1;y=1.1}
+  - effect:particlering{particle=composter;radius=4.9;points=49;amount=1;y=1.3;delay=1}
+  - effect:particlering{particle=composter;radius=4.8;points=48;amount=1;y=1.5;delay=2}
+  - effect:particlering{particle=composter;radius=4.7;points=47;amount=1;y=1.7;delay=3}
+  - effect:particlering{particle=composter;radius=4.6;points=46;amount=1;y=1.9;delay=4}
+  - effect:sound{s=entity.player.breath;v=5;p=2}
+  - delay 5
+  - skill{s=SK006_13}
+  - skill{s=SK006_fail}
+  
+SK006_13:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=治癒領域_詠唱_13}
+  - moving{} false
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱中..";fo=20} @self
+  - addtag{t=治癒領域_詠唱_14} @self  
+  - skill{s=SK006_removetag_05}
+  - skill{s=SK006_removetag_10}
+  - removetag{t=治癒領域_詠唱_11} @self
+  - removetag{t=治癒領域_詠唱_12} @self
+  - effect:particlering{particle=composter;radius=4.5;points=45;amount=1;y=2.1}
+  - effect:particlering{particle=composter;radius=4.4;points=44;amount=1;y=2.3;delay=1}
+  - effect:particlering{particle=composter;radius=4.3;points=43;amount=1;y=2.5;delay=2}
+  - effect:particlering{particle=composter;radius=4.2;points=42;amount=1;y=2.7;delay=3}
+  - effect:particlering{particle=composter;radius=4.1;points=41;amount=1;y=2.9;delay=4}
+  - delay 5
+  - skill{s=SK006_14}
+  - skill{s=SK006_fail}
+  
+SK006_14:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=治癒領域_詠唱_14}
+  - moving{} false
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱中...";fo=20} @self
+  - addtag{t=治癒領域_詠唱_15} @self  
+  - skill{s=SK006_removetag_05}
+  - skill{s=SK006_removetag_10}
+  - removetag{t=治癒領域_詠唱_11} @self
+  - removetag{t=治癒領域_詠唱_12} @self
+  - removetag{t=治癒領域_詠唱_13} @self
+  - effect:particlering{particle=composter;radius=4;points=40;amount=1;y=3.1}
+  - effect:particlering{particle=composter;radius=3.9;points=39;amount=1;y=3.3;delay=1}
+  - effect:particlering{particle=composter;radius=3.8;points=38;amount=1;y=3.5;delay=2}
+  - effect:particlering{particle=composter;radius=3.7;points=37;amount=1;y=3.7;delay=3}
+  - effect:particlering{particle=composter;radius=3.6;points=36;amount=1;y=3.9;delay=4}
+  - delay 5
+  - skill{s=SK006_15}
+  - skill{s=SK006_fail}
+  
+SK006_15:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=治癒領域_詠唱_15}
+  - moving{} false
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱中.";fo=20} @self
+  - addtag{t=治癒領域_詠唱_16} @self  
+  - skill{s=SK006_removetag_05}
+  - skill{s=SK006_removetag_10}
+  - removetag{t=治癒領域_詠唱_11} @self
+  - removetag{t=治癒領域_詠唱_12} @self
+  - removetag{t=治癒領域_詠唱_13} @self
+  - removetag{t=治癒領域_詠唱_14} @self
+  - effect:particlering{particle=composter;radius=3.5;points=35;amount=1;y=4.1}
+  - effect:particlering{particle=composter;radius=3.4;points=34;amount=1;y=4.3;delay=1}
+  - effect:particlering{particle=composter;radius=3.3;points=33;amount=1;y=4.5;delay=2}
+  - effect:particlering{particle=composter;radius=3.2;points=32;amount=1;y=4.7;delay=3}
+  - effect:particlering{particle=composter;radius=3.1;points=31;amount=1;y=4.9;delay=4}
+  - effect:sound{s=entity.player.breath;v=5;p=2}
+  - delay 5
+  - skill{s=SK006_16}
+  - skill{s=SK006_fail}
+  
+SK006_16:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=治癒領域_詠唱_16}
+  - moving{} false
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱中..";fo=20} @self
+  - addtag{t=治癒領域_詠唱_17} @self  
+  - skill{s=SK006_removetag_05}
+  - skill{s=SK006_removetag_10}
+  - skill{s=SK006_removetag_15}
+  - effect:particlering{particle=composter;radius=3;points=30;amount=1;y=5.1}
+  - effect:particlering{particle=composter;radius=2.9;points=29;amount=1;y=5.3;delay=1}
+  - effect:particlering{particle=composter;radius=2.8;points=28;amount=1;y=5.5;delay=2}
+  - effect:particlering{particle=composter;radius=2.7;points=27;amount=1;y=5.7;delay=3}
+  - effect:particlering{particle=composter;radius=2.6;points=26;amount=1;y=5.9;delay=4}
+  - delay 5
+  - skill{s=SK006_17}
+  - skill{s=SK006_fail}
+  
+SK006_17:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=治癒領域_詠唱_17}
+  - moving{} false
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱中...";fo=20} @self
+  - addtag{t=治癒領域_詠唱_18} @self  
+  - skill{s=SK006_removetag_05}
+  - skill{s=SK006_removetag_10}
+  - skill{s=SK006_removetag_15}
+  - removetag{t=治癒領域_詠唱_16} @self
+  - effect:particlering{particle=composter;radius=2.5;points=25;amount=1;y=6.1}
+  - effect:particlering{particle=composter;radius=2.4;points=24;amount=1;y=6.3;delay=1}
+  - effect:particlering{particle=composter;radius=2.3;points=23;amount=1;y=6.5;delay=2}
+  - effect:particlering{particle=composter;radius=2.2;points=22;amount=1;y=6.7;delay=3}
+  - effect:particlering{particle=composter;radius=2.1;points=21;amount=1;y=6.9;delay=4}
+  - delay 5
+  - skill{s=SK006_18}
+  - skill{s=SK006_fail}
+  
+SK006_18:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=治癒領域_詠唱_18}
+  - moving{} false
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱中.";fo=20} @self
+  - addtag{t=治癒領域_詠唱_19} @self  
+  - skill{s=SK006_removetag_05}
+  - skill{s=SK006_removetag_10}
+  - skill{s=SK006_removetag_15}
+  - removetag{t=治癒領域_詠唱_16} @self
+  - removetag{t=治癒領域_詠唱_17} @self
+  - effect:particlering{particle=composter;radius=2;points=20;amount=1;y=7.1}
+  - effect:particlering{particle=composter;radius=1.9;points=19;amount=1;y=7.3;delay=1}
+  - effect:particlering{particle=composter;radius=1.8;points=18;amount=1;y=7.5;delay=2}
+  - effect:particlering{particle=composter;radius=1.7;points=17;amount=1;y=7.7;delay=3}
+  - effect:particlering{particle=composter;radius=1.6;points=16;amount=1;y=7.9;delay=4}
+  - effect:sound{s=entity.player.breath;v=5;p=2}
+  - delay 5
+  - skill{s=SK006_19}
+  - skill{s=SK006_fail}
+  
+SK006_19:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=治癒領域_詠唱_19}
+  - moving{} false
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱中..";fo=20} @self
+  - addtag{t=治癒領域_詠唱_20} @self  
+  - skill{s=SK006_removetag_05}
+  - skill{s=SK006_removetag_10}
+  - skill{s=SK006_removetag_15}
+  - removetag{t=治癒領域_詠唱_16} @self
+  - removetag{t=治癒領域_詠唱_17} @self
+  - removetag{t=治癒領域_詠唱_18} @self
+  - effect:particlering{particle=composter;radius=1.5;points=15;amount=1;y=8.1}
+  - effect:particlering{particle=composter;radius=1.4;points=14;amount=1;y=8.3;delay=1}
+  - effect:particlering{particle=composter;radius=1.3;points=13;amount=1;y=8.5;delay=2}
+  - effect:particlering{particle=composter;radius=1.2;points=12;amount=1;y=8.7;delay=3}
+  - effect:particlering{particle=composter;radius=1.1;points=11;amount=1;y=8.9;delay=4}
+  - delay 5
+  - skill{s=SK006_20}
+  - skill{s=SK006_fail}
+  
+SK006_20:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=治癒領域_詠唱_20}
+  - moving{} false
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱中...";fo=20} @self
+  - addtag{t=治癒領域_詠唱_start} @self  
+  - skill{s=SK006_removetag_05}
+  - skill{s=SK006_removetag_10}
+  - skill{s=SK006_removetag_15}
+  - removetag{t=治癒領域_詠唱_16} @self
+  - removetag{t=治癒領域_詠唱_17} @self
+  - removetag{t=治癒領域_詠唱_18} @self
+  - removetag{t=治癒領域_詠唱_19} @self
+  - effect:particlering{particle=composter;radius=1;points=10;amount=1;y=9.1}
+  - effect:particlering{particle=composter;radius=0.9;points=9;amount=1;y=9.3;delay=1}
+  - effect:particlering{particle=composter;radius=0.8;points=8;amount=1;y=9.5;delay=2}
+  - effect:particlering{particle=composter;radius=0.7;points=7;amount=1;y=9.7;delay=3}
+  - effect:particlering{particle=composter;radius=0.6;points=6;amount=1;y=9.9;delay=4}
+  - delay 5
+  - skill{s=SK006_start}
+  - skill{s=SK006_fail}
+  
+SK006_start:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=治癒領域_詠唱_start}
+  - moving{} false
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&2治癒領域詠唱成功";fo=20} @self
+  #- skill{s=SK006_ok} @self
+  - skill{s=SK006_removetag_05}
+  - skill{s=SK006_removetag_10}
+  - skill{s=SK006_removetag_15}
+  - skill{s=SK006_removetag_20}
+  - totem{onTick=SK006_totem;onHit=SK006_ok;hR=5;vR=5;md=100;y=0.5}
+  - removetag{t=治癒領域_詠唱_start} @self
+  - potion{type=SLOW;duration=25;level=4} @self 
+  - effect:sound{s=entity.player.levelup;v=5;p=1.5}
+  
+SK006_totem:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particlesphere{particle=composter;amount=200;radius=5}
+  #- skill{s=SK006_particlering} #@PlayersInRadius{r=5}
+  #- heal{amount=5} #@PlayersInRadius{r=5}
+  #- effect:particles{p=heart;y=1.5} #@PlayersInRadius{r=5}
+  #- effect:sound{s=entity.player.levelup;v=5;p=1.5} #@PlayersInRadius{r=5}
+  #- effect:sound{s=entity.player.burp;v=5;p=2} #@PlayersInRadius{r=5}
+  
+SK006_ok:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - skill{s=SK006_particlering} #@PlayersInRadius{r=5} #;repeat=10;repeatInterval=10
+  - heal{amount=5} #@PlayersInRadius{r=5}
+  - effect:particles{p=heart;y=1.5} #@PlayersInRadius{r=5}
+  - effect:sound{s=entity.player.levelup;v=5;p=1.5} #@PlayersInRadius{r=5}
+  - effect:sound{s=entity.player.burp;v=5;p=2} #@PlayersInRadius{r=5}
+  
+  
+SK006_particlering:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particlering{particle=composter;radius=0.5;points=6;amount=1;y=2;repeat=10;repeatInterval=1}
+  - effect:particlering{particle=composter;radius=0.5;points=3;amount=1;y=1.8;delay=1;repeat=9;repeatInterval=1}
+  - effect:particlering{particle=composter;radius=0.5;points=6;amount=1;y=1.6;delay=2;repeat=8;repeatInterval=1}
+  - effect:particlering{particle=composter;radius=0.5;points=3;amount=1;y=1.4;delay=3;repeat=7;repeatInterval=1}
+  - effect:particlering{particle=composter;radius=0.5;points=6;amount=1;y=1.2;delay=4;repeat=6;repeatInterval=1}
+  - effect:particlering{particle=composter;radius=0.5;points=3;amount=1;y=1;delay=5;repeat=5;repeatInterval=1}
+  - effect:particlering{particle=composter;radius=0.5;points=6;amount=1;y=0.8;delay=6;repeat=4;repeatInterval=1}
+  - effect:particlering{particle=composter;radius=0.5;points=3;amount=1;y=0.6;delay=7;repeat=3;repeatInterval=1}
+  - effect:particlering{particle=composter;radius=0.5;points=6;amount=1;y=0.4;delay=8;repeat=2;repeatInterval=1}
+  - effect:particlering{particle=composter;radius=0.5;points=3;amount=1;y=0.2;delay=9;repeat=1;repeatInterval=1}
+  - effect:particlering{particle=composter;radius=0.5;points=6;amount=1;y=0;delay=10}
+  

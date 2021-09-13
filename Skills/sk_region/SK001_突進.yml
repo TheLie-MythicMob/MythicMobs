@@ -1,0 +1,8 @@
+# 此技能由【小崇#8767 - TaiwanPingNO1】製作而成。
+
+SK001:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - throw{velocity=-20;velocityY=5} @targetLocation
+  - message{m="&c技能測試 &7>> &2成功觸發！"} @self

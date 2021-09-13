@@ -1,0 +1,25 @@
+# 此技能由【小龍#9874 - Lolilong030】製作而成。
+
+M024_艾靈守衛_SkillA_滋養:
+  Cooldown: 120
+  Conditions:
+  - hastag{tag=Boss吸收}
+  TriggerConditions:
+  Skills:
+  - setAI{ai=false} @self 
+  - message{m="&a艾靈守衛 &7>> &f將你們的一切都獻祭給我吧！靈魂們！"} @PlayersInRadius{r=20}
+  - effect:particleline{particle=reddust;amount=5;fromOrigin=true;y=0.5;c=#00EC00} @MobsInRadius{t=M022_野靈犬,M023_靈魂骷髏;r=20}
+  - effect:sound{s=entity.cat.hiss;v=3;p=0.5}
+  - delay 25
+  - effect:particleline{particle=reddust;amount=5;fromOrigin=true;y=0.5;c=#93FF93} @MobsInRadius{t=M022_野靈犬,M023_靈魂骷髏;r=20}
+  - effect:sound{s=entity.cat.hiss;v=3;p=0.5}
+  - delay 25
+  - effect:particleline{particle=reddust;amount=5;fromOrigin=true;y=0.5;c=#F0FFF0} @MobsInRadius{t=M022_野靈犬,M023_靈魂骷髏;r=20}
+  - effect:sound{s=entity.cat.hiss;v=3;p=0.5}
+  - delay 50
+  - message{m="&3系統 &7>> &f滋養發動，周遭的靈魂將成為艾靈守衛的養分！"} @PIR{r=20}  
+  - effect:particles{p=heart;a=100;y=1;hs=1} 
+  - effect:sound{s=entity.cat.ambient;v=3;p=2}
+  - consume{damage=0;h=50} @MobsInRadius{t=M022_野靈犬,M023_靈魂骷髏;r=30}
+  - remove @MobsInRadius{t=M022_野靈犬,M023_靈魂骷髏;r=30}
+  - setAI{ai=true} @self

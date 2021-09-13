@@ -1,0 +1,15 @@
+# 此技能由【小龍#9874 - Lolilong030】製作而成。
+
+M009_哥布林將軍_SkillB_鼓舞:
+  Cooldown: 60
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - effect:particles{p=note;a=300;hs=1;vs=0.5} @self
+  - effect:sound{s=entity.ravager.roar;v=2;p=1.5} @self
+  - message{m="&a哥布林將軍 &7>> &f通通向前衝吧！戰士們！"} @PlayersInRadius{r=20}
+  - message{m="&3系統 &7>> &f周圍的哥布林戰士獲得加速！"} @PIR{r=20}
+  - potion{t=SPEED;d=200;l=1} @MIR{r=30;t=M007_哥布林戰士}
+  - effect:particles{p=flame;a=300;hs=1;vs=0.5} @MIR{r=30;t=M007_哥布林戰士}
+  - delay 60
+  - effect:sound{s=entity.ravager.roar;v=2;p=1.5} @self

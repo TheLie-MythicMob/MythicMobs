@@ -1,0 +1,32 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M015_SkillA:
+  Cooldown: 4
+  Conditions:
+  - onground
+  - incombat
+  Skills:
+  - message{m="&c盜賊首領 &7>> &f盜賊首領:找死!"} @PlayersInRadius{r=10}
+  - effect:sound{s=entity.villager.no;v=30;p=0.5}
+  - effect:particles{p=cloud;hs=1;=vs=1;y=1.5} @self
+  - delay 20
+  - effect:particles{p=cloud;hs=1;=vs=1;y=1.5} @self
+  - delay 20
+  - message{m="&c盜賊首領 &7>> &f盜賊首領:吃我一擊吧!"} @PlayersInRadius{r=10}
+  - jump{velocity=1}
+  - effect:sound{s=entity.villager.no;v=30;p=1}
+  - effect:sound{s=entity.blaze.shoot;v=30;p=2}
+  - delay 5
+  - leap{velocity=200} @Target
+  - delay 10
+  - effect:particlering{p=explosion_normal;radius=0;points=1;amount=20;vs=0;hs=0}
+  - effect:particlering{p=explosion_normal;radius=3;points=3;amount=20;vs=1;hs=1}
+  - effect:particlering{p=explosion_normal;radius=6;points=6;amount=20;vs=1.5;hs=1.5}
+  - effect:particlering{p=explosion_normal;radius=9;points=9;amount=20;vs=2;hs=2}
+  - effect:particlering{p=explosion_normal;radius=12;points=12;amount=20;vs=2;hs=2}
+  - effect:particlering{p=explosion_normal;radius=15;points=15;amount=20;vs=2;hs=2}
+  - damage{amount=30;ia=true} @PIR{r=15}
+  - effect:sound{s=item.totem.use;v=2;p=0.6}
+  - potion{type=SLOW;duration=100;level=4} @PIR{r=15}
+  - potion{type=CONFUSION;duration=100;level=4} @PIR{r=15}
+  - throw{velocity=10;velocityY=2} @PIR{r=15}
+

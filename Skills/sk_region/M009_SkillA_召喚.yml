@@ -1,0 +1,20 @@
+# 此技能由【小龍#9874 - Lolilong030】製作而成。
+
+M009_哥布林將軍_SkillA_召喚:
+  Cooldown: 45
+  Conditions:
+  TriggerConditions:
+  Skills:
+  - effect:particles{p=flame;a=200;hs=1;vs=1;s=1} @self
+  - effect:sound{s=entity.ravager.celebrate;v=2;p=2} @self
+  - message{m="&a哥布林將軍 &7>> &f弟兄們上！"} @PlayersInRadius{r=20}
+  - message{m="&3系統 &7>> &f周圍開始出現哥布林戰士！"} @PIR{r=20}
+  - summon{t=M007_哥布林戰士;a=2;r=8} @self
+  - delay 30
+  - effect:sound{s=entity.blaze.shoot;v=2;p=2} @self
+  - effect:particles{p=flame;a=200;hs=1;vs=1;s=1} @self
+  - summon{t=M007_哥布林戰士;a=2;r=8} @self
+  - delay 30
+  - effect:sound{s=entity.blaze.shoot;v=2;p=2} @self
+  - effect:particles{p=flame;a=200;hs=1;vs=1;s=1} @self
+  - summon{t=M007_哥布林戰士;a=2;r=8} @self

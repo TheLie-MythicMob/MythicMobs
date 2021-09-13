@@ -1,0 +1,31 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M015_SkillC:
+  Cooldown: 4.5
+  Conditions:
+  - onground
+  - incombat
+  Skills:
+  - message{m="&c盜賊首領 &7>> &f呵..你的味道我記住了!"} @PlayersInRadius{r=10}
+  - effect:sound{s=entity.villager.trade;v=30;p=0.5}
+  - effect:particlering{p=warped_spore;radius=0.3;points=10;amount=10;vs=2;hs=2} @self
+  - potion{type=INVISIBILITY;duration=200;level=100} @self
+  - effect:sound{s=block.fire.extinguish;v=30;p=0.5}
+  - damagearmor{a=hand;d=20000;signal=Execute} @self
+  - delay 5
+  - effect:particles{p=portal;hs=0.5;vs=1.5;repeat=40;repeatInterval=5} @self
+  - delay 10
+  - message{m="&c盜賊首領 &7>> &f隨時小心背後吧!"} @PlayersInRadius{r=10}
+  - effect:sound{s=entity.villager.yes;v=30;p=0.5}
+  - delay 190
+  - skill{s=M015_SkillC_01}
+  - equip{item=iron_sword:0} @self
+  
+M015_SkillC_01:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - teleport{spreadh=0;spreadv=0} @Target
+  - delay 5
+  - message{m="&c盜賊首領 &7>> &f哈哈!去死吧!"} @PIR{r=2}
+  - throw{velocity=10;velocityY=5} @PIR{r=2}
+  - damage{amount=25;ia=true} @PIR{r=2}

@@ -1,0 +1,132 @@
+# 此技能由【小崇#8767 - TaiwanPingNO1】製作而成。
+SK005:
+  Cooldown: 0.5
+  Conditions:
+  Skills:
+  - message{m="&c技能測試 &7>> &2揮擊發動！"} @self
+  - addtag{t=揮擊_蓄力_01} @self 
+  - skill{s=SK005_end}
+  - skill{s=SK005_05}
+  - skill{s=SK005_04}
+  - skill{s=SK005_03}
+  - skill{s=SK005_02}
+  - skill{s=SK005_01}
+  
+SK005_end:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=揮擊_蓄力_end}
+  Skills:
+  - removetag{t=揮擊_蓄力_01} @self
+  
+SK005_01:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=揮擊_蓄力_01}
+  Skills:
+  - message{m="&c技能測試 &7>> &1蓄力完成1/5！"} @self
+  - addtag{t=揮擊_蓄力_02} @self  
+  - addtag{t=揮擊_蓄力_end} @self
+  - addtag{t=揮擊_失敗_01} @self
+  - effect:particlesphere{p=reddust;color=#ff0000;amount=100;radius=1;y=0.2;hs=1;vs=1} @self
+  - potion{type=SLOW;duration=15;level=3} @self
+  - effect:sound{s=entity.player.breath;v=5;p=2}
+  - delay 15
+  - removetag{t=揮擊_蓄力_02} @self
+  - removetag{t=揮擊_蓄力_end} @self
+  - skill{s=SK005_01_fail}
+  
+SK005_02:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=揮擊_蓄力_02}
+  Skills:
+  - message{m="&c技能測試 &7>> &6蓄力完成2/5！"} @self
+  - addtag{t=揮擊_蓄力_03} @self  
+  - addtag{t=揮擊_蓄力_end} @self  
+  - addtag{t=揮擊_失敗_02} @self
+  - removetag{t=揮擊_蓄力_02} @self
+  - removetag{t=揮擊_蓄力_01} @self
+  - removetag{t=揮擊_失敗_01} @self
+  - effect:particlesphere{p=reddust;color=#ff0000;amount=70;radius=0.8;y=0.5;hs=0.7;vs=0.7} @self
+  - potion{type=SLOW;duration=15;level=3} @self
+  - effect:sound{s=entity.player.breath;v=5;p=2}
+  - delay 15
+  - removetag{t=揮擊_蓄力_02} @self
+  - removetag{t=揮擊_蓄力_03} @self
+  - removetag{t=揮擊_蓄力_end} @self
+  - skill{s=SK005_02_fail}
+
+SK005_03:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=揮擊_蓄力_03}
+  Skills:
+  - message{m="&c技能測試 &7>> &3蓄力完成3/5！"} @self
+  - addtag{t=揮擊_蓄力_04} @self  
+  - addtag{t=揮擊_蓄力_end} @self  
+  - addtag{t=揮擊_失敗_03} @self
+  - removetag{t=揮擊_蓄力_03} @self
+  - removetag{t=揮擊_蓄力_02} @self
+  - removetag{t=揮擊_蓄力_01} @self
+  - removetag{t=揮擊_失敗_02} @self
+  - effect:particlesphere{p=reddust;color=#ff0000;amount=50;radius=0.6;y=0.5;hs=0.4;vs=0.4} @self
+  - potion{type=SLOW;duration=15;level=3} @self
+  - effect:sound{s=entity.player.breath;v=5;p=2}
+  - delay 15
+  - removetag{t=揮擊_蓄力_02} @self
+  - removetag{t=揮擊_蓄力_03} @self
+  - removetag{t=揮擊_蓄力_04} @self
+  - removetag{t=揮擊_蓄力_end} @self
+  - skill{s=SK005_03_fail}
+
+
+SK005_04:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=揮擊_蓄力_04}
+  Skills:
+  - message{m="&c技能測試 &7>> &4蓄力完成4/5！"} @self
+  - addtag{t=揮擊_蓄力_05} @self  
+  - addtag{t=揮擊_蓄力_end} @self  
+  - addtag{t=揮擊_失敗_04} @self
+  - removetag{t=揮擊_蓄力_04} @self
+  - removetag{t=揮擊_蓄力_01} @self
+  - removetag{t=揮擊_蓄力_02} @self
+  - removetag{t=揮擊_蓄力_03} @self
+  - removetag{t=揮擊_失敗_03} @self
+  - effect:particlesphere{p=reddust;color=#ff0000;amount=20;radius=0.3;y=0.5;hs=0.1;vs=0.1} @self
+  - potion{type=SLOW;duration=15;level=3} @self
+  - effect:sound{s=entity.player.breath;v=5;p=2}
+  - delay 15
+  - removetag{t=揮擊_蓄力_02} @self
+  - removetag{t=揮擊_蓄力_03} @self
+  - removetag{t=揮擊_蓄力_04} @self
+  - removetag{t=揮擊_蓄力_05} @self
+  - removetag{t=揮擊_蓄力_end} @self
+  - skill{s=SK005_04_fail}
+  
+SK005_05:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=揮擊_蓄力_05}
+  Skills:
+  - message{m="&c技能測試 &7>> &5蓄力完成！"} @self
+  - skill{s=SK005_ok}
+  - addtag{t=揮擊_蓄力_end} @self  
+  - removetag{t=揮擊_失敗_04} @self
+  - removetag{t=揮擊_蓄力_05} @self
+  - removetag{t=揮擊_蓄力_01} @self
+  - removetag{t=揮擊_蓄力_02} @self
+  - removetag{t=揮擊_蓄力_03} @self
+  - removetag{t=揮擊_蓄力_04} @self
+  - removetag{t=揮擊_蓄力_end} @self
+  
+SK005_ok:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particles{p=sweep_attack;y=0.5} @Cone{angle=30;points=150;range=5;rotation=0}
+  - effect:sound{s=entity.player.attack.sweep;v=5;p=0.1}
+  #- damage{amount=<eval.%arctic_skill_damage%*1+%arctic_player_level%*1.5>;ia=false} @EntitiesInCone{angle=30;range=5;rotation=0}
+  - customdamage{a=999;damagecause=MAGIC} @EntitiesInCone{angle=30;range=5;rotation=0}

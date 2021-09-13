@@ -1,0 +1,32 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M032_SkillB:
+  Cooldown: 8
+  Conditions:
+  - onground
+  - incombat
+  Skills:
+  - effect:sound{s=entity.pillager.ambient;v=2;p=0.3}
+  - message{m="&e阿努凡里歐斯 &7>> &f小心了！"} @PlayersNearOrigin{r=30}
+  - effect:particlesphere{p=reddust;color=#ffff00;amount=50;radius=1;y=0.5;vs=0.1} @self
+  - effect:particlesphere{p=reddust;color=#ffff00;amount=40;radius=0.8;y=0.5;vs=0.1;delay=4} @self
+  - effect:particlesphere{p=reddust;color=#ffff00;amount=30;radius=0.6;y=0.4;vs=0.1;delay=8} @self
+  - effect:particlesphere{p=reddust;color=#ffff00;amount=20;radius=0.4;y=0.3;vs=0.1;delay=12} @self
+  - effect:particlesphere{p=reddust;color=#ffff00;amount=10;radius=0.2;y=0.3;vs=0.1;delay=16} @self
+  - potion{type=INVISIBILITY;duration=100;level=10000} @self
+  - effect:sound{s=entity.tnt.primed;v=2;p=2}
+  #
+  - delay 80
+  - effect:sound{s=entity.tnt.primed;v=2;p=2}
+  - effect:particlesphere{p=reddust;color=#ffff00;amount=50;radius=0.2;y=0.5;vs=0.1} @self
+  - effect:particlesphere{p=reddust;color=#ffff00;amount=40;radius=0.4;y=0.5;vs=0.1;delay=4} @self
+  - effect:particlesphere{p=reddust;color=#ffff00;amount=30;radius=0.6;y=0.4;vs=0.1;delay=8} @self
+  - effect:particlesphere{p=reddust;color=#ffff00;amount=20;radius=0.8;y=0.3;vs=0.1;delay=12} @self
+  - effect:particlesphere{p=reddust;color=#ffff00;amount=10;radius=1;y=0.3;vs=0.1;delay=16} @self
+  - effect:sound{s=entity.enderman.teleport;v=3;p=1.2}
+  - teleport{spreadh=0;spreadv=0} @PIR{r=20}
+  - delay 20
+  - damage{amount=30;ia=false} @PlayersNearOrigin{r=2}
+  - potion{type=HUNGER;duration=100;level=3} @PlayersNearOrigin{r=2}
+  - effect:sound{s=entity.wither.break_block;v=3;p=1.5}
+  - effect:particlering{p=reddust;color=#ffff00;radius=1;points=1;amount=20;vs=0;hs=0;} @self
+  - effect:particlering{p=reddust;color=#ffff00;radius=2;points=4;amount=20;vs=1;hs=1;delay=1} @self

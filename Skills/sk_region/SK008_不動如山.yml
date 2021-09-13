@@ -1,0 +1,300 @@
+# 此技能由【小崇#8767 - TaiwanPingNO1】製作而成。
+SK008:
+  Cooldown: 0.5
+  Conditions:
+  Skills:
+  - addtag{t=不動如山_蓄力_01} @self 
+  - skill{s=SK008_end}
+  - skill{s=SK008_start}
+  - skill{s=SK008_09}
+  - skill{s=SK008_08}
+  - skill{s=SK008_07}
+  - skill{s=SK008_06}
+  - skill{s=SK008_05}
+  - skill{s=SK008_04}
+  - skill{s=SK008_03}
+  - skill{s=SK008_02}
+  - skill{s=SK008_01}
+  
+SK008_end:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=不動如山_蓄力_end}
+  Skills:
+  - removetag{t=不動如山_蓄力_01} @self
+  
+SK008_01:
+  Cooldown: 15
+  Conditions:
+  - hastag{tag=不動如山_蓄力_01}
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&e不動如山蓄力中.";fo=40} @self
+  - addtag{t=不動如山_蓄力_02} @self  
+  - addtag{t=不動如山_蓄力_end} @self
+  - addtag{t=不動如山_失敗_01} @self
+  - effect:particlesphere{p=reddust;color=#fff000;amount=30;radius=0.1;y=0.5;hs=0.1;vs=0.1} @self
+  - potion{type=SLOW;duration=15;level=1} @self
+  - effect:sound{s=block.beacon.deactivate;v=5;p=1.1}
+  - delay 18
+  - removetag{t=不動如山_蓄力_02} @self
+  - removetag{t=不動如山_蓄力_end} @self
+  - skill{s=SK008_01_fail}
+  
+SK008_02:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=不動如山_蓄力_02}
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&e不動如山蓄力中..";fo=40} @self
+  - addtag{t=不動如山_蓄力_03} @self  
+  - addtag{t=不動如山_蓄力_end} @self  
+  - removetag{t=不動如山_蓄力_02} @self
+  - removetag{t=不動如山_蓄力_01} @self
+  - addtag{t=不動如山_失敗_02} @self
+  - removetag{t=不動如山_失敗_01} @self
+  - effect:particlesphere{p=reddust;color=#fff000;amount=30;radius=0.15;y=0.5;hs=0.15;vs=0.15} @self
+  - potion{type=SLOW;duration=15;level=1} @self
+  - effect:sound{s=block.beacon.deactivate;v=5;p=1.2}
+  - delay 18
+  - removetag{t=不動如山_蓄力_02} @self
+  - removetag{t=不動如山_蓄力_03} @self
+  - removetag{t=不動如山_蓄力_end} @self
+  - skill{s=SK008_02_fail}
+
+SK008_03:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=不動如山_蓄力_03}
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&e不動如山蓄力中...";fo=40} @self
+  - addtag{t=不動如山_蓄力_04} @self  
+  - addtag{t=不動如山_蓄力_end} @self  
+  - removetag{t=不動如山_蓄力_03} @self
+  - removetag{t=不動如山_蓄力_02} @self
+  - removetag{t=不動如山_蓄力_01} @self
+  - addtag{t=不動如山_失敗_03} @self
+  - removetag{t=不動如山_失敗_02} @self
+  - effect:particlesphere{p=reddust;color=#fff000;amount=30;radius=0.2;y=0.5;hs=0.2;vs=0.2} @self
+  - potion{type=SLOW;duration=15;level=1} @self
+  - effect:sound{s=block.beacon.deactivate;v=5;p=1.3}
+  - delay 18
+  - removetag{t=不動如山_蓄力_02} @self
+  - removetag{t=不動如山_蓄力_03} @self
+  - removetag{t=不動如山_蓄力_04} @self
+  - removetag{t=不動如山_蓄力_end} @self
+  - skill{s=SK008_03_fail}
+
+
+SK008_04:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=不動如山_蓄力_04}
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&e不動如山蓄力中.";fo=40} @self
+  - addtag{t=不動如山_蓄力_05} @self  
+  - addtag{t=不動如山_蓄力_end} @self  
+  - removetag{t=不動如山_蓄力_04} @self
+  - removetag{t=不動如山_蓄力_01} @self
+  - removetag{t=不動如山_蓄力_02} @self
+  - removetag{t=不動如山_蓄力_03} @self
+  - addtag{t=不動如山_失敗_04} @self
+  - removetag{t=不動如山_失敗_03} @self
+  - effect:particlesphere{p=reddust;color=#fff000;amount=30;radius=0.25;y=0.5;hs=0.25;vs=0.25} @self
+  - potion{type=SLOW;duration=15;level=1} @self
+  - effect:sound{s=block.beacon.deactivate;v=5;p=1.4}
+  - delay 18
+  - removetag{t=不動如山_蓄力_02} @self
+  - removetag{t=不動如山_蓄力_03} @self
+  - removetag{t=不動如山_蓄力_04} @self
+  - removetag{t=不動如山_蓄力_05} @self
+  - removetag{t=不動如山_蓄力_end} @self
+  - skill{s=SK008_04_fail}
+  
+SK008_05:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=不動如山_蓄力_05}
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&e不動如山蓄力中..";fo=40} @self
+  - addtag{t=不動如山_蓄力_06} @self  
+  - addtag{t=不動如山_蓄力_end} @self  
+  - removetag{t=不動如山_蓄力_04} @self
+  - removetag{t=不動如山_蓄力_01} @self
+  - removetag{t=不動如山_蓄力_02} @self
+  - removetag{t=不動如山_蓄力_03} @self
+  - removetag{t=不動如山_蓄力_05} @self
+  - addtag{t=不動如山_失敗_05} @self
+  - removetag{t=不動如山_失敗_04} @self
+  - effect:particlesphere{p=reddust;color=#fff000;amount=30;radius=0.3;y=0.5;hs=0.3;vs=0.3} @self
+  - potion{type=SLOW;duration=15;level=1} @self
+  - effect:sound{s=block.beacon.deactivate;v=5;p=1.5}
+  - delay 18
+  - removetag{t=不動如山_蓄力_02} @self
+  - removetag{t=不動如山_蓄力_03} @self
+  - removetag{t=不動如山_蓄力_04} @self
+  - removetag{t=不動如山_蓄力_05} @self
+  - removetag{t=不動如山_蓄力_06} @self
+  - removetag{t=不動如山_蓄力_end} @self
+  - skill{s=SK008_05_fail}
+  
+SK008_06:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=不動如山_蓄力_06}
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&e不動如山蓄力中...";fo=40} @self
+  - addtag{t=不動如山_蓄力_07} @self  
+  - addtag{t=不動如山_蓄力_end} @self  
+  - removetag{t=不動如山_蓄力_06} @self
+  - removetag{t=不動如山_蓄力_05} @self
+  - removetag{t=不動如山_蓄力_04} @self
+  - removetag{t=不動如山_蓄力_03} @self
+  - removetag{t=不動如山_蓄力_02} @self
+  - removetag{t=不動如山_蓄力_01} @self
+  - addtag{t=不動如山_失敗_06} @self
+  - removetag{t=不動如山_失敗_05} @self
+  - effect:particlesphere{p=reddust;color=#fff000;amount=40;radius=0.35;y=0.5;hs=0.3;vs=0.4} @self
+  - potion{type=SLOW;duration=15;level=1} @self
+  - effect:sound{s=block.beacon.deactivate;v=5;p=1.6}
+  - delay 18
+  - removetag{t=不動如山_蓄力_02} @self
+  - removetag{t=不動如山_蓄力_03} @self
+  - removetag{t=不動如山_蓄力_04} @self
+  - removetag{t=不動如山_蓄力_05} @self
+  - removetag{t=不動如山_蓄力_06} @self
+  - removetag{t=不動如山_蓄力_07} @self
+  - removetag{t=不動如山_蓄力_end} @self
+  - skill{s=SK008_06_fail}
+  
+SK008_07:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=不動如山_蓄力_07}
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&e不動如山蓄力中.";fo=40} @self
+  - addtag{t=不動如山_蓄力_08} @self  
+  - addtag{t=不動如山_蓄力_end} @self  
+  - removetag{t=不動如山_蓄力_07} @self
+  - removetag{t=不動如山_蓄力_06} @self
+  - removetag{t=不動如山_蓄力_05} @self
+  - removetag{t=不動如山_蓄力_04} @self
+  - removetag{t=不動如山_蓄力_03} @self
+  - removetag{t=不動如山_蓄力_02} @self
+  - removetag{t=不動如山_蓄力_01} @self
+  - addtag{t=不動如山_失敗_07} @self
+  - removetag{t=不動如山_失敗_06} @self
+  - effect:particlesphere{p=reddust;color=#fff000;amount=50;radius=0.4;y=0.5;hs=0.3;vs=0.5} @self
+  - potion{type=SLOW;duration=15;level=1} @self
+  - effect:sound{s=block.beacon.deactivate;v=5;p=1.7}
+  - delay 18
+  - removetag{t=不動如山_蓄力_02} @self
+  - removetag{t=不動如山_蓄力_03} @self
+  - removetag{t=不動如山_蓄力_04} @self
+  - removetag{t=不動如山_蓄力_05} @self
+  - removetag{t=不動如山_蓄力_06} @self
+  - removetag{t=不動如山_蓄力_07} @self
+  - removetag{t=不動如山_蓄力_08} @self
+  - removetag{t=不動如山_蓄力_end} @self
+  - skill{s=SK008_07_fail}
+  
+SK008_08:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=不動如山_蓄力_08}
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&e不動如山蓄力中..";fo=40} @self
+  - addtag{t=不動如山_蓄力_09} @self  
+  - addtag{t=不動如山_蓄力_end} @self  
+  - removetag{t=不動如山_蓄力_08} @self
+  - removetag{t=不動如山_蓄力_07} @self
+  - removetag{t=不動如山_蓄力_06} @self
+  - removetag{t=不動如山_蓄力_05} @self
+  - removetag{t=不動如山_蓄力_04} @self
+  - removetag{t=不動如山_蓄力_03} @self
+  - removetag{t=不動如山_蓄力_02} @self
+  - removetag{t=不動如山_蓄力_01} @self
+  - addtag{t=不動如山_失敗_08} @self
+  - removetag{t=不動如山_失敗_07} @self
+  - effect:particlesphere{p=reddust;color=#fff000;amount=60;radius=0.45;y=0.5;hs=0.3;vs=0.6} @self
+  - potion{type=SLOW;duration=15;level=1} @self
+  - effect:sound{s=block.beacon.deactivate;v=5;p=1.8}
+  - delay 18
+  - removetag{t=不動如山_蓄力_02} @self
+  - removetag{t=不動如山_蓄力_03} @self
+  - removetag{t=不動如山_蓄力_04} @self
+  - removetag{t=不動如山_蓄力_05} @self
+  - removetag{t=不動如山_蓄力_06} @self
+  - removetag{t=不動如山_蓄力_07} @self
+  - removetag{t=不動如山_蓄力_08} @self
+  - removetag{t=不動如山_蓄力_09} @self
+  - removetag{t=不動如山_蓄力_end} @self
+  - skill{s=SK008_08_fail}
+  
+SK008_09:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=不動如山_蓄力_09}
+  Skills:
+  - sendtitle{title="&c技能測試";subtitle="&e不動如山蓄力中...";fo=40} @self
+  - addtag{t=不動如山_蓄力_start} @self  
+  - addtag{t=不動如山_蓄力_end} @self  
+  - removetag{t=不動如山_蓄力_09} @self
+  - removetag{t=不動如山_蓄力_08} @self
+  - removetag{t=不動如山_蓄力_07} @self
+  - removetag{t=不動如山_蓄力_06} @self
+  - removetag{t=不動如山_蓄力_05} @self
+  - removetag{t=不動如山_蓄力_04} @self
+  - removetag{t=不動如山_蓄力_03} @self
+  - removetag{t=不動如山_蓄力_02} @self
+  - removetag{t=不動如山_蓄力_01} @self
+  - addtag{t=不動如山_失敗_09} @self
+  - removetag{t=不動如山_失敗_08} @self
+  - effect:particlesphere{p=reddust;color=#fff000;amount=70;radius=0.5;y=0.5;hs=0.3;vs=0.7} @self
+  - potion{type=SLOW;duration=15;level=1} @self
+  - effect:sound{s=block.beacon.deactivate;v=5;p=1.9}
+  - delay 18
+  - removetag{t=不動如山_蓄力_02} @self
+  - removetag{t=不動如山_蓄力_03} @self
+  - removetag{t=不動如山_蓄力_04} @self
+  - removetag{t=不動如山_蓄力_05} @self
+  - removetag{t=不動如山_蓄力_06} @self
+  - removetag{t=不動如山_蓄力_07} @self
+  - removetag{t=不動如山_蓄力_08} @self
+  - removetag{t=不動如山_蓄力_09} @self
+  - removetag{t=不動如山_蓄力_start} @self
+  - removetag{t=不動如山_蓄力_end} @self
+  - skill{s=SK008_09_fail}
+  
+SK008_start:
+  Cooldown: 0
+  Conditions:
+  - hastag{tag=不動如山_蓄力_start}
+  Skills:
+  - effect:sound{s=block.beacon.deactivate;v=5;p=2}
+  - effect:sound{s=entity.zombie.break_wooden_door;v=5;p=1.2}
+  - effect:sound{s=entity.blaze.shoot;v=5;p=0.6}
+  - skill{s=SK008_ok}
+  - addtag{t=不動如山_蓄力_end} @self  
+  - removetag{t=不動如山_失敗_09} @self
+  - removetag{t=不動如山_蓄力_02} @self
+  - removetag{t=不動如山_蓄力_03} @self
+  - removetag{t=不動如山_蓄力_04} @self
+  - removetag{t=不動如山_蓄力_05} @self
+  - removetag{t=不動如山_蓄力_06} @self
+  - removetag{t=不動如山_蓄力_07} @self
+  - removetag{t=不動如山_蓄力_08} @self
+  - removetag{t=不動如山_蓄力_09} @self
+  - removetag{t=不動如山_蓄力_end} @self
+  - removetag{t=不動如山_蓄力_start} @self
+  
+  
+SK008_ok:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:glow{color=YELLOW;duration=200} @self
+  - effect:particlering{p=reddust;color=#fff000;radius=0;points=1;amount=20;vs=0;hs=0;delay=0}
+  - effect:particlering{p=reddust;color=#fff000;radius=1;points=3;amount=20;vs=1;hs=1;delay=2}
+  - effect:particlering{p=reddust;color=#fff000;radius=2;points=6;amount=20;vs=1.5;hs=1.5;delay=4}
+  - effect:particlering{p=reddust;color=#fff000;radius=3;points=9;amount=20;vs=2;hs=2;delay=6}
+  - throw{velocity=20;velocityY=4} @EntitiesNearOrigin{r=3}

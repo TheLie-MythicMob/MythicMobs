@@ -1,0 +1,169 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M021_SkillD:
+  Cooldown: 10
+  Conditions:
+  Skills:
+  - skill{s=M021_SkillD_彈幕}
+  
+M021_SkillD_彈幕:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - potion{type=SLOW;duration=200;level=1000}
+  - effect:particlesphere{particle=fishing;amount=20;radius=0.2;y=2;delay=0}
+  - effect:sound{s=entity.dolphin.swim;v=5;p=0.6;delay=0}
+  - effect:particlesphere{particle=fishing;amount=25;radius=0.3;y=2.2;delay=2}
+  - effect:particlesphere{particle=fishing;amount=30;radius=0.4;y=2.4;delay=4}
+  - effect:particlesphere{particle=fishing;amount=35;radius=0.5;y=2.6;delay=6}
+  - effect:sound{s=entity.dolphin.swim;v=5;p=0.4;delay=6}
+  - effect:particlesphere{particle=fishing;amount=40;radius=0.6;y=2.8;delay=8}
+  - effect:particlesphere{particle=fishing;amount=45;radius=0.7;y=3;delay=10}
+  - effect:particlesphere{particle=fishing;amount=50;radius=0.8;y=3.2;delay=12}
+  - effect:sound{s=entity.dolphin.swim;v=5;p=0.2;delay=12}
+  - effect:particlesphere{particle=fishing;amount=55;radius=0.9;y=3.4;delay=14}
+  - effect:particlesphere{particle=fishing;amount=60;radius=1;y=3.6;delay=16}
+  - effect:particlesphere{particle=fishing;amount=65;radius=1.1;y=3.8;delay=18}
+  - effect:sound{s=entity.dolphin.swim;v=5;p=0.1;delay=18}
+  - effect:particlesphere{particle=fishing;amount=70;radius=1.2;y=4;delay=20}
+  - effect:particlesphere{particle=fishing;amount=75;radius=1.3;y=4.2;delay=22}
+  - effect:particlesphere{particle=fishing;amount=200;radius=1.4;y=4.4;delay=24;repeat=3;repeatInterval=10}
+  - effect:sound{s=entity.dolphin.jump;v=5;p=2;delay=24}
+  - projectile{ot=M021_SkillD_粒子;onHit=M021_SkillA_水標_擊中;oe=M021_SkillA_水標_消失;v=8;i=1;hR=1;vR=1;syo=9;g=0.1;sfo=0;delay=24} @RLNTE{amount=50;radius=30;spacing=0;minradius=0}
+  - effect:particlesphere{particle=fishing;amount=200;radius=1.4;y=4.4;delay=54}
+  - effect:particlesphere{particle=fishing;amount=200;radius=1.4;y=4;delay=55}
+  - effect:particlesphere{particle=fishing;amount=200;radius=1.4;y=3.6;delay=56}
+  - effect:particlesphere{particle=fishing;amount=200;radius=1.4;y=3.2;delay=57}
+  - effect:particlesphere{particle=fishing;amount=200;radius=1.4;y=2.8;delay=58}
+  - effect:particlesphere{particle=fishing;amount=200;radius=1.4;y=2.4;delay=59}
+  - effect:particlesphere{particle=fishing;amount=200;radius=1.4;y=2;delay=60}
+  - effect:particlesphere{particle=fishing;amount=200;radius=1.4;y=1.6;delay=61}
+  - effect:particlesphere{particle=fishing;amount=200;radius=1.4;y=1.2;delay=62}
+  - effect:particlesphere{particle=fishing;amount=200;radius=1.4;y=0.8;delay=63}
+  - effect:particlesphere{particle=fishing;amount=200;radius=1.4;y=0.4;delay=64}
+  - skill{s=M021_SkillD_01;delay=64}
+  
+M021_SkillD_01:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  # <上升>
+  - effect:sound{s=entity.player.splash.high_speed;v=2;p=2}
+  - effect:sound{s=block.water.ambient;v=2;p=2;repeat=11;repeatInterval=5}
+  - effect:particlering{particle=fishing;radius=1;points=20;amount=1;y=0.3}
+  - effect:particlering{particle=fishing;radius=1.2;points=21;amount=1;y=0.34;delay=1}
+  - effect:particlering{particle=fishing;radius=1.4;points=22;amount=1;y=0.38;delay=1}
+  - effect:particlering{particle=fishing;radius=1.6;points=23;amount=1;y=0.42;delay=2}
+  - effect:particlering{particle=fishing;radius=1.8;points=24;amount=1;y=0.46;delay=2}
+  - effect:particlering{particle=fishing;radius=2;points=25;amount=1;y=0.5;delay=3}
+  - effect:particlering{particle=fishing;radius=2.4;points=26;amount=1;y=0.54;delay=3}
+  - effect:particlering{particle=fishing;radius=2.6;points=27;amount=1;y=0.58;delay=4}
+  - effect:particlering{particle=fishing;radius=2.8;points=28;amount=1;y=0.62;delay=4}
+  - effect:particlering{particle=fishing;radius=3;points=29;amount=1;y=0.66;delay=5}
+  - effect:particlering{particle=fishing;radius=3.2;points=30;amount=1;y=0.7;delay=5}
+  - effect:particlering{particle=fishing;radius=3.4;points=31;amount=1;y=0.74;delay=6}
+  - effect:particlering{particle=fishing;radius=3.6;points=32;amount=1;y=0.78;delay=6}
+  - effect:particlering{particle=fishing;radius=3.8;points=33;amount=1;y=0.82;delay=7}
+  - effect:particlering{particle=fishing;radius=4;points=34;amount=1;y=0.86;delay=7}
+  - effect:particlering{particle=fishing;radius=4.2;points=35;amount=1;y=0.90;delay=8}
+  - effect:particlering{particle=fishing;radius=4.4;points=36;amount=1;y=0.94;delay=8}
+  - effect:particlering{particle=fishing;radius=4.6;points=37;amount=1;y=0.98;delay=9}
+  - effect:particlering{particle=fishing;radius=4.8;points=38;amount=1;y=1.02;delay=9}
+  - effect:particlering{particle=fishing;radius=5;points=39;amount=1;y=1.04;delay=10}
+  #
+  
+  - throw{velocity=5;velocityY=1;delay=10} @PlayersInRing{min=0;max=6}
+  - throw{velocity=5;velocityY=1;delay=12} @PlayersInRing{min=0;max=6}
+  - throw{velocity=5;velocityY=1;delay=14} @PlayersInRing{min=0;max=6}
+  - throw{velocity=5;velocityY=1;delay=16} @PlayersInRing{min=0;max=6}
+  - throw{velocity=5;velocityY=1;delay=18} @PlayersInRing{min=0;max=6}
+  - skill{s=M021_SkillD_傷害_01;delay=10} @PlayersInRing{min=0;max=6}
+  #
+  - effect:particlering{particle=fishing;radius=5.2;points=40;amount=1;y=1.08;delay=10}
+  - effect:particlering{particle=fishing;radius=5.4;points=41;amount=1;y=1.12;delay=11}
+  # <下墜>  
+  - effect:particlering{particle=fishing;radius=5.6;points=42;amount=1;y=1.12;delay=11}
+  - effect:particlering{particle=fishing;radius=5.8;points=44;amount=1;y=1.12;delay=12}
+  - effect:particlering{particle=fishing;radius=6;points=46;amount=1;y=1.12;delay=12}
+  # <下墜> 
+  - effect:particlering{particle=fishing;radius=6.2;points=48;amount=1;y=1.08;delay=13}
+  - effect:particlering{particle=fishing;radius=6.4;points=52;amount=1;y=1.04;delay=13}
+  - effect:particlering{particle=fishing;radius=6.6;points=56;amount=1;y=1;delay=14}
+  - effect:particlering{particle=fishing;radius=6.8;points=60;amount=1;y=0.96;delay=14}
+  - effect:particlering{particle=fishing;radius=7;points=70;amount=1;y=0.92;delay=15}
+  - effect:particlering{particle=fishing;radius=7.2;points=80;amount=1;y=0.88;delay=15}
+  - effect:particlering{particle=fishing;radius=7.4;points=90;amount=1;y=0.84;delay=16}
+  - effect:particlering{particle=fishing;radius=7.6;points=100;amount=1;y=0.80;delay=16}
+  - effect:particlering{particle=fishing;radius=7.9;points=110;amount=1;y=0.76;delay=17}
+  - effect:particlering{particle=fishing;radius=8.2;points=120;amount=1;y=0.72;delay=17}
+  - effect:particlering{particle=fishing;radius=8.5;points=130;amount=1;y=0.68;delay=18}
+  - effect:particlering{particle=fishing;radius=8.8;points=140;amount=1;y=0.64;delay=18}
+  - effect:particlering{particle=fishing;radius=9.1;points=150;amount=1;y=0.60;delay=19}
+  - effect:particlering{particle=fishing;radius=9.4;points=160;amount=1;y=0.56;delay=19}
+  - effect:particlering{particle=fishing;radius=9.7;points=170;amount=1;y=0.52;delay=20}
+  #
+  - throw{velocity=3;velocityY=1;delay=20} @PlayersInRing{min=5;max=11}
+  - throw{velocity=3;velocityY=1;delay=22} @PlayersInRing{min=5;max=11}
+  - throw{velocity=3;velocityY=1;delay=24} @PlayersInRing{min=5;max=11}
+  - throw{velocity=3;velocityY=0;delay=26} @PlayersInRing{min=5;max=11}
+  - throw{velocity=3;velocityY=0;delay=28} @PlayersInRing{min=5;max=11}
+  - skill{s=M021_SkillD_傷害_02;delay=20} @PlayersInRing{min=5;max=11}
+  #
+  - effect:particlering{particle=fishing;radius=10;points=180;amount=1;y=0.48;delay=20}
+  - effect:particlering{particle=fishing;radius=10.3;points=190;amount=1;y=0.44;delay=21}
+  - effect:particlering{particle=fishing;radius=10.6;points=200;amount=1;y=0.4;delay=21}
+  - effect:particlering{particle=fishing;radius=10.9;points=200;amount=1;y=0.38;delay=22}
+  - effect:particlering{particle=fishing;radius=11.2;points=200;amount=1;y=0.34;delay=22}
+  - effect:particlering{particle=fishing;radius=11.5;points=200;amount=1;y=0.3;delay=23}
+  - effect:particlering{particle=fishing;radius=11.8;points=200;amount=1;y=0.26;delay=24}
+  - effect:particlering{particle=fishing;radius=12.1;points=200;amount=1;y=0.22;delay=24}
+  - effect:particlering{particle=fishing;radius=12.4;points=200;amount=1;y=0.18;delay=25}
+  - effect:particlering{particle=fishing;radius=12.7;points=200;amount=1;y=0.18;delay=25}
+  - effect:particlering{particle=fishing;radius=13;points=200;amount=1;y=0.18;delay=26}
+  - effect:sound{s=entity.player.splash.high_speed;v=2;p=0.8;delay=26}
+  # <微上升>
+  - effect:particlering{particle=fishing;radius=13.3;points=200;amount=1;y=0.22;delay=27}
+  - effect:particlering{particle=fishing;radius=13.6;points=200;amount=1;y=0.24;delay=27}
+  #
+  - throw{velocity=3;velocityY=0;delay=27} @PlayersInRing{min=11;max=14}
+  - skill{s=M021_SkillD_傷害_03;delay=27}  @PlayersInRing{min=11;max=14}
+  #
+  - effect:particlering{particle=fishing;radius=13.9;points=200;amount=1;y=0.26;delay=28}
+  - effect:particlering{particle=fishing;radius=14.2;points=200;amount=1;y=0.28;delay=28}
+  
+M021_SkillD_粒子:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particles{p=fishing}
+  
+M021_SkillD_傷害_01:
+  Cooldown: 0
+  TriggerConditions:
+  - hastag{tag=M021_SkillD_傷害_02_發動} false
+  - hastag{tag=M021_SkillD_傷害_03_發動} false
+  Skills:
+  - damage{amount=70;ia=false}
+  - message{m="&3系統 &7>> &f你因近距離受到強大水壓而受到巨大傷害！"}
+  - addtag{t=M021_SkillD_傷害_01_發動}
+  - delay 60
+  - removetag{t=M021_SkillD_傷害_01_發動}
+  
+M021_SkillD_傷害_02:
+  Cooldown: 0
+  TriggerConditions:
+  - hastag{tag=M021_SkillD_傷害_01_發動} false
+  Skills:
+  - damage{amount=40;ia=false}
+  - message{m="&3系統 &7>> &f你因中距離受到強大水壓而受到傷害！"}
+  - addtag{t=M021_SkillD_傷害_02_發動}
+  - delay 60
+  - removetag{t=M021_SkillD_傷害_02_發動}
+  
+M021_SkillD_傷害_03:
+  Cooldown: 0
+  TriggerConditions:
+  - hastag{tag=M021_SkillD_傷害_02_發動} false
+  - hastag{tag=M021_SkillD_傷害_01_發動} false
+  Skills:
+  - damage{amount=20;ia=false}
+  - message{m="&3系統 &7>> &f你受到強大水壓但距離過遠只受到些許傷害！"}

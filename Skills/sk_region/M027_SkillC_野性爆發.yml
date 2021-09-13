@@ -1,0 +1,8 @@
+# 此怪物由【小崇#8767 - TaiwanPingNO1】製作而成。
+M027_SkillC:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - effect:particlesphere{particle=smoke;amount=30;radius=0.6;vs=1} @self
+  - potion{type=SPEED;duration=20;level=3} @self
+  - potion{type=INCREASE_DAMAGE;duration=20;level=3} @self
